@@ -2,56 +2,61 @@
   "home": {
     "brands": [{
       "class": "brands__item--1",
-      "image": {
-        "path": "./assets/images/brands/they_trust_us.svg",
-        "text": "They trust us"
-      }
+      "text": "They trust us"
     }, {
       "class": "brands__item--2",
       "image": {
-        "path": "./assets/images/brands/myllyn_paras.svg",
+        "src": "./assets/images/brands/myllyn_paras.svg",
+        "src_mob": "./assets/images/brands/myllyn_paras_mob.svg",
         "text": "Myllyn Paras"
       }
     }, {
       "class": "brands__item--3",
       "image": {
-        "path": "./assets/images/brands/british_american_tobacco.svg",
+        "src": "./assets/images/brands/british_american_tobacco.svg",
+        "src_mob": "./assets/images/brands/british_american_tobacco_mob.svg",
         "text": "British American Tobacco"
       }
     }, {
       "class": "brands__item--4",
       "image": {
-        "path": "./assets/images/brands/melon.svg",
+        "src": "./assets/images/brands/melon.svg",
+        "src_mob": "./assets/images/brands/melon_mob.svg",
         "text": "Melon Fashion Group"
       }
     }, {
       "class": "brands__item--5",
       "image": {
-        "path": "./assets/images/brands/bausch.svg",
+        "src": "./assets/images/brands/bausch.svg",
+        "src_mob": "./assets/images/brands/bausch_mob.svg",
         "text": "Bausch Health Companies"
       }
     }, {
       "class": "brands__item--6",
       "image": {
-        "path": "./assets/images/brands/reddys.svg",
+        "src": "./assets/images/brands/reddys.svg",
+        "src_mob": "./assets/images/brands/reddys_mob.svg",
         "text": "Dr. Reddy’s Laboratories"
       }
     }, {
       "class": "brands__item--7",
       "image": {
-        "path": "./assets/images/brands/gambling.svg",
+        "src": "./assets/images/brands/gambling.svg",
+        "src_mob": "./assets/images/brands/gambling_mob.svg",
         "text": "GamblingCompliance"
       }
     }, {
       "class": "brands__item--8",
       "image": {
-        "path": "./assets/images/brands/shell.svg",
+        "src": "./assets/images/brands/shell.svg",
+        "src_mob": "./assets/images/brands/shell_mob.svg",
         "text": "Shell"
       }
     }, {
       "class": "brands__item--9",
       "image": {
-        "path": "./assets/images/brands/bloomsbury.svg",
+        "src": "./assets/images/brands/bloomsbury.svg",
+        "src_mob": "./assets/images/brands/bloomsbury_mob.svg",
         "text": "Bloomsbury"
       }
     }]

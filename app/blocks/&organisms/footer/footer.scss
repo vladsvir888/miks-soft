@@ -1,16 +1,40 @@
 .footer {
-  padding: 0 1.6rem;
+  position: relative;
+  padding-top: 28rem;
   color: var(--pallette-white);
   font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: -0.02em;
   line-height: 140%;
 
-  &__container {
+  &__video {
+    position: absolute;
+    bottom: 0;
+    left: 10rem;
+    z-index: -1;
+    width: 66.9rem;
+    height: 49.7rem;
+    background: linear-gradient(332.71deg, var(--pallette-baltic-sea) 1.63%, rgba(29, 25, 35, 0) 75.68%);
+
+    @include media('1024', max) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include media('767', max) {
+      width: 37.5rem;
+      height: 29.5rem;
+    }
+
+    img {
+      @include img(cover);
+    }
+  }
+
+  &__inner {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-      'item1 item1 item1 item2 item3 item4';
+    grid-template-areas: 'item1 item1 item1 item2 item3 item4';
     gap: 1rem;
     align-items: flex-end;
     padding: 2.7rem 0;
@@ -22,6 +46,7 @@
         'item2 item3 item4'
         'item1 item1 item1';
       gap: 3.6rem;
+      align-items: flex-start;
     }
 
     @include media('767', max) {
@@ -42,6 +67,8 @@
   }
 
   &__logo {
+    display: inline-flex;
+
     img {
       width: 42.9rem;
       height: 6.8rem;
@@ -80,7 +107,7 @@
   }
 
   &__list {
-    --offset-y: 0.4rem
+    --offset-y: 0.4rem;
   }
 
   &__link {

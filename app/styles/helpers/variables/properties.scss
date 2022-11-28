@@ -5,10 +5,15 @@
   --pallette-white: #fff;
   --pallette-light-taupe: #b19b71;
   --pallette-american-silver: #d2d5ca;
+  --pallette-baltic-sea: #1c1a22;
 
   // containers
-  --container-width: 140rem;
-  --container-padding: 1.6rem;
+  --container-width: 144rem;
+  --container-padding: 2rem;
+
+  @include media('500', max) {
+    --container-padding: 1.6rem;
+  }
 
   // fonts
   --font1: 'DM Sans', sans-serif;
@@ -16,4 +21,5 @@
 
   // transition
   --transition: 0.3s;
+  --transition2: 1s;
 }

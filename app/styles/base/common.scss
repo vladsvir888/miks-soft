@@ -45,7 +45,8 @@ a[class] {
 }
 
 :focus-visible {
-  outline: 0.2rem dotted var(--pallette-black);
+  outline-offset: 0.5rem;
+  outline-color: var(--pallette-light-taupe);
 }
 
 .no-scroll {
@@ -74,7 +75,7 @@ body {
   @include flex-column;
   height: 100%;
   font-family: var(--font1);
-  font-weight: 400;
+  color: var(--pallette-white);
   background-color: var(--pallette-black);
 }
 
@@ -145,4 +146,15 @@ body {
       transform: scaleX(1);
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pallette-american-silver);
+  border-radius: 0.5rem;
 }

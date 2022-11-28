@@ -1,10 +1,7 @@
 .header {
-  padding: 0 1.6rem;
+  &__inner {
+    @include flex-center-between;
 
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     text-transform: uppercase;
     padding: 2.5rem 1rem 2.5rem 1.6rem;
     border-bottom: 0.1rem solid var(--pallette-onyx);
@@ -40,8 +37,8 @@
 
   &__end {
     --offset-x: 6rem;
-    display: flex;
-    align-items: center;
+
+    @include flex-center-y;
   }
 
   &__link {
@@ -59,8 +56,8 @@
   }
 
   &__discuss-link {
-    display: flex;
-    align-items: center;
+    @include flex-center-y;
+
     padding: 1.25rem 1.6rem;
     font-size: 1.1rem;
     line-height: 100%;

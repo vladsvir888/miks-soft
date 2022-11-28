@@ -3,9 +3,16 @@
     <ul class="brands__list" role="list">
       {% for brand in home.brands %}
         <li class="brands__item {{ brand.class }}">
-          {% view "@icon" with {
-            icon: brand
-          } %}
+          {% if brand.image %}
+            <picture>
+              <source media="(max-width:500px)" data-srcset="{{ brand.image.src_mob }}">
+              <img class="lazy brands__img" src="./assets/images/pixel.png" data-src="{{ brand.image.src }}" alt="{{ brand.image.text }}">
+            </picture>
+          {% else %}
+            <p class="brands__text">
+              {{ brand.text }}
+            </p>
+          {% endif %}
         </li>
       {% endfor %}
     </ul>
