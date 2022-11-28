@@ -1,0 +1,34 @@
+<header class="header">
+  <div class="container header__container">
+    <div class="header__start">
+      {% view "@logo" with {
+        logo: header.logo|merge({
+          class: "header__logo"
+        })
+      } %}
+    </div>
+    <div class="header__end offset-x">
+      <nav class="menu header__menu" aria-label="Main">
+        <ul class="header__list offset-x" role="list">
+          {% for item in header.menu %}
+            <li class="header__item">
+              {% view "@button" with {
+                button: item|merge({
+                  class: "header__link"
+                })
+              } %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      {% view "@button" with {
+        button: header.discuss_link|merge({
+          class: "header__discuss-link"
+        })
+      } %}
+    </div>
+
+    {% view "@burger" %}
+  </div>
+</header>

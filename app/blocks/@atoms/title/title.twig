@@ -1,0 +1,5 @@
+{% set level = title.level|default("1") %}
+
+<h{{ level }} class="title {% if title.class %}{{ title.class }}{% endif %}">
+  {{ title.text }}
+</h{{ level }}>

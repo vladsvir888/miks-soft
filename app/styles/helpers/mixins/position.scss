@@ -1,0 +1,25 @@
+@mixin pos-center($pos: null) {
+  position: absolute;
+
+  @if $pos != null {
+    @if $pos == x {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @else if $pos == y {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @else if $pos == xy {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @else {
+    @warn 'Missing argument - $pos.';
+  }
+}

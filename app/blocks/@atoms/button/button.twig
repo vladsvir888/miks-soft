@@ -1,0 +1,12 @@
+<{{ button.href ? "a" : "button" }} {% if button.href %}href="{{ button.href }}"{% endif %} class="btn {{ button.class }}">
+  {% if button.icon %}
+    {% view "@icon" with {
+      icon: button.icon|default({})|merge({
+        class: "btn__icon" ~ (button.icon.class is defined ? " " ~ button.icon.class : "")
+      })
+    } %}
+  {% endif %}
+  <span class="btn__text {{ button.text.class }}">
+    {{ button.text.text }}
+  </span>
+</{{ button.href ? "a" : "button" }}>

@@ -1,0 +1,28 @@
+{% extends "../blocks/layout/base.twig" %}
+
+{% block content %}
+
+<style>
+  .index-list {
+    margin: 5rem;
+  }
+
+  .index-list__link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--pallette-white);
+  }
+</style>
+
+<ul class="index-list">
+  {% for page in pages %}
+    <li>
+      <a target="_blank" class="btn link index-list__link" href="{{ page.link }}.html">
+        {{ page.text }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

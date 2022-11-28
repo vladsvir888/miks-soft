@@ -1,0 +1,49 @@
+@mixin offset($args...) {
+  @each $value in $args {
+    $val: pxToRem($value);
+
+    // margin
+    .m-#{$value} {
+      margin: $val;
+    }
+
+    .mt-#{$value} {
+      margin-top: $val;
+    }
+
+    .mr-#{$value} {
+      margin-right: $val;
+    }
+
+    .mb-#{$value} {
+      margin-bottom: $val;
+    }
+
+    .ml-#{$value} {
+      margin-left: $val;
+    }
+
+    // padding
+    .p-#{$value} {
+      padding: $val;
+    }
+
+    .pt-#{$value} {
+      padding-top: $val;
+    }
+
+    .pr-#{$value} {
+      padding-right: $val;
+    }
+
+    .pb-#{$value} {
+      padding-bottom: $val;
+    }
+
+    .pl-#{$value} {
+      padding-left: $val;
+    }
+  }
+}
+
+// @include offset(0, 10, 20);

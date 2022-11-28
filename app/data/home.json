@@ -1,0 +1,59 @@
+{
+  "home": {
+    "brands": [{
+      "class": "brands__item--1",
+      "image": {
+        "path": "./assets/images/brands/they_trust_us.svg",
+        "text": "They trust us"
+      }
+    }, {
+      "class": "brands__item--2",
+      "image": {
+        "path": "./assets/images/brands/myllyn_paras.svg",
+        "text": "Myllyn Paras"
+      }
+    }, {
+      "class": "brands__item--3",
+      "image": {
+        "path": "./assets/images/brands/british_american_tobacco.svg",
+        "text": "British American Tobacco"
+      }
+    }, {
+      "class": "brands__item--4",
+      "image": {
+        "path": "./assets/images/brands/melon.svg",
+        "text": "Melon Fashion Group"
+      }
+    }, {
+      "class": "brands__item--5",
+      "image": {
+        "path": "./assets/images/brands/bausch.svg",
+        "text": "Bausch Health Companies"
+      }
+    }, {
+      "class": "brands__item--6",
+      "image": {
+        "path": "./assets/images/brands/reddys.svg",
+        "text": "Dr. Reddy’s Laboratories"
+      }
+    }, {
+      "class": "brands__item--7",
+      "image": {
+        "path": "./assets/images/brands/gambling.svg",
+        "text": "GamblingCompliance"
+      }
+    }, {
+      "class": "brands__item--8",
+      "image": {
+        "path": "./assets/images/brands/shell.svg",
+        "text": "Shell"
+      }
+    }, {
+      "class": "brands__item--9",
+      "image": {
+        "path": "./assets/images/brands/bloomsbury.svg",
+        "text": "Bloomsbury"
+      }
+    }]
+  }
+}

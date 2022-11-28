@@ -1,0 +1,19 @@
+@use "sass:math";
+
+@mixin font-size($fz, $lh: null) {
+  font-size: rem($fz);
+
+  @if $lh != null {
+    line-height: math.div($lh, $fz);
+  }
+}
+
+//  ===== Usage =====
+
+/*
+
+  .block {
+    @include font-size(20, 16);
+  }
+
+*/

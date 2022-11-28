@@ -1,0 +1,61 @@
+.burger {
+  $this: &;
+
+  display: none;
+  cursor: pointer;
+
+  @include media('767', max) {
+    display: flex;
+  }
+
+  &#{$this}--active #{$this}__btn-item {
+    top: 0.5rem;
+
+    &:first-child {
+      transform: rotate(45deg)
+    }
+
+    &:last-child {
+      transform: rotate(-45deg)
+    }
+  }
+
+  &__inner {
+    @include flex-center;
+
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: var(--pallette-onyx);
+    border-radius: 50%;
+  }
+
+  &__btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.6rem;
+    height: 0.8rem;
+    border: none;
+    background-color: transparent;
+    cursor: inherit;
+
+    &-item {
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 1.6rem;
+      height: 0.1rem;
+      background-color: var(--pallette-white);
+      transition: transform var(--transition);
+
+      &:first-child {
+        top: 0;
+      }
+
+      &:last-child {
+        bottom: 0;
+      }
+    }
+  }
+}

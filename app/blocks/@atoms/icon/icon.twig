@@ -1,0 +1,16 @@
+{% if not icon.image %}
+  <svg
+    {% if icon.sizes.width %}width="{{ icon.sizes.width }}"{% endif %}
+    {% if icon.sizes.height %}height="{{ icon.sizes.height }}"{% endif %}
+    class="icon {% if icon.class %}{{ icon.class }}{% endif %}"
+  >
+    <use xlink:href="./assets/sprites/{{ icon.name }}"></use>
+  </svg>
+{% else %}
+  <img
+    class="lazy"
+    src="./assets/images/pixel.png"
+    data-src="{{ icon.image.path }}"
+    {% if icon.image.text %}alt="{{ icon.image.text }}"{% endif %}
+  >
+{% endif %}

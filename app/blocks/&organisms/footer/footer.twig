@@ -1,0 +1,47 @@
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__item footer__item--1">
+      <p class="footer__copyright">
+        <small>
+          {{ footer.copyright }}
+        </small>
+      </p>
+      {% view "@logo" with {
+        logo: footer.logo|merge({
+          class: "footer__logo"
+        })
+      } %}
+    </div>
+    <div class="footer__item footer__list offset-y footer__item--2">
+      {{ footer.address }}
+    </div>
+    <address class="footer__item footer__address footer__item--3">
+      <ul class="footer__list offset-y" role="list">
+        {% for item in footer.help_links %}
+          <li class="footer__item">
+            {% view "@button" with {
+              button: item|merge({
+                class: "link footer__link"
+              })
+            } %}
+          </li>
+        {% endfor %}
+      </ul>
+    </address>
+    <div class="footer__item footer__item--4">
+      <nav class="menu footer__menu" aria-label="Footer">
+        <ul class="footer__list footer__menu-list offset-y" role="list">
+          {% for item in footer.menu %}
+            <li class="footer__item">
+              {% view "@button" with {
+                button: item|merge({
+                  class: "link footer__link"
+                })
+              } %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>

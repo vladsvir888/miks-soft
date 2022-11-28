@@ -1,0 +1,10 @@
+.btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: all var(--transition);
+
+  &__icon {
+    transition: all var(--transition);
+  }
+}

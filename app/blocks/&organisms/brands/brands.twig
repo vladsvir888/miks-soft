@@ -1,0 +1,13 @@
+<section class="brands">
+  <div class="container">
+    <ul class="brands__list" role="list">
+      {% for brand in home.brands %}
+        <li class="brands__item {{ brand.class }}">
+          {% view "@icon" with {
+            icon: brand
+          } %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

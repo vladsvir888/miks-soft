@@ -1,0 +1,13 @@
+@mixin truncate($truncation-boundary: null) {
+  @if $truncation-boundary != null {
+    display: block;
+    max-width: $truncation-boundary;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  @else {
+    @warn 'Missing argument - $truncation-boundary.';
+  }
+}
