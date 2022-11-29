@@ -6,6 +6,8 @@
   --pallette-light-taupe: #b19b71;
   --pallette-american-silver: #d2d5ca;
   --pallette-baltic-sea: #1c1a22;
+  --pallette-topaz: #797585;
+  --pallette-gray-suit: #cdcad5;
 
   // containers
   --container-width: 144rem;
@@ -22,4 +24,20 @@
   // transition
   --transition: 0.3s;
   --transition2: 1s;
+
+  // lh
+  --lh140: 140%;
+  --lh100: 100%;
+
+  // tt
+  --ttu: uppercase;
+  -tti: inherit;
+
+  // fw
+  --fw400: 400;
+  --fw500: 500;
+
+  // ls
+  --lsm04: -0.04em;
+  --lsm02: -0.02em
 }

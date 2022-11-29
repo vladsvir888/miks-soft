@@ -1,0 +1,21 @@
+<section class="hero">
+  <div class="container">
+    {% view "@title" with {
+      title: hero.title|merge({
+        class: "title--h1 hero__title"
+      })
+    } %}
+
+    <ul class="hero__list offset-x">
+      {% for item in hero.labels %}
+        {% view "@label" with {
+          label: item
+        } %}
+      {% endfor %}
+    </ul>
+
+    <p class="hero__text">
+      {{ hero.text }}
+    </p>
+  </div>
+</section>

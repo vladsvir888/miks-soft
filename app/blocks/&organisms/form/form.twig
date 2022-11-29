@@ -1,0 +1,13 @@
+<form action="/" class="form">
+  <div class="form__content">
+    {% for item in form.items %}
+      {% view "@input_block" with {
+        input: item
+      } %}
+    {% endfor %}
+
+    {% view "@button" with {
+      button: form.button
+    } %}
+  </div>
+</form>

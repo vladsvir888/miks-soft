@@ -2,7 +2,7 @@
   &__inner {
     @include flex-center-between;
 
-    text-transform: uppercase;
+    text-transform: var(--ttu);
     padding: 2.5rem 1rem 2.5rem 1.6rem;
     border-bottom: 0.1rem solid var(--pallette-onyx);
 
@@ -45,7 +45,7 @@
     padding: 0.7rem 1rem;
     color: var(--pallette-white);
     font-size: 1.4rem;
-    line-height: 100%;
+    line-height: var(--lh100);
     border-radius: 5rem;
     transition: color var(--transition), background-color var(--transition);
 
@@ -56,34 +56,6 @@
   }
 
   &__discuss-link {
-    @include flex-center-y;
-
-    padding: 1.25rem 1.6rem;
-    font-size: 1.1rem;
-    line-height: 100%;
-    font-weight: 500;
-    color: var(--pallette-black);
-    background-color: var(--pallette-white);
-    border-radius: 5rem;
-
-    .btn__icon {
-      width: 1.2rem;
-      height: 1.2rem;
-      flex-shrink: 0;
-      margin-right: 0.6rem;
-      fill: var(--pallette-light-taupe);
-    }
-
-    &:hover {
-      color: var(--pallette-white);
-      background-color: var(--pallette-light-taupe);
-
-      .btn__icon {
-        fill: var(--pallette-white);
-        transform: rotate(180deg);
-      }
-    }
-
     @include media('767', max) {
       display: none;
     }

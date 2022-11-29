@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": {
+      "text": "We create the effective <b>digital solutions for business</b>"
+    },
+    "labels": [{
+      "text": "Website"
+    }, {
+      "text": "Custom software"
+    }, {
+      "text": "App dev"
+    }],
+    "text": "Senior team with a clear cost of work. For middle up business."
+  }
+}

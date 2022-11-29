@@ -1,0 +1,63 @@
+// input-block
+.input-block {
+  $this: &;
+
+  border-bottom: 0.1rem solid var(--pallette-topaz);
+
+  &__input {
+    width: 100%;
+    padding-bottom: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: var(--fw500);
+    line-height: var(--lh140);
+    letter-spacing: var(--lsm02);
+    color: inherit;
+    outline: none;
+
+    @include placeholder {
+      opacity: 0;
+    }
+
+    &:focus ~ #{$this}__label,
+    &:not(:placeholder-shown) ~ #{$this}__label {
+      transform: translateY(-1.8rem);
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transition: transform var(--transition);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  label {
+    font-size: 1.4rem;
+    line-height: var(--lh140);
+    letter-spacing: var(--lsm02);
+    color: var(--pallette-topaz);
+  }
+}
+
+// input
+.input {
+  background-color: transparent;
+  border: none;
+
+  &--checkbox {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0;
+    margin-right: 1.6rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid var(--pallette-topaz);
+    appearance: none;
+  }
+}

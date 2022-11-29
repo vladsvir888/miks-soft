@@ -1,0 +1,30 @@
+.callback-aside {
+  &__title {
+    margin-bottom: 3.4rem;
+    text-align: center;
+
+    @include media('767', max) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 3.2rem;
+    line-height: var(--lh140);
+    text-transform: var(--ttu);
+    letter-spacing: var(--lsm04);
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 6.7rem;
+
+      @include media('767', max) {
+        margin-bottom: 5.4rem;
+      }
+    }
+
+    @include media('767', max) {
+      font-size: 1.4rem;
+    }
+  }
+}

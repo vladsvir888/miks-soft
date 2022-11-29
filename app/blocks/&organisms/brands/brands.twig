@@ -1,17 +1,17 @@
-<section class="brands">
+<section class="brands {{ brands.class }}">
   <div class="container">
     <ul class="brands__list" role="list">
-      {% for brand in home.brands %}
-        <li class="brands__item {{ brand.class }}">
+      {% for brand in home.brands.items %}
+        <li class="brands__item">
           {% if brand.image %}
             <picture>
               <source media="(max-width:500px)" data-srcset="{{ brand.image.src_mob }}">
               <img class="lazy brands__img" src="./assets/images/pixel.png" data-src="{{ brand.image.src }}" alt="{{ brand.image.text }}">
             </picture>
           {% else %}
-            <p class="brands__text">
+            <h2 class="brands__title">
               {{ brand.text }}
-            </p>
+            </h2>
           {% endif %}
         </li>
       {% endfor %}

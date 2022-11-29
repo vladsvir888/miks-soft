@@ -1,0 +1,26 @@
+.hero {
+  margin-top: 11.1rem;
+  margin-bottom: 28.8rem;
+
+  &__title {
+    margin-bottom: 11.2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+      margin-bottom: 2.6rem;
+    }
+  }
+
+  &__text {
+    max-width: 62.9rem;
+    font-size: 3.2rem;
+    line-height: var(--lh140);
+    letter-spacing: var(--lsm04);
+    text-transform: var(--ttu);
+    color: var(--pallette-gray-suit);
+  }
+}

@@ -1,0 +1,31 @@
+{% set input_type = input.type|default("text") %}
+
+{% if not input.checkbox %}
+  <div class="input-block {{ input.class }}">
+    <input
+      class="input input-block__input"
+      id="{{ input.id }}"
+      type="{{ input_type }}"
+      placeholder="{{ input.placeholder }}"
+      name="{{ input.name }}"
+    >
+    <label class="input-block__label" for="{{ input.id }}">
+      {{ input.placeholder }}
+    </label>
+  </div>
+{% else %}
+  <div class="input-block {{ input.class }}">
+    <div class="input-block__inner">
+      <input
+        class="input input--checkbox"
+        id="{{ input.id }}"
+        type="{{ input_type }}"
+        name="{{ input.name }}"
+      >
+      <label for="{{ input.id }}">
+        Yes, I have read and agree to the
+        <a class="link form__link" href="#">Data Privacy</a> and <a class="link form__link" href="#">Privacy notice</a>
+      </label>
+    </div>
+  </div>
+{% endif %}

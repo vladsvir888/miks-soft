@@ -2,10 +2,14 @@
   position: relative;
   padding-top: 28rem;
   color: var(--pallette-white);
-  font-weight: 400;
+  font-weight: var(--fw400);
   font-size: 1.4rem;
-  letter-spacing: -0.02em;
-  line-height: 140%;
+  letter-spacing: var(--lsm02);
+  line-height: var(--lh140);
+
+  @include media('1024', max) {
+    padding-top: 18rem;
+  }
 
   &__video {
     position: absolute;
@@ -24,6 +28,10 @@
     @include media('767', max) {
       width: 37.5rem;
       height: 29.5rem;
+    }
+
+    @include media('500', max) {
+      bottom: 20rem;
     }
 
     img {

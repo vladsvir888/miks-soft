@@ -1,0 +1,23 @@
+.title {
+  font-weight: var(--fw400);
+  text-transform: var(--ttu);
+  font-family: var(--font2);
+  line-height: var(--lh100);
+
+  &--h1 {
+    font-size: 8.4rem;
+
+    b {
+      color: var(--pallette-light-taupe);
+      font-weight: var(--fw400);
+    }
+  }
+
+  &--h2 {
+    font-size: 7.8rem;
+
+    @include media('767', max) {
+      font-size: 2.8rem;
+    }
+  }
+}

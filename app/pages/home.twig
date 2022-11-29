@@ -2,8 +2,12 @@
 
 {% block content %}
   <main class="main">
+    {% view "&hero" %}
+
     {% view "&brands" with {
       brands: home.brands
     } %}
+
+    {% view "&callback_aside" %}
   </main>
 {% endblock %}

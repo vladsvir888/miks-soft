@@ -1,0 +1,57 @@
+.form {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6.5rem 2rem;
+    max-width: 92.6rem;
+    margin: 0 auto;
+
+    @include media('767', max) {
+      gap: 3.6rem 2rem;
+    }
+
+    @include media('500', max) {
+      display: block;
+
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 3.6rem;
+        }
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    grid-column: span 2;
+
+    &--2 {
+      grid-column: span 2;
+      border-bottom: none;
+
+      @include media('1024', max) {
+        grid-column: span 4;
+      }
+    }
+
+    &--4 {
+      grid-column: span 4;
+    }
+  }
+
+  &__btn {
+    grid-column: 4 / 5;
+
+    @include media('1024', max) {
+      grid-column: span 4;
+    }
+
+    @include media('500', max) {
+      margin: 0 auto;
+    }
+  }
+
+  &__link {
+    color: var(--pallette-white);
+  }
+}

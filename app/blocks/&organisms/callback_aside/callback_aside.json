@@ -1,0 +1,55 @@
+{
+  "callback_aside": {
+    "title": {
+      "level": 2,
+      "text": "Lets discuss your project"
+    },
+    "subtitle": "Fill out the form below and we`ll get back to you shortly.",
+    "form": {
+      "items": [{
+        "class": "form__item",
+        "id": "input_name_id",
+        "placeholder": "Name",
+        "name": "name"
+      }, {
+        "class": "form__item",
+        "id": "input_company_id",
+        "placeholder": "Company",
+        "name": "company"
+      }, {
+        "class": "form__item",
+        "id": "input_email_id",
+        "type": "email",
+        "placeholder": "Email",
+        "name": "email"
+      }, {
+        "class": "form__item",
+        "id": "input_phone_id",
+        "type": "tel",
+        "placeholder": "Phone number",
+        "name": "phone"
+      }, {
+        "class": "form__item form__item--4",
+        "id": "input_message_id",
+        "placeholder": "Few words about your project",
+        "name": "message"
+      }, {
+        "checkbox": true,
+        "class": "form__item--2",
+        "id": "input_checkbox_id",
+        "type": "checkbox",
+        "name": "is_checked"
+      }],
+      "button": {
+        "class": "btn--secondary form__btn",
+        "submit": true,
+        "text": {
+          "text": "Send request"
+        },
+        "icon": {
+          "name": "sprite-mono.svg#btn-figure"
+        }
+      }
+    }
+  }
+}
