@@ -1,4 +1,12 @@
 .header {
+  $this: &;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
   &__inner {
     @include flex-center-between;
 
@@ -8,6 +16,18 @@
 
     @include media('500', max) {
       padding: 5.4rem 0.4rem 2.4rem 1.4rem;
+    }
+  }
+
+  &--active {
+    margin-top: 1.5rem;
+
+    #{$this}__inner {
+      background: rgba(28, 26, 34, 0.5);
+      backdrop-filter: blur(2rem);
+      border-radius: 8rem;
+      padding: 1rem 1rem 1rem 1.6rem;
+      border-bottom: none;
     }
   }
 

@@ -27,4 +27,4 @@ export const twigBuild = () => (
     .pipe(dest(config.build.templates))
 );
 
-export const twigWatch = () => watch(config.watch.templates, twigBuild);
+export const twigWatch = () => watch([config.watch.templates, config.watch.data], twigBuild);

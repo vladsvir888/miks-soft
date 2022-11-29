@@ -6,37 +6,41 @@
     },
     "copyright": "&copy; 2021 Designed and Developed by",
     "address": "<p>Harju maakond, Tallinn,</p> <p>Kristiine linnaosa, A. H.</p> <p>Tammsaare tee 47, 11316</p>",
-    "help_links": [{
-      "href": "#",
-      "text": {
-        "text": "Facebook"
-      }
-    }, {
-      "href": "tel:+3726347351",
-      "text": {
-        "text": "+372 6347 351"
-      }
-    }, {
-      "href": "mailto:hello@miks-soft.com",
-      "text": {
-        "text": "hello@miks-soft.com"
-      }
-    }],
-    "menu": [{
-      "href": "#",
-      "text": {
-        "text": "Services"
-      }
-    }, {
-      "href": "#",
-      "text": {
-        "text": "Portfolio"
-      }
-    }, {
-      "href": "#",
-      "text": {
-        "text": "Privacy policy"
-      }
-    }]
+    "help_links": {
+      "items": [{
+        "href": "#",
+        "text": {
+          "text": "Facebook"
+        }
+      }, {
+        "href": "tel:+3726347351",
+        "text": {
+          "text": "+372 6347 351"
+        }
+      }, {
+        "href": "mailto:hello@miks-soft.com",
+        "text": {
+          "text": "hello@miks-soft.com"
+        }
+      }]
+    },
+    "menu": {
+      "items": [{
+        "href": "#",
+        "text": {
+          "text": "Services"
+        }
+      }, {
+        "href": "#",
+        "text": {
+          "text": "Portfolio"
+        }
+      }, {
+        "href": "#",
+        "text": {
+          "text": "Privacy policy"
+        }
+      }]
+    }
   }
 }

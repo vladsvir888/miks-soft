@@ -11,7 +11,19 @@
   }
 
   &__item {
+    @include flex-center;
+
+    min-height: 16rem;
+    padding: 1rem;
     background-color: var(--pallette-black);
+
+    @include media('767', max) {
+      min-height: 10rem;
+    }
+
+    @include media('500', max) {
+      padding: 0.2rem;
+    }
 
     &:first-child {
       grid-column: span 2;
@@ -22,22 +34,17 @@
     }
   }
 
-  &__item {
-    @include flex-center;
-
-    min-height: 16rem;
-    padding: 1rem;
-
-    @include media('767', max) {
-      min-height: 10rem;
-    }
-
-    @include media('500', max) {
-      padding: 0.2rem;
-    }
-  }
-
   &__img {
+    // padding: 1.2rem;
+    // width: 13.5rem;
+    // height: 6rem;
+    // object-fit: contain;
+    transition: transform var(--transition2);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
     @include media('500', max) {
       padding: 2rem;
     }

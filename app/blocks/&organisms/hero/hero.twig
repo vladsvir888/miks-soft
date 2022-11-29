@@ -1,13 +1,17 @@
 <section class="hero">
   <div class="container">
+    <div class="hero__video">
+      <img src="./assets/images/rings_hero.png" alt="">
+    </div>
+
     {% view "@title" with {
       title: hero.title|merge({
         class: "title--h1 hero__title"
       })
     } %}
 
-    <ul class="hero__list offset-x">
-      {% for item in hero.labels %}
+    <ul class="hero__list" role="list">
+      {% for item in hero.labels.items %}
         {% view "@label" with {
           label: item
         } %}
@@ -17,5 +21,22 @@
     <p class="hero__text">
       {{ hero.text }}
     </p>
+
+    {% view "@button" with {
+      button: hero.button|default({})|merge({
+        class: "btn--secondary hero__btn"
+      })
+    } %}
+
+    <ul class="hero__awards" role="list">
+      {% for item in hero.awards.items %}
+        <li>
+          <picture>
+            <source media="(max-width:500px)" data-srcset="{{ item.path_mob }}">
+            <img class="lazy hero__awards-img" src="./assets/images/pixel.png" data-src="{{ item.path }}" alt="{{ item.text }}">
+          </picture>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>

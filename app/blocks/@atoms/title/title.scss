@@ -11,10 +11,22 @@
       color: var(--pallette-light-taupe);
       font-weight: var(--fw400);
     }
+
+    @include media('1024', max) {
+      font-size: 6.4rem;
+    }
+
+    @include media('767', max) {
+      font-size: 3.5rem;
+    }
   }
 
   &--h2 {
     font-size: 7.8rem;
+
+    @include media('1024', max) {
+      font-size: 5.8rem;
+    }
 
     @include media('767', max) {
       font-size: 2.8rem;

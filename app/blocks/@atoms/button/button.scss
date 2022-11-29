@@ -29,7 +29,7 @@
 
   &--primary {
     padding: 1.25rem 1.6rem;
-    font-size: 1.1rem;
+    font-size: var(--fz-btn-primary);
     line-height: var(--lh100);
     color: var(--pallette-black);
     background-color: var(--pallette-white);
@@ -46,7 +46,7 @@
 
   &--secondary {
     padding: 2rem 3rem;
-    font-size: 1.5rem;
+    font-size: var(--fz-btn-secondary);
     line-height: var(--lh100);
     text-transform: var(--ttu);
     color: inherit;

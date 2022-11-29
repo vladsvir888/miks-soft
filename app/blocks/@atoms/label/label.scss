@@ -6,4 +6,8 @@
   text-transform: var(--ttu);
   border-radius: 5rem;
   border: 0.1rem solid var(--pallette-topaz);
+
+  @include media('1024', max) {
+    font-size: 1rem;
+  }
 }

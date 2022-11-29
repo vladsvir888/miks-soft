@@ -30,17 +30,18 @@ export const config = {
 
   watch: {
     styles: `${appFolder}/{styles,blocks}/**/*.scss`,
-    templates: `${appFolder}/{pages,blocks}/**/*.twig`,
+    templates: `${appFolder}/{pages,blocks}/**/(*.twig|*.json)`,
     scripts: `${appFolder}/{scripts,blocks}/**/*.js`,
     resources: `${appFolder}/resources/**/*`,
     images: `${appFolder}/images/**/*`,
     iconsMono: `${appFolder}/icons/mono/**/*`,
     iconsMulti: `${appFolder}/icons/multi/**/*`,
+    data: `${appFolder}/data/*.json`,
   },
 
   twig: {
-    root: 'app',
-    data: '../../app/data/',
+    root: `${appFolder}`,
+    data: `../../${appFolder}/data/`,
     atomicPaths: {
       '@': './app/blocks/@atoms/',
       '^': './app/blocks/^molecules/',

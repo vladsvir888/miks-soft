@@ -21,7 +21,7 @@
       </div>
       <address class="footer__item footer__address footer__item--3">
         <ul class="footer__list offset-y" role="list">
-          {% for item in footer.help_links %}
+          {% for item in footer.help_links.items %}
             <li class="footer__item">
               {% view "@button" with {
                 button: item|merge({
@@ -35,7 +35,7 @@
       <div class="footer__item footer__item--4">
         <nav class="menu footer__menu" aria-label="Footer">
           <ul class="footer__list footer__menu-list offset-y" role="list">
-            {% for item in footer.menu %}
+            {% for item in footer.menu.items %}
               <li class="footer__item">
                 {% view "@button" with {
                   button: item|merge({
