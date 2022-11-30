@@ -1,0 +1,16 @@
+<article class="several-example offset-y">
+  {% view "@image" with {
+    image: several_example.image|merge({
+      class: "several-example__img"
+    })
+  } %}
+
+  <a class="several-example__link" href="#">
+    {% view "@title" with {
+      title: several_example.title|merge({
+        level: 4,
+        class: "title--h4 several-example__title"
+      })
+    } %}
+  </a>
+</article>

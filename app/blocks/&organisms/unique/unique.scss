@@ -1,0 +1,105 @@
+.unique {
+  $this: &;
+
+  padding: 11.2rem 0 8.8rem;
+  background: var(--tabs-gradient);
+
+  @include media('767', max) {
+    padding: 4rem 0;
+  }
+
+  &__title {
+    margin-bottom: 3.4rem;
+    text-align: center;
+  }
+
+  &__content {
+    display: none;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 6.1rem;
+    padding: 0 1.6rem;
+
+    @include media('767', max) {
+      margin-top: 2rem;
+    }
+
+    &#{$this}__content--show {
+      display: grid;
+
+      @include media('1024', max) {
+        display: block;
+      }
+    }
+
+    &-item {
+      grid-column: span 3;
+
+      &--perfomance {
+        --offset-y: 4.8rem;
+
+        grid-column: 5 / 7;
+        margin-bottom: 5.6rem;
+      }
+
+      &--slider {
+        --offset-y: 2rem;
+
+        grid-column: span 6;
+      }
+
+      &--btn {
+        @include flex-center;
+
+        grid-column: span 6;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: var(--lh140);
+      letter-spacing: var(--lsm02);
+      color: var(--pallette-gray-suit);
+
+      @include media('767', max) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__text-block {
+    margin-bottom: 6rem;
+
+    @include media('767', max) {
+      margin-bottom: 5.6rem;
+    }
+  }
+
+  &__advantages-block {
+    --offset-y: 2rem;
+    margin-bottom: 7rem;
+
+    @include media('767', max) {
+      margin-bottom: 5.6rem;
+    }
+  }
+
+  &__subtitle {
+    color: var(--pallette-white);
+  }
+
+  &__slider {
+    height: 48rem;
+
+    @include media('1024', max) {
+      height: 40rem;
+    }
+
+    @include media('767', max) {
+      height: 35rem;
+    }
+
+    @include media('500', max) {
+      height: 30rem;
+    }
+  }
+}

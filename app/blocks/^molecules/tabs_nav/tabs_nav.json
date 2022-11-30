@@ -1,0 +1,21 @@
+{
+  "tabs_nav": {
+    "items": [{
+      "id": "tab_1",
+      "class": "tabs-nav__item--active",
+      "text": {
+        "text": "Website"
+      }
+    }, {
+      "id": "tab_2",
+      "text": {
+        "text": "Custom software"
+      }
+    }, {
+      "id": "tab_3",
+      "text": {
+        "text": "App dev"
+      }
+    }]
+  }
+}

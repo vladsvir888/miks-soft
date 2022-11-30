@@ -1,0 +1,89 @@
+<section class="unique">
+
+  <div class="container">
+    {% view "@title" with {
+      title: unique.title|default({})|merge({
+        class: "title--h2 unique__title"
+      })
+    } %}
+
+    {% view "^tabs_nav" %}
+  </div>
+
+  {% for content in unique.contents %}
+    <section class="unique__content js-tabs-content {{ content.class }}" data-tab-content="{{ content.data.tab_content }}">
+      <div class="unique__content-item">
+        {% if content.description %}
+          <div class="unique__text-block offset-y">
+            {% for item in content.description %}
+              <p>
+                {{ item.text }}
+              </p>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if content.advantages_block %}
+          <div class="unique__advantages-block offset-y">
+            {% view "@title" with {
+              title: content.advantages_block.title|default({})|merge({
+                level: 3,
+                class: "title--h3 unique__subtitle"
+              })
+            } %}
+
+            <p>
+              {{ content.advantages_block.text }}
+            </p>
+          </div>
+        {% endif %}
+      </div>
+
+      {% if content.perfomance_block %}
+        <div class="unique__content-item unique__content-item--perfomance offset-y">
+          {% view "@title" with {
+            title: content.perfomance_block.title|default({})|merge({
+              level: 3,
+              class: "title--h3 unique__subtitle"
+            })
+          } %}
+
+          {% view "@image" with {
+            image: content.perfomance_block.image
+          } %}
+        </div>
+      {% endif %}
+
+      {% if content.several_examples %}
+        <div class="unique__content-item unique__content-item--slider offset-y">
+          {% view "@title" with {
+            title: content.several_examples.title|default({})|merge({
+              level: 3,
+              class: "title--h3 unique__subtitle"
+            })
+          } %}
+
+          <div class="swiper unique__slider js-several-examples">
+            <div class="swiper-wrapper">
+              {% for item in content.several_examples.items %}
+                <div class="swiper-slide">
+                  {% view "^several_example" with {
+                    several_example: item
+                  } %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="unique__content-item unique__content-item--btn">
+        {% view "@button" with {
+          button: content.button|merge({
+            class: "btn--secondary unique__btn"
+          })
+        } %}
+      </div>
+    </section>
+  {% endfor %}
+</section>

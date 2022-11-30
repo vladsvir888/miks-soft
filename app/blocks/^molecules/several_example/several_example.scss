@@ -1,0 +1,39 @@
+.several-example {
+  $this: &;
+
+  --offset-y: 2rem;
+
+  position: relative;
+
+  &:hover {
+    #{$this}__link {
+      color: var(--pallette-light-taupe);
+    }
+  }
+
+  picture {
+    display: block;
+  }
+
+  &__link {
+    color: inherit;
+    transition: var(--transition);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: '';
+    }
+  }
+
+  &__title {
+    max-width: 36rem;
+  }
+
+  &__img {
+    @include img(cover);
+  }
+}

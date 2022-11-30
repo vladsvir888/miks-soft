@@ -5,9 +5,9 @@
   --pallette-white: #fff;
   --pallette-light-taupe: #b19b71;
   --pallette-american-silver: #d2d5ca;
-  --pallette-baltic-sea: #1c1a22;
   --pallette-topaz: #797585;
   --pallette-gray-suit: #cdcad5;
+  --pallette-woodsmoke: #141218;
 
   // containers
   --container-width: 144rem;
@@ -32,6 +32,7 @@
   // tt
   --ttu: uppercase;
   --tti: inherit;
+  --ttl: lowercase;
 
   // fw
   --fw400: 400;
@@ -48,4 +49,7 @@
   @include media('500', max) {
     --fz-btn-secondary: 1.3rem;
   }
+
+  // tabs gradient (todo: заменить 16-е значение цвета на css переменную)
+  --tabs-gradient: radial-gradient(183.92% 177.93% at 112.29% -107.48%, #483142 0%, rgba(204, 86, 35, 0) 100%);
 }
