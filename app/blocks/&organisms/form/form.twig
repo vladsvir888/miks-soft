@@ -7,7 +7,12 @@
     {% endfor %}
 
     {% view "@button" with {
-      button: form.button
+      button: form.button|default({})|merge({
+        class: "btn--secondary form__btn",
+        icon: {
+          name: "sprite-mono.svg#btn-figure"
+        }
+      })
     } %}
   </div>
 </form>

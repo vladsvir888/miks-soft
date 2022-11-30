@@ -1,4 +1,9 @@
-<{{ button.href ? "a" : "button" }} {% if button.href %}href="{{ button.href }}"{% endif %} class="btn {{ button.class }}"{% if button.submit %}type="submit"{% endif %} {% if button.id %}id="{{ button.id }}"{% endif %}>
+<{{ button.href ? "a" : "button" }}
+  {% if button.href %}href="{{ button.href }}"{% endif %}
+  class="btn {{ button.class }}"
+  {% if button.submit %}type="submit"{% endif %}
+  {% if button.id %}id="{{ button.id }}"{% endif %}
+>
   {% if button.icon %}
     {% view "@icon" with {
       icon: button.icon|default({})|merge({

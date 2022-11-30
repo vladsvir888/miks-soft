@@ -1,41 +1,38 @@
 <footer class="footer">
+  {# todo: заменить на видос #}
   <div class="footer__video">
     <img src="./assets/images/rings.png" alt="">
   </div>
   <div class="container">
     <div class="footer__inner">
       <div class="footer__item footer__item--1">
-        <p class="footer__copyright">
-          <small>
-            {{ footer.copyright }}
-          </small>
-        </p>
-        {% view "@logo" with {
-          logo: footer.logo|merge({
-            class: "footer__logo"
-          })
-        } %}
+        {% if footer.copyright %}
+          <p class="footer__copyright">
+            <small>
+              {{ footer.copyright }}
+            </small>
+          </p>
+        {% endif %}
+
+        {% if footer.logo %}
+          {% view "@logo" with {
+            logo: footer.logo|merge({
+              class: "footer__logo"
+            })
+          } %}
+        {% endif %}
       </div>
-      <div class="footer__item footer__list offset-y footer__item--2">
-        {{ footer.address }}
-      </div>
-      <address class="footer__item footer__address footer__item--3">
-        <ul class="footer__list offset-y" role="list">
-          {% for item in footer.help_links.items %}
-            <li class="footer__item">
-              {% view "@button" with {
-                button: item|merge({
-                  class: "link footer__link"
-                })
-              } %}
-            </li>
-          {% endfor %}
-        </ul>
-      </address>
-      <div class="footer__item footer__item--4">
-        <nav class="menu footer__menu" aria-label="Footer">
-          <ul class="footer__list footer__menu-list offset-y" role="list">
-            {% for item in footer.menu.items %}
+
+      {% if footer.address %}
+        <div class="footer__item footer__list offset-y footer__item--2">
+          {{ footer.address }}
+        </div>
+      {% endif %}
+
+      {% if footer.help_links %}
+        <address class="footer__item footer__address footer__item--3">
+          <ul class="footer__list offset-y" role="list">
+            {% for item in footer.help_links.items %}
               <li class="footer__item">
                 {% view "@button" with {
                   button: item|merge({
@@ -45,8 +42,26 @@
               </li>
             {% endfor %}
           </ul>
-        </nav>
-      </div>
+        </address>
+      {% endif %}
+
+      {% if footer.menu %}
+        <div class="footer__item footer__item--4">
+          <nav class="menu footer__menu" aria-label="Footer">
+            <ul class="footer__list footer__menu-list offset-y" role="list">
+              {% for item in footer.menu.items %}
+                <li class="footer__item">
+                  {% view "@button" with {
+                    button: item|merge({
+                      class: "link footer__link"
+                    })
+                  } %}
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      {% endif %}
     </div>
   </div>
 </footer>

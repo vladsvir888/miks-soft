@@ -41,13 +41,9 @@
         "name": "is_checked"
       }],
       "button": {
-        "class": "btn--secondary form__btn",
         "submit": true,
         "text": {
           "text": "Send request"
-        },
-        "icon": {
-          "name": "sprite-mono.svg#btn-figure"
         }
       }
     }

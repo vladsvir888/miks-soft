@@ -1,0 +1,20 @@
+<section class="grid-logos {{ grid_logos.class }}">
+  <div class="container">
+    <ul class="grid-logos__list" role="list">
+      {% for item in home.grid_logos.items %}
+        <li class="grid-logos__item">
+          {% if item.image %}
+            <picture>
+              <source media="(max-width:500px)" data-srcset="{{ item.image.src_mob }}">
+              <img class="lazy grid-logos__img" src="./assets/images/pixel.png" data-src="{{ item.image.src }}" alt="{{ item.image.text }}">
+            </picture>
+          {% else %}
+            <h2 class="grid-logos__title">
+              {{ item.text }}
+            </h2>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

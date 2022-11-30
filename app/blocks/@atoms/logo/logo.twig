@@ -1,4 +1,12 @@
-<a href="#" class="logo {{ logo.class }}">
-  <span class="visually-hidden">{{ logo.text }}</span>
-  <img src="{{ logo.path }}" alt="">
-</a>
+{% if not logo.header %}
+  <a href="#" class="logo {{ logo.class }}">
+    <span class="visually-hidden">{{ logo.text }}</span>
+    <img src="{{ logo.path }}" alt="">
+  </a>
+{% else %}
+  <a href="#" class="logo {{ logo.class }}">
+    <span class="visually-hidden">{{ logo.text }}</span>
+    <img class="logo--top" src="{{ logo.path }}" alt="">
+    <img class="logo--bottom" src="{{ logo.path }}" alt="">
+  </a>
+{% endif %}

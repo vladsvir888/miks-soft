@@ -1,9 +1,10 @@
-<header class="header">
+<header class="header js-header">
   <div class="container">
     <div class="header__inner">
       <div class="header__start">
         {% view "@logo" with {
           logo: header.logo|merge({
+            header: true,
             class: "header__logo"
           })
         } %}
@@ -25,7 +26,10 @@
 
         {% view "@button" with {
           button: header.discuss_link|merge({
-            class: "btn--primary header__discuss-link"
+            class: "btn--primary header__discuss-link",
+            icon: {
+              name: "sprite-mono.svg#btn-figure"
+            }
           })
         } %}
       </div>

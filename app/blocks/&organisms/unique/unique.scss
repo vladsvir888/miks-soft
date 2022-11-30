@@ -45,6 +45,10 @@
         --offset-y: 2rem;
 
         grid-column: span 6;
+
+        @include media('767', max) {
+          width: calc(100% + 1.6rem);
+        }
       }
 
       &--btn {
@@ -100,6 +104,17 @@
 
     @include media('500', max) {
       height: 30rem;
+    }
+  }
+
+  &__img {
+    width: 41.2rem;
+    height: 19.8rem;
+    object-fit: contain;
+
+    @include media('500', max) {
+      width: auto;
+      height: auto;
     }
   }
 }

@@ -82,20 +82,24 @@
   }
 
   &__awards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem 23rem;
     align-items: center;
     padding-top: 2.7rem;
     border-top: 0.1rem solid var(--pallette-onyx);
 
-    @include media('500', max) {
-      padding-top: 1.6rem;
+    @include media('1024', max) {
+      gap: 2rem 8rem;
     }
 
-    > * {
-      &:not(:last-child) {
-        margin-right: 1.4rem;
-      }
+    @include media('767', max) {
+      gap: 2rem 4rem;
+    }
+
+    @include media('500', max) {
+      padding-top: 1.6rem;
+      gap: 2rem 1.6rem;
     }
 
     &-img {

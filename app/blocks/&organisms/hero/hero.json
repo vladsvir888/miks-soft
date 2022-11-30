@@ -16,31 +16,23 @@
     "button": {
       "text": {
         "text": "Discuss your project"
-      },
-      "icon": {
-        "name": "sprite-mono.svg#btn-figure"
       }
     },
     "awards": {
       "items": [{
         "path": "./assets/images/awards/awwwards.svg",
-        "path_mob": "./assets/images/awards/awwwards_mob.svg",
         "text": "Awwwards"
       }, {
         "path": "./assets/images/awards/css_design_awards.svg",
-        "path_mob": "./assets/images/awards/css_design_awards_mob.svg",
         "text": "CSSDesignAwards"
       }, {
         "path": "./assets/images/awards/cssfox.svg",
-        "path_mob": "./assets/images/awards/cssfox_mob.svg",
         "text": "cssfox"
       }, {
         "path": "./assets/images/awards/cms_magazine.svg",
-        "path_mob": "./assets/images/awards/cms_magazine_mob.svg",
         "text": "cms_magazine"
       }, {
         "path": "./assets/images/awards/behance.svg",
-        "path_mob": "./assets/images/awards/behance_mob.svg",
         "text": "behance"
       }]
     }

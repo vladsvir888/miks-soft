@@ -9,7 +9,7 @@
     margin: 0 auto;
     padding: 0 1.5rem;
     border: 0.1rem solid var(--pallette-onyx);
-    border-radius: 5rem;
+    border-radius: var(--bdrs5);
   }
 
   &__item {

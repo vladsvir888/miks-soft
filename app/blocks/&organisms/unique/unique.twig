@@ -49,7 +49,9 @@
           } %}
 
           {% view "@image" with {
-            image: content.perfomance_block.image
+            image: content.perfomance_block.image|default({})|merge({
+              class: "unique__img"
+            })
           } %}
         </div>
       {% endif %}

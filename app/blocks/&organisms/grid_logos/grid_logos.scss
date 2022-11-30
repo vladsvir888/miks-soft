@@ -1,4 +1,4 @@
-.brands {
+.grid-logos {
   &__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -35,17 +35,18 @@
   }
 
   &__img {
-    // padding: 1.2rem;
-    // width: 13.5rem;
-    // height: 6rem;
-    // object-fit: contain;
+    width: 27.6rem;
+    height: 15.1rem;
+    object-fit: contain;
     transition: transform var(--transition2);
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
 
     @include media('500', max) {
+      width: auto;
+      height: auto;
       padding: 2rem;
     }
   }

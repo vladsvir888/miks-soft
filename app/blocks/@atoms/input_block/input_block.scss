@@ -52,6 +52,8 @@
   border: none;
 
   &--checkbox {
+    @include bg(contain);
+
     width: 1.6rem;
     height: 1.6rem;
     margin: 0;

@@ -1,7 +1,7 @@
 {
   "home": {
-    "brands": {
-      "class": "main__brands",
+    "grid_logos": {
+      "class": "main__grid-logos",
       "items": [{
         "text": "They trust us"
       }, {
@@ -24,20 +24,20 @@
         }
       }, {
         "image": {
-          "src": "./assets/images/brands/bausch.svg",
-          "src_mob": "./assets/images/brands/bausch_mob.svg",
+          "src": "./assets/images/brands/bausch_health.svg",
+          "src_mob": "./assets/images/brands/bausch_health_mob.svg",
           "text": "Bausch Health Companies"
         }
       }, {
         "image": {
-          "src": "./assets/images/brands/reddys.svg",
-          "src_mob": "./assets/images/brands/reddys_mob.svg",
+          "src": "./assets/images/brands/dr.reddys.svg",
+          "src_mob": "./assets/images/brands/dr.reddys_mob.svg",
           "text": "Dr. Reddy’s Laboratories"
         }
       }, {
         "image": {
-          "src": "./assets/images/brands/gambling.svg",
-          "src_mob": "./assets/images/brands/gambling_mob.svg",
+          "src": "./assets/images/brands/gambling_compliance.svg",
+          "src_mob": "./assets/images/brands/gambling_compliance_mob.svg",
           "text": "GamblingCompliance"
         }
       }, {

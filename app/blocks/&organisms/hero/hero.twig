@@ -1,42 +1,53 @@
 <section class="hero">
   <div class="container">
+    {# todo: заменить на видос #}
     <div class="hero__video">
       <img src="./assets/images/rings_hero.png" alt="">
     </div>
 
-    {% view "@title" with {
-      title: hero.title|merge({
-        class: "title--h1 hero__title"
-      })
-    } %}
+    {% if hero.title %}
+      {% view "@title" with {
+        title: hero.title|default({})|merge({
+          class: "title--h1 hero__title"
+        })
+      } %}
+    {% endif %}
 
-    <ul class="hero__list" role="list">
-      {% for item in hero.labels.items %}
-        {% view "@label" with {
-          label: item
-        } %}
-      {% endfor %}
-    </ul>
+    {% if hero.labels.items %}
+      <ul class="hero__list" role="list">
+        {% for item in hero.labels.items %}
+          {% view "@label" with {
+            label: item
+          } %}
+        {% endfor %}
+      </ul>
+    {% endif %}
 
-    <p class="hero__text">
-      {{ hero.text }}
-    </p>
+    {% if hero.text %}
+      <p class="hero__text">
+        {{ hero.text }}
+      </p>
+    {% endif %}
 
-    {% view "@button" with {
-      button: hero.button|default({})|merge({
-        class: "btn--secondary hero__btn"
-      })
-    } %}
+    {% if hero.button %}
+      {% view "@button" with {
+        button: hero.button|default({})|merge({
+          class: "btn--secondary hero__btn",
+          icon: {
+            name: "sprite-mono.svg#btn-figure"
+          }
+        })
+      } %}
+    {% endif %}
 
-    <ul class="hero__awards" role="list">
-      {% for item in hero.awards.items %}
-        <li>
-          <picture>
-            <source media="(max-width:500px)" data-srcset="{{ item.path_mob }}">
+    {% if hero.awards %}
+      <ul class="hero__awards" role="list">
+        {% for item in hero.awards.items %}
+          <li>
             <img class="lazy hero__awards-img" src="./assets/images/pixel.png" data-src="{{ item.path }}" alt="{{ item.text }}">
-          </picture>
-        </li>
-      {% endfor %}
-    </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 </section>

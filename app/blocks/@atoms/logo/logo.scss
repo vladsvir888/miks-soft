@@ -1,0 +1,23 @@
+.logo {
+  $this: &;
+
+  &--top,
+  &--bottom {
+    transition: transform var(--transition);
+  }
+
+  &--bottom {
+    position: absolute;
+    transform: translateY(100%);
+  }
+
+  &:hover {
+    #{$this}--bottom {
+      transform: translateY(0);
+    }
+
+    #{$this}--top {
+      transform: translateY(-150%);
+    }
+  }
+}

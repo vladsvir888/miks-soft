@@ -12,7 +12,7 @@ const Tabs = (selector) => {
 
       const tabContent = document.querySelector(`${selector} [data-tab-content=${btn.id}]`);
 
-      if (index === 0) { // todo: решить проблему, если кнопок табов будет много
+      if (index === 0) { // todo: решить проблему, если кнопок табов будет больше, чем в дизайне
         parent.style.setProperty('--tabs-gradient', 'radial-gradient(183.92% 177.93% at 112.29% -107.48%, #483142 0%, rgba(204, 86, 35, 0) 100%)');
       } else if (index === 1) {
         parent.style.setProperty('--tabs-gradient', 'radial-gradient(183.92% 177.93% at 112.29% -107.48%, #1E4C73 0%, rgba(204, 86, 35, 0) 100%)');
