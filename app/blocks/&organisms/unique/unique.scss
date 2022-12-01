@@ -107,14 +107,14 @@
     }
   }
 
-  // &__img {
-  //   width: 41.2rem;
-  //   height: 19.8rem;
-  //   object-fit: contain;
+  &__img {
+    width: 41.2rem;
+    height: 19.8rem;
+    object-fit: contain;
 
-  //   @include media('500', max) {
-  //     width: auto;
-  //     height: auto;
-  //   }
-  // }
+    @include media('500', max) {
+      width: auto;
+      height: auto;
+    }
+  }
 }

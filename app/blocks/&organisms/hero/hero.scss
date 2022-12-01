@@ -112,6 +112,8 @@
     }
 
     &-img {
+      @include img(cover);
+
       transition: transform var(--transition2);
 
       &:hover {

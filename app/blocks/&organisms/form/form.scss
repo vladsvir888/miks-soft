@@ -2,7 +2,7 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 6.5rem 2rem;
+    gap: 3.4rem 2rem;
     max-width: 92.6rem;
     margin: 0 auto;
 
@@ -25,17 +25,21 @@
     position: relative;
     grid-column: span 2;
 
-    &--2 {
+    &--mb {
+      margin-bottom: 3.1rem;
+    }
+
+    &--5 {
+      grid-column: span 4;
+    }
+
+    &--6 {
       grid-column: span 2;
       border-bottom: none;
 
       @include media('1024', max) {
         grid-column: span 4;
       }
-    }
-
-    &--4 {
-      grid-column: span 4;
     }
   }
 

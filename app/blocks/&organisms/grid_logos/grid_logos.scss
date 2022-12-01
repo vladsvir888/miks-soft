@@ -5,7 +5,7 @@
     gap: 0.1rem;
     background-color: var(--pallette-onyx);
 
-    @include media('767', max) {
+    @include media('1024', max) {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -28,7 +28,7 @@
     &:first-child {
       grid-column: span 2;
 
-      @include media('767', max) {
+      @include media('1024', max) {
         grid-column: inherit;
       }
     }

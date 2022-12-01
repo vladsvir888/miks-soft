@@ -31,7 +31,17 @@
     }
 
     @include media('500', max) {
-      bottom: 20rem;
+      bottom: 15rem;
+
+      &::before {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 17rem;
+        background: linear-gradient(360deg, var(--pallette-black) 50%, rgba(29, 25, 35, 0) 72.37%);
+        z-index: 1;
+        content: '';
+      }
     }
 
     img {
