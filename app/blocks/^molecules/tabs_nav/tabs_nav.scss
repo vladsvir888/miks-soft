@@ -1,23 +1,18 @@
 .tabs-nav {
   $this: &;
 
-  display: flex;
+  @include flex-center;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+    justify-content: center;
     border: 0.1rem solid var(--pallette-onyx);
     border-radius: var(--bdrs5);
   }
 
   &__item {
-    margin: 1rem 0;
-
-    &:not(:last-child) {
-      margin-right: 1.6rem;
-    }
+    padding: 1rem 0.8rem;
 
     &--active {
       #{$this}__btn {

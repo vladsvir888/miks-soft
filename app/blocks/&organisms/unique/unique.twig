@@ -3,6 +3,7 @@
   <div class="container">
     {% view "@title" with {
       title: unique.title|default({})|merge({
+        attrs: 'data-sal="slide-up" data-sal-duration="800"',
         class: "title--h2 unique__title"
       })
     } %}
@@ -16,7 +17,7 @@
         {% if content.description %}
           <div class="unique__text-block offset-y">
             {% for item in content.description %}
-              <p>
+              <p data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                 {{ item.text }}
               </p>
             {% endfor %}
@@ -27,12 +28,13 @@
           <div class="unique__advantages-block offset-y">
             {% view "@title" with {
               title: content.advantages_block.title|default({})|merge({
+                attrs: 'data-sal="slide-up" data-sal-duration="800" data-sal-delay="200"',
                 level: 3,
                 class: "title--h3 unique__subtitle"
               })
             } %}
 
-            <p>
+            <p data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
               {{ content.advantages_block.text }}
             </p>
           </div>
@@ -43,6 +45,7 @@
         <div class="unique__content-item unique__content-item--perfomance offset-y">
           {% view "@title" with {
             title: content.perfomance_block.title|default({})|merge({
+              attrs: 'data-sal="slide-up" data-sal-duration="800" data-sal-delay="200"',
               level: 3,
               class: "title--h3 unique__subtitle"
             })

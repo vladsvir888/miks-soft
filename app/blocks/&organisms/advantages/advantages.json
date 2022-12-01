@@ -1,0 +1,81 @@
+{
+  "advantages": {
+    "title": {
+      "level": 2,
+      "text": "Choosing a Miks team means choosing quality on time"
+    },
+    "items": [{
+      "content": {
+        "title": {
+          "level": 3,
+          "text": "<b>10</b> <span>years</span>"
+        },
+        "text": "Successful experience working with businesses from online stores to oil companies"
+      },
+      "image": {
+        "class": "advantages__img--1",
+        "name": "advantages_figure/01.png",
+        "alt": ""
+      }
+    }, {
+      "content": {
+        "title": {
+          "level": 3,
+          "text": "<b>60</b> <span>employees</span>"
+        },
+        "text": "The cumulative experience of the team is estimated for centuries. We know exactly who you need"
+      },
+      "image": {
+        "class": "advantages__img--2",
+        "name": "advantages_figure/02.png",
+        "alt": ""
+      }
+    }, {
+      "content": {
+        "title": {
+          "level": 3,
+          "text": "<b>320</b> <span>clients</span>"
+        },
+        "text": "Every customer is the most important to us! Regardless of the scale of the project"
+      },
+      "image": {
+        "class": "advantages__img--3",
+        "name": "advantages_figure/03.png",
+        "alt": ""
+      }
+    }, {
+      "content": {
+        "title": {
+          "level": 3,
+          "text": "<b>56%</b> <span>repeat orders</span>"
+        },
+        "text": "We are proud and value the trust of our customers. Execution on time is our value"
+      },
+      "image": {
+        "class": "advantages__img--4",
+        "name": "advantages_figure/04.png",
+        "alt": ""
+      }
+    }, {
+      "content": {
+        "title": {
+          "level": 3,
+          "text": "<b>500+</b> <span>projects</span>"
+        },
+        "text": "We know in advance how to complete your project. We implement projects of any complexity"
+      },
+      "image": {
+        "class": "advantages__img--5",
+        "name": "advantages_figure/05.png",
+        "alt": ""
+      }
+    }, {
+      "button": {
+        "text": {
+          "text": "Discuss your project"
+        }
+      },
+      "text": "Make an appointment for the first online meeting. Entrust your project to professionals"
+    }]
+  }
+}

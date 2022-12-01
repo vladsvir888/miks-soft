@@ -108,14 +108,6 @@ body {
   @include container();
 }
 
-.wow {
-  @include media('1024', max) {
-    visibility: visible !important;
-
-    animation-name: none !important;
-  }
-}
-
 .offset-x > *:not(:last-child) {
   margin-right: var(--offset-x, 1rem);
 }
@@ -137,9 +129,9 @@ body {
 
 // main
 .main__grid-logos {
-  margin-bottom: 26.2rem;
+  padding-bottom: 26.2rem;
 
   @include media('1024', max) {
-    margin-bottom: 11rem;
+    padding-bottom: 11rem;
   }
 }

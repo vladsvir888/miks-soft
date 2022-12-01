@@ -3,13 +3,14 @@
     {% if callback_aside.title %}
       {% view "@title" with {
         title: callback_aside.title|merge({
+          attrs: 'data-sal="slide-up" data-sal-duration="800"',
           class: "title--h2 callback-aside__title"
         })
       } %}
     {% endif %}
 
     {% if callback_aside.subtitle %}
-      <p class="callback-aside__text">
+      <p data-sal="slide-up" data-sal-duration="800" data-sal-delay="200" class="callback-aside__text">
         {{ callback_aside.subtitle }}
       </p>
     {% endif %}

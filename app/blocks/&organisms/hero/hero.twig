@@ -8,6 +8,7 @@
     {% if hero.title %}
       {% view "@title" with {
         title: hero.title|default({})|merge({
+          attrs: 'data-sal="slide-up" data-sal-duration="800"',
           class: "title--h1 hero__title"
         })
       } %}
@@ -17,14 +18,16 @@
       <ul class="hero__list" role="list">
         {% for item in hero.labels.items %}
           {% view "@label" with {
-            label: item
+            label: item|merge({
+              attrs: 'data-sal="slide-up" data-sal-duration="800" data-sal-delay="400"'
+            })
           } %}
         {% endfor %}
       </ul>
     {% endif %}
 
     {% if hero.text %}
-      <p class="hero__text">
+      <p data-sal="slide-up" data-sal-duration="800" data-sal-delay="800" class="hero__text">
         {{ hero.text }}
       </p>
     {% endif %}
@@ -43,8 +46,13 @@
     {% if hero.awards %}
       <ul class="hero__awards" role="list">
         {% for item in hero.awards.items %}
-          <li>
-            <img class="lazy hero__awards-img" src="./assets/images/pixel.png" data-src="{{ item.path }}" alt="{{ item.text }}">
+          <li {% if item.attrs %}{{ item.attrs }}{% endif %}>
+            <img
+              class="lazy hero__awards-img"
+              src="./assets/images/pixel.png"
+              data-src="{{ item.path }}"
+              alt="{{ item.text }}"
+            >
           </li>
         {% endfor %}
       </ul>

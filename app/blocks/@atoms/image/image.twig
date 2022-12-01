@@ -18,7 +18,7 @@
       class="img lazy {% if image.class %}{{ image.class }}{% endif %}"
       src="./assets/images/pixel.png"
       data-src="{{ path ~ image.name }}"
-      {% if image.alt %}alt="{{ image.alt }}"{% endif %}
+      {% if image.alt is defined %}alt="{{ image.alt }}"{% endif %}
       {% if image.sizes.width %}width="{{ image.sizes.width }}"{% endif %}
       {% if image.sizes.height %}height="{{ image.sizes.height }}"{% endif %}
     />

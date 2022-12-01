@@ -7,7 +7,7 @@
 
   &:hover {
     #{$this}__link {
-      color: var(--pallette-light-taupe);
+      color: var(--pallette-white);
     }
   }
 
@@ -16,7 +16,7 @@
   }
 
   &__link {
-    color: inherit;
+    color: var(--pallette-gray-suit);
     transition: var(--transition);
 
     &::before {

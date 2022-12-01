@@ -1,0 +1,62 @@
+<section class="advantages">
+  <div class="container">
+    {% view "@title" with {
+      title: advantages.title|default({})|merge({
+        attrs: 'data-sal="slide-up" data-sal-duration="800"',
+        class: "title--h2 advantages__title"
+      })
+    } %}
+
+    <div class="advantages__grid">
+      {% for item in advantages.items %}
+        {% if not item.button %}
+          <div class="advantages__item">
+            <div class="offset-y advantages__content">
+              {% if item.content.title %}
+                {% view "@title" with {
+                  title: item.content.title|default({})|merge({
+                    class: "title--h3 advantages__subtitle"
+                  })
+                } %}
+              {% endif %}
+
+              {% if item.content.text %}
+                <p class="advantages__text">
+                  {{ item.content.text }}
+                </p>
+              {% endif %}
+            </div>
+
+            {% if item.image %}
+              {% view "@image" with {
+                image: item.image|default({})|merge({
+                  class: "advantages__img " ~ item.image.class
+                })
+              } %}
+            {% endif %}
+          </div>
+        {% else %}
+          <div class="advantages__item advantages__item--button offset-y">
+            {% if item.button %}
+              {% view "@button" with {
+                button: item.button|default({})|merge({
+                  class: "btn--secondary advantages__btn",
+                  icon: {
+                    name: "sprite-mono.svg#btn-figure"
+                  }
+                })
+              } %}
+            {% endif %}
+
+            {% if item.text %}
+              <p class="advantages__text advantages__text--button">
+                {{ item.text }}
+              </p>
+            {% endif %}
+
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

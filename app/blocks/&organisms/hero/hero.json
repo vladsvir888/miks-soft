@@ -20,18 +20,23 @@
     },
     "awards": {
       "items": [{
+        "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='200'",
         "path": "./assets/images/awards/awwwards.svg",
         "text": "Awwwards"
       }, {
+        "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='300'",
         "path": "./assets/images/awards/css_design_awards.svg",
         "text": "CSSDesignAwards"
       }, {
+        "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='400'",
         "path": "./assets/images/awards/cssfox.svg",
         "text": "cssfox"
       }, {
+        "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='500'",
         "path": "./assets/images/awards/cms_magazine.svg",
         "text": "cms_magazine"
       }, {
+        "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='600'",
         "path": "./assets/images/awards/behance.svg",
         "text": "behance"
       }]

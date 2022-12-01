@@ -7,48 +7,56 @@
         "text": "They trust us"
       }, {
         "image": {
+          "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='100'",
           "src": "./assets/images/brands/myllyn_paras.svg",
           "src_mob": "./assets/images/brands/myllyn_paras_mob.svg",
           "text": "Myllyn Paras"
         }
       }, {
         "image": {
+          "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='200'",
           "src": "./assets/images/brands/british_american_tobacco.svg",
           "src_mob": "./assets/images/brands/british_american_tobacco_mob.svg",
           "text": "British American Tobacco"
         }
       }, {
         "image": {
+          "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='300'",
           "src": "./assets/images/brands/melon.svg",
           "src_mob": "./assets/images/brands/melon_mob.svg",
           "text": "Melon Fashion Group"
         }
       }, {
         "image": {
+          "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='400'",
           "src": "./assets/images/brands/bausch_health.svg",
           "src_mob": "./assets/images/brands/bausch_health_mob.svg",
           "text": "Bausch Health Companies"
         }
       }, {
         "image": {
+          "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='500'",
           "src": "./assets/images/brands/dr.reddys.svg",
           "src_mob": "./assets/images/brands/dr.reddys_mob.svg",
           "text": "Dr. Reddy’s Laboratories"
         }
       }, {
         "image": {
+          "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='600'",
           "src": "./assets/images/brands/gambling_compliance.svg",
           "src_mob": "./assets/images/brands/gambling_compliance_mob.svg",
           "text": "GamblingCompliance"
         }
       }, {
         "image": {
+          "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='700'",
           "src": "./assets/images/brands/shell.svg",
           "src_mob": "./assets/images/brands/shell_mob.svg",
           "text": "Shell"
         }
       }, {
         "image": {
+          "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='800'",
           "src": "./assets/images/brands/bloomsbury.svg",
           "src_mob": "./assets/images/brands/bloomsbury_mob.svg",
           "text": "Bloomsbury"

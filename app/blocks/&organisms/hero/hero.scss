@@ -1,27 +1,36 @@
 .hero {
   position: relative;
-  margin-top: 18.8rem;
-  margin-bottom: 28.8rem;
+  padding-top: 18.8rem;
+  padding-bottom: 28.8rem;
 
   @include media('1024', max) {
-    margin-bottom: 6.9rem;
-    margin-top: 15.9rem;
+    padding-bottom: 6.9rem;
+    padding-top: 15.9rem;
     overflow: hidden;
   }
 
   &__video {
     position: absolute;
-    top: 26.5rem;
+    top: 41.1rem;
     right: 0;
     z-index: -1;
+    width: 91rem;
+    height: 62rem;
 
     @include media('1024', max) {
       top: 12rem;
       right: -22rem;
     }
 
+    @include media('767', max) {
+      width: 55rem;
+      height: 50rem;
+    }
+
     @include media('500', max) {
-      top: 22rem;
+      top: 38rem;
+      width: 55rem;
+      height: 34rem;
     }
 
     img {
