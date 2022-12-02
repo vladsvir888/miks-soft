@@ -1,0 +1,40 @@
+.hero-inner {
+  padding-bottom: 7.6rem;
+
+  &__wrap {
+    @include flex-center-column;
+
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 3.2rem;
+    line-height: var(--lh140);
+    text-transform: var(--ttu);
+    letter-spacing: var(--lsm04);
+
+    &:not(:last-child) {
+      margin-bottom: 2.6rem;
+    }
+  }
+
+  &__title {
+    font-size: 7.8rem;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    &--big {
+      font-size: 12.8rem;
+    }
+  }
+
+  &__subtitle {
+    max-width: 70rem;
+    font-size: 1.8rem;
+    line-height: var(--lh140);
+    letter-spacing: var(--ltsm02);
+    color: var(--pallette-gray-suit);
+  }
+}

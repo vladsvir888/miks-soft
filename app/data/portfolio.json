@@ -1,0 +1,50 @@
+{
+  "portfolio": {
+    "hero_inner": {
+      "text": "Our team has completed more than",
+      "title": {
+        "text": "500 projects in 10 years"
+      },
+      "subtitle": "We would like to remind you that MIKS has a large staff of employees with&nbsp;a&nbsp;high&nbsp;level of competence to carry out a project of any complexity and scale"
+    },
+    "tabs_nav": {
+      "items": [{
+        "id": "tab_1",
+        "class": "tabs-nav__item--active",
+        "text": {
+          "text": "Website"
+        }
+      }, {
+        "id": "tab_2",
+        "text": {
+          "text": "Custom software"
+        }
+      }, {
+        "id": "tab_3",
+        "text": {
+          "text": "App dev"
+        }
+      }]
+    },
+    "note": "Several examples of successful cases, of different scales",
+    "items": [{
+      "title": "Busking",
+      "labels": [{
+        "text": "Web"
+      }, {
+        "text": "Soft"
+      }],
+      "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
+      "button": {
+        "href": "#",
+        "text": {
+          "text": "Explore"
+        }
+      },
+      "image": {
+        "alt": "Busking",
+        "name": "portfolio/01.jpg"
+      }
+    }]
+  }
+}

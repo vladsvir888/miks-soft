@@ -1,0 +1,73 @@
+.portfolio-card {
+  $this: &;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  // &:hover {
+  //   #{$this}__btn {
+  //     opacity: 1;
+  //     pointer-events: auto;
+  //     transform: translateX(0);
+  //   }
+  // }
+
+  &__content {
+    grid-column: span 2;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+    font-weight: var(--fw400);
+    line-height: var(--lh140);
+    letter-spacing: var(--ltsm04);
+    text-transform: var(--ttu);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.8rem;
+    margin-bottom: 5.9rem;
+
+    > * {
+      margin-left: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 12.9rem;
+    font-size: 1.8rem;
+    line-height: var(--lh140);
+    letter-spacing: var(--ltsm02);
+    color: var(--pallette-gray-suit);
+  }
+
+  &__img-wrap {
+    grid-column: 4 / 7;
+
+    img {
+      @include img(cover);
+    }
+  }
+
+  // &__btn {
+  //   justify-content: flex-start;
+  //   // opacity: 0;
+  //   // pointer-events: none;
+  //   // transform: translateX(2rem);
+
+  //   // &::before {
+  //   //   position: absolute;
+  //   //   top: 0;
+  //   //   left: 0;
+  //   //   bottom: 0;
+  //   //   right: 0;
+  //   //   z-index: 1;
+  //   //   content: '';
+  //   // }
+  // }
+}

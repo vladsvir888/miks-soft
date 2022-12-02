@@ -2,6 +2,12 @@
   "pages": [{
     "text": "Home",
     "link": "home"
+  }, {
+    "text": "404",
+    "link": "error"
+  }, {
+    "text": "Portfolio",
+    "link": "portfolio"
   }],
   "title_page": "Miks Soft"
 }

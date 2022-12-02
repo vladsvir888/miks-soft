@@ -1,0 +1,13 @@
+{
+  "error": {
+    "type": "404",
+    "title": {
+      "text": "something went wrong"
+    },
+    "text": "Check the link, back to main page or use navigation above",
+    "video": {
+      "path": "./assets/hero_video.mp4"
+    }
+  },
+  "footer": false
+}

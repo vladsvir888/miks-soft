@@ -128,10 +128,24 @@ body {
 }
 
 // main
-.main__grid-logos {
-  padding-bottom: 26.2rem;
+.main {
+  &__grid-logos {
+    padding-bottom: 26.2rem;
 
-  @include media('1024', max) {
-    padding-bottom: 11rem;
+    @include media('1024', max) {
+      padding-bottom: 11rem;
+    }
+  }
+
+  &__section {
+    padding-top: 18.8rem;
+
+    @include media('1024', max) {
+      padding-top: 15.9rem;
+    }
+  }
+
+  &--error {
+    overflow: hidden;
   }
 }

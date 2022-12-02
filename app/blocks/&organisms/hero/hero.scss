@@ -1,11 +1,9 @@
 .hero {
   position: relative;
-  padding-top: 18.8rem;
   padding-bottom: 28.8rem;
 
   @include media('1024', max) {
     padding-bottom: 6.9rem;
-    padding-top: 15.9rem;
     overflow: hidden;
   }
 
@@ -33,7 +31,7 @@
       height: 34rem;
     }
 
-    img {
+    video {
       @include img(cover);
     }
   }

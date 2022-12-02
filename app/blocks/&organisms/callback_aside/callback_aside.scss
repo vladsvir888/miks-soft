@@ -1,7 +1,7 @@
 .callback-aside {
   &__title {
     margin-bottom: 3.4rem;
-    text-align: center;
+    text-align: var(--tac);
 
     @include media('767', max) {
       margin-bottom: 2rem;
@@ -13,7 +13,7 @@
     line-height: var(--lh140);
     text-transform: var(--ttu);
     letter-spacing: var(--lsm04);
-    text-align: center;
+    text-align: var(--tac);
 
     &:not(:last-child) {
       margin-bottom: 6.7rem;

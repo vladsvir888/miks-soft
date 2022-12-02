@@ -1,0 +1,51 @@
+<article class="portfolio-card">
+  <div class="portfolio-card__content">
+    {% if portfolio_card.title %}
+      <h2 class="portfolio-card__title">
+        {{ portfolio_card.title }}
+      </h2>
+    {% endif %}
+
+    {% if portfolio_card.labels %}
+      <ul class="portfolio-card__list">
+        {% for item in portfolio_card.labels %}
+          {% view "@label" with {
+            label: item
+          } %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if portfolio_card.text %}
+      <p class="portfolio-card__text">
+        {{ portfolio_card.text }}
+      </p>
+    {% endif %}
+
+    {% if portfolio_card.button %}
+      {# {% view "@button" with {
+        button: portfolio_card.button|default({})|merge({
+          class: "btn--arrow portfolio-card__btn",
+          right_icon: {
+            name: "sprite-mono.svg#arrow"
+          }
+        })
+      } %} #}
+
+      {# <a class="btn btn--arrow portfolio-card__btn" href="#">
+        <span class="btn__text">Explore</span>
+        <svg class="icon btn__right-icon">
+          <use xlink:href="./assets/sprites/sprite-mono.svg#arrow"></use>
+        </svg>
+      </a> #}
+    {% endif %}
+  </div>
+
+  {% if portfolio_card.image %}
+    <div class="portfolio-card__img-wrap">
+      {% view "@image" with {
+        image: portfolio_card.image
+      } %}
+    </div>
+  {% endif %}
+</article>

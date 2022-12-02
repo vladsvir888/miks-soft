@@ -1,6 +1,6 @@
 const Header = () => {
   const header = document.querySelector('.js-header');
-  const target = document.querySelector('.title--h1');
+  const target = document.querySelector('.js-title');
 
   if (!target && !header) return;
 

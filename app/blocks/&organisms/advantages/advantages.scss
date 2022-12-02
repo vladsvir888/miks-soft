@@ -9,7 +9,7 @@
 
   &__title {
     margin-bottom: 6.8rem;
-    text-align: center;
+    text-align: var(--tac);
   }
 
   &__grid {
@@ -53,7 +53,7 @@
 
       @include flex-center-column;
 
-      text-align: center;
+      text-align: var(--tac);
     }
 
     &:hover {

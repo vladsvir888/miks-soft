@@ -1,0 +1,13 @@
+{% extends "../blocks/layout/base.twig" %}
+
+{% block content %}
+  <main class="main">
+    {% view "&hero_inner" with {
+      hero_inner: portfolio.hero_inner
+    } %}
+
+    {% view "&portfolio" %}
+
+    {% view "&callback_aside" %}
+  </main>
+{% endblock %}

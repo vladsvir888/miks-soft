@@ -1,8 +1,8 @@
 import changed from 'gulp-changed';
-import imagemin from 'gulp-imagemin';
-import imageminPngquant from 'imagemin-pngquant';
-import imageminWebp from 'imagemin-webp';
-import gulpif from 'gulp-if';
+// import imagemin from 'gulp-imagemin';
+// import imageminPngquant from 'imagemin-pngquant';
+// import imageminWebp from 'imagemin-webp';
+// import gulpif from 'gulp-if';
 import rename from 'gulp-rename';
 import gulpAvif from 'gulp-avif';
 import {
@@ -12,20 +12,20 @@ import {
 const copyImages = () => (
   src(`${config.app.images}`)
     .pipe(changed(config.build.assets))
-    .pipe(gulpif(config.isProd, imagemin([
-      imagemin.mozjpeg({ quality: 80 }),
-      imageminPngquant({ quality: [0.8, 0.9] }),
-      imagemin.svgo(),
-    ])))
+    // .pipe(gulpif(config.isProd, imagemin([
+    //   imagemin.mozjpeg({ quality: 80 }),
+    //   imageminPngquant({ quality: [0.8, 0.9] }),
+    //   imagemin.svgo(),
+    // ])))
     .pipe(dest(`${config.build.assets}/images`))
 );
 
 const convertImagesToWebp = () => (
   src(config.app.imagesAfterCopy)
     .pipe(changed(config.build.assets, { extension: '.webp' }))
-    .pipe(gulpif(config.isProd, imagemin([
-      imageminWebp({ quality: 80 }),
-    ])))
+    // .pipe(gulpif(config.isProd, imagemin([
+    //   imageminWebp({ quality: 80 }),
+    // ])))
     .pipe(rename({
       extname: '.webp',
     }))

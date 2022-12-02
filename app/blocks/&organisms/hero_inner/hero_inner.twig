@@ -1,0 +1,23 @@
+<section class="hero-inner main__section">
+  <div class="container">
+    <div class="hero-inner__wrap">
+      {% if hero_inner.text %}
+        <p class="hero-inner__text">{{ hero_inner.text }}</p>
+      {% endif %}
+
+      {% if hero_inner.title %}
+        {% view "@title" with {
+          title: hero_inner.title|default({})|merge({
+            class: "js-title hero-inner__title"
+          })
+        } %}
+      {% endif %}
+
+      {% if hero_inner.subtitle %}
+        <p class="hero-inner__subtitle">
+          {{ hero_inner.subtitle }}
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</section>

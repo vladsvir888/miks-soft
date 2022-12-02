@@ -24,7 +24,11 @@
 
   {% block content %}{% endblock %}
 
-  {% view "&footer" %}
+  {% set isFooter = footer|default(true) %}
+
+  {% if isFooter %}
+    {% view "&footer" %}
+  {% endif %}
 <script src="./scripts/main.js"></script>
 </body>
 </html>

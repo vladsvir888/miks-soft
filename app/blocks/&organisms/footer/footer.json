@@ -1,5 +1,8 @@
 {
   "footer": {
+    "video": {
+      "path": "./assets/footer_video.mp4"
+    },
     "logo": {
       "text": "Miks Soft Home",
       "path": "./assets/images/logo.svg"

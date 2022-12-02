@@ -1,0 +1,31 @@
+<section class="error main__section">
+  <div class="container">
+    <div class="error__inner">
+      {% if error.type %}
+        <div class="error__type">
+          {{ error.type }}
+        </div>
+      {% endif %}
+
+      {% if error.title %}
+        {% view "@title" with {
+          title: error.title|default({})|merge({
+            class: "js-title error__title"
+          })
+        } %}
+      {% endif %}
+
+      {% if error.text %}
+        <p class="error__text">
+          {{ error.text }}
+        </p>
+      {% endif %}
+
+      {% if error.video %}
+        <div class="error__video">
+          <video src="{{ error.video.path }}" autoplay="autoplay" loop muted playsinline></video>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

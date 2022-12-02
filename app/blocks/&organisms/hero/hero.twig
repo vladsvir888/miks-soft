@@ -1,15 +1,16 @@
-<section class="hero">
+<section class="hero main__section">
   <div class="container">
-    {# todo: заменить на видос #}
-    <div class="hero__video">
-      <img src="./assets/images/rings_hero.png" alt="">
-    </div>
+    {% if hero.video %}
+      <div class="hero__video">
+        <video src="{{ hero.video.path }}" autoplay="autoplay" loop muted playsinline></video>
+      </div>
+    {% endif %}
 
     {% if hero.title %}
       {% view "@title" with {
         title: hero.title|default({})|merge({
           attrs: 'data-sal="slide-up" data-sal-duration="800"',
-          class: "title--h1 hero__title"
+          class: "title--h1 js-title hero__title"
         })
       } %}
     {% endif %}
