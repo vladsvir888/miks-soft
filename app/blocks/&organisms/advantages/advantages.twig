@@ -28,11 +28,13 @@
             </div>
 
             {% if item.image %}
-              {% view "@image" with {
-                image: item.image|default({})|merge({
-                  class: "advantages__img " ~ item.image.class
-                })
-              } %}
+              <div class="advantages__img-wrap">
+                {% view "@image" with {
+                  image: item.image|default({})|merge({
+                    class: "advantages__img " ~ item.image.class
+                  })
+                } %}
+              </div>
             {% endif %}
           </div>
         {% else %}

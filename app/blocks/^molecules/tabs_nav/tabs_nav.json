@@ -1,17 +1,20 @@
 {
   "tabs_nav": {
     "items": [{
+      "attrs": "data-color='#483140'",
       "id": "tab_1",
       "class": "tabs-nav__item--active",
       "text": {
         "text": "Website"
       }
     }, {
+      "attrs": "data-color='#353458'",
       "id": "tab_2",
       "text": {
         "text": "Custom software"
       }
     }, {
+      "attrs": "data-color='#1E4364'",
       "id": "tab_3",
       "text": {
         "text": "App dev"

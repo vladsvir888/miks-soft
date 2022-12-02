@@ -3,6 +3,7 @@
   class="btn {{ button.class }}"
   {% if button.submit %}type="submit"{% endif %}
   {% if button.id %}id="{{ button.id }}"{% endif %}
+  {% if button.attrs %}{{ button.attrs }}{% endif %}
 >
   {% if button.icon %}
     {% view "@icon" with {

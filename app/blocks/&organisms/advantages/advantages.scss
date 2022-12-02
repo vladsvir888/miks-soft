@@ -59,33 +59,28 @@
     &:hover {
       #{$this}__img {
         &--1 {
-          transform-origin: center;
           opacity: 1;
-          transform: rotate(-15deg) scale(1.05);
+          transform: rotate(-15deg) scale(1.1);
         }
 
         &--2 {
-          transform-origin: center;
           opacity: 1;
-          transform: rotate(-18.04deg) scale(1.05);
+          transform: rotate(-18.04deg) scale(1.1);
         }
 
         &--3 {
-          transform-origin: center;
           opacity: 1;
-          transform: rotate(-14.86deg) scale(1.05);
+          transform: rotate(-14.86deg) scale(1.1);
         }
 
         &--4 {
-          transform-origin: center;
           opacity: 1;
-          transform: rotate(-11.75deg) scale(1.05);
+          transform: rotate(-11.75deg) scale(1.1);
         }
 
         &--5 {
-          transform-origin: center;
           opacity: 1;
-          transform: rotate(-16.89deg) scale(1.05);
+          transform: rotate(-28.9deg) scale(1.1);
         }
       }
     }
@@ -141,25 +136,63 @@
     }
   }
 
-  picture {
-    // position: relative;
+  &__img-wrap {
+    position: relative;
     display: block;
     overflow: hidden;
-    width: 20rem;
+    // width: 20rem;
+    // height: 20.4rem;
+    width: 22rem;
     height: 20.4rem;
 
     @include media('500', max) {
-      width: auto;
-      height: auto;
+      width: 18rem;
+      height: 15rem;
     }
   }
 
   &__img {
-    // position: absolute;
-    // right: 0;
-    @include img(contain);
-
+    position: absolute;
+    top: -10rem;
+    left: 7rem;
+    // width: 43rem;
+    // height: 49rem;
+    width: 43rem;
+    height: 52.2rem;
+    object-fit: cover;
     opacity: 0.4;
     transition: transform var(--transition2), opacity var(--transition2);
+
+    @include media('500', max) {
+      width: 31.3rem;
+      height: 38.4rem;
+    }
+
+    &--1 {
+      height: 46rem;
+      top: -7rem;
+    }
+
+    &--3 {
+      top: -7rem;
+      left: 5rem;
+    }
+
+    &--4 {
+      height: 40rem;
+      top: -5rem;
+
+      @include media('500', max) {
+        height: 34rem;
+      }
+    }
+
+    &--5 {
+      transform: rotate(-16.89deg);
+
+      @include media('500', max) {
+        height: 50rem;
+      }
+    }
   }
 }

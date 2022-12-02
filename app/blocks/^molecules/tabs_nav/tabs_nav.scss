@@ -31,6 +31,10 @@
     color: var(--pallette-gray-suit);
     background-color: var(--pallette-woodsmoke);
 
+    .btn__text {
+      pointer-events: none;
+    }
+
     &:hover {
       color: var(--pallette-black);
       background-color: var(--pallette-white);
