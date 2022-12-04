@@ -17,7 +17,6 @@
     display: none;
     grid-template-columns: repeat(6, 1fr);
     margin-top: 6.1rem;
-    padding: 0 1.6rem;
 
     @include media('767', max) {
       margin-top: 2rem;

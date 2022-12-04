@@ -14,7 +14,7 @@
       },
       "image": {
         "class": "advantages__img--1",
-        "name": "advantages_figure/2.png",
+        "name": "advantages_figure/1.png",
         "alt": ""
       }
     }, {
@@ -27,7 +27,7 @@
       },
       "image": {
         "class": "advantages__img--2",
-        "name": "advantages_figure/1.png",
+        "name": "advantages_figure/2.png",
         "alt": ""
       }
     }, {
@@ -40,7 +40,7 @@
       },
       "image": {
         "class": "advantages__img--3",
-        "name": "advantages_figure/5.png",
+        "name": "advantages_figure/3.png",
         "alt": ""
       }
     }, {
@@ -53,7 +53,7 @@
       },
       "image": {
         "class": "advantages__img--4",
-        "name": "advantages_figure/3.png",
+        "name": "advantages_figure/4.png",
         "alt": ""
       }
     }, {
@@ -66,7 +66,7 @@
       },
       "image": {
         "class": "advantages__img--5",
-        "name": "advantages_figure/4.png",
+        "name": "advantages_figure/5.png",
         "alt": ""
       }
     }, {

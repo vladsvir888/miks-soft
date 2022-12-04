@@ -2,7 +2,7 @@
   <div class="container">
     {% if hero.video %}
       <div class="hero__video">
-        <video src="{{ hero.video.path }}" autoplay="autoplay" loop muted playsinline></video>
+        <video src="{{ hero.video.path }}" preload="metadata" autoplay="autoplay" loop muted playsinline></video>
       </div>
     {% endif %}
 
