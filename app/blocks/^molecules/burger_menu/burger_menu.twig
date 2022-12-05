@@ -1,0 +1,48 @@
+<div class="burger-menu">
+  <div class="burger-menu__content">
+    {% if burger_menu.link %}
+      {% view "@button" with {
+        button: burger_menu.link|merge({
+          class: "btn--primary burger-menu__btn",
+          icon: {
+            name: "sprite-mono.svg#btn-figure"
+          }
+        })
+      } %}
+    {% endif %}
+
+    {% if burger_menu.list %}
+      <ul class="burger-menu__list offset-y">
+        {% for item in burger_menu.list.items %}
+          <li class="burger-menu__item">
+            {% view "@button" with {
+              button: item|merge({
+                class: "burger-menu__link"
+              })
+            } %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if burger_menu.text %}
+      <p class="burger-menu__text">
+        {{ burger_menu.text }}
+      </p>
+    {% endif %}
+
+    {% if burger_menu.help_links %}
+      <ul class="burger-menu__help-links offset-y">
+        {% for item in burger_menu.help_links.items %}
+          <li class="burger-menu__help-item">
+            {% view "@button" with {
+              button: item|merge({
+                class: "burger-menu__help-link"
+              })
+            } %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>

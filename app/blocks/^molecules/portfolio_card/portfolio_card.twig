@@ -1,13 +1,15 @@
 <article class="portfolio-card">
   <div class="portfolio-card__content">
     {% if portfolio_card.title %}
-      <h2 class="portfolio-card__title">
-        {{ portfolio_card.title }}
+      <h2 class="portfolio-card__title" data-sal="slide-up" data-sal-duration="800">
+        <a class="portfolio-card__title-link" href="#">
+          {{ portfolio_card.title }}
+        </a>
       </h2>
     {% endif %}
 
     {% if portfolio_card.labels %}
-      <ul class="portfolio-card__list">
+      <ul class="portfolio-card__list" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
         {% for item in portfolio_card.labels %}
           {% view "@label" with {
             label: item
@@ -17,32 +19,27 @@
     {% endif %}
 
     {% if portfolio_card.text %}
-      <p class="portfolio-card__text">
+      <p class="portfolio-card__text" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
         {{ portfolio_card.text }}
       </p>
     {% endif %}
 
-    {% if portfolio_card.button %}
-      {# {% view "@button" with {
-        button: portfolio_card.button|default({})|merge({
-          class: "btn--arrow portfolio-card__btn",
-          right_icon: {
+    {% if portfolio_card.text_with_arrow %}
+      <div class="portfolio-card__text-arrow">
+        {{ portfolio_card.text_with_arrow.text }}
+
+        {% view "@icon" with {
+          icon: {
+            class: "portfolio-card__text-arrow-icon",
             name: "sprite-mono.svg#arrow"
           }
-        })
-      } %} #}
-
-      {# <a class="btn btn--arrow portfolio-card__btn" href="#">
-        <span class="btn__text">Explore</span>
-        <svg class="icon btn__right-icon">
-          <use xlink:href="./assets/sprites/sprite-mono.svg#arrow"></use>
-        </svg>
-      </a> #}
+        } %}
+      </div>
     {% endif %}
   </div>
 
   {% if portfolio_card.image %}
-    <div class="portfolio-card__img-wrap">
+    <div class="portfolio-card__img-wrap" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
       {% view "@image" with {
         image: portfolio_card.image
       } %}

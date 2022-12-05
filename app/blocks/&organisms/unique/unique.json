@@ -5,7 +5,7 @@
       "text": "Unique digital products"
     },
     "contents": [{
-      "class": "unique__content--show",
+      "class": "js-show",
       "data": {
         "tab_content": "tab_1"
       },

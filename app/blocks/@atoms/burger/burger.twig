@@ -1,8 +1,28 @@
 <div class="burger">
   <div class="burger__inner">
-    <button class="burger__btn" aria-label="Show menu">
-      <span class="burger__btn-item"></span>
-      <span class="burger__btn-item"></span>
+    <button
+      class="burger__btn"
+      aria-label="Toggle menu"
+      aria-controls="burger_menu"
+      aria-expanded="false"
+    >
+      {% view "@icon" with {
+        icon: {
+          class: "burger__icon burger__icon--menu",
+          name: "sprite-mono.svg#menu",
+          attrs: 'aria-hidden="true"'
+        }
+      } %}
+
+      {% view "@icon" with {
+        icon: {
+          class: "burger__icon burger__icon--close",
+          name: "sprite-mono.svg#close",
+          attrs: 'aria-hidden="true"'
+        }
+      } %}
+      {# <span class="burger__btn-item"></span>
+      <span class="burger__btn-item"></span> #}
     </button>
   </div>
 </div>

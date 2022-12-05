@@ -1,5 +1,5 @@
-<section class="hero main__section">
-  <div class="container">
+<div class="hero main__section">
+  <div class="container hero__container">
     {% if hero.video %}
       <div class="hero__video">
         <video src="{{ hero.video.path }}" preload="metadata" autoplay="autoplay" loop muted playsinline></video>
@@ -59,4 +59,4 @@
       </ul>
     {% endif %}
   </div>
-</section>
+</div>

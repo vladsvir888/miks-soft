@@ -66,23 +66,6 @@
       fill: var(--pallette-light-taupe);
     }
   }
-
-  &--arrow {
-    font-size: 1.8rem;
-    letter-spacing: var(--ltsm02);
-    line-height: var(--lh140);
-    color: inherit;
-    text-transform: var(--tti);
-
-    #{$this}__right-icon {
-      margin-left: 2.4rem;
-      width: 4rem;
-      height: 1.6rem;
-      flex-shrink: 0;
-      fill: transparent;
-      stroke: var(--pallette-white);
-    }
-  }
 }
 
 // link

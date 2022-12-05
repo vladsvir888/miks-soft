@@ -1,6 +1,10 @@
 .hero-inner {
   padding-bottom: 7.6rem;
 
+  @include media('1024', max) {
+    padding-bottom: 2.2rem;
+  }
+
   &__wrap {
     @include flex-center-column;
 
@@ -16,6 +20,11 @@
     &:not(:last-child) {
       margin-bottom: 2.6rem;
     }
+
+    @include media('767', max) {
+      margin-bottom: 2.4rem;
+      font-size: 2rem;
+    }
   }
 
   &__title {
@@ -23,6 +32,14 @@
 
     &:not(:last-child) {
       margin-bottom: 5rem;
+    }
+
+    @include media('767', max) {
+      font-size: 4.8rem;
+
+      &:not(:last-child) {
+        margin-bottom: 4.1rem;
+      }
     }
 
     &--big {
@@ -36,5 +53,9 @@
     line-height: var(--lh140);
     letter-spacing: var(--ltsm02);
     color: var(--pallette-gray-suit);
+
+    @include media('767', max) {
+      font-size: 1.2rem;
+    }
   }
 }

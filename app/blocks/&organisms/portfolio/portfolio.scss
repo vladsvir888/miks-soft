@@ -2,8 +2,20 @@
   padding-top: 10.4rem;
   padding-bottom: 16.3rem;
 
+  @include media('1024', max) {
+    padding-top: 2rem;
+  }
+
   &__inner {
     --offset-y: 4rem;
+
+    @include media('767', max) {
+      --offset-y: 2rem;
+
+      > *:first-child {
+        margin-bottom: 4rem;
+      }
+    }
   }
 
   &__note {
@@ -12,11 +24,27 @@
     line-height: var(--lh140);
     letter-spacing: var(--ltsm02);
     color: var(--pallette-gray-suit);
+
+    @include media('767', max) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__list {
+    display: none;
+
+    &.js-show {
+      display: block;
+    }
   }
 
   &__item {
     padding: 3rem 0;
     border-bottom: 0.1rem solid var(--pallette-onyx);
+
+    @include media('1024', max) {
+      padding: 2rem 0;
+    }
 
     &:first-child {
       border-top: 0.1rem solid var(--pallette-onyx);

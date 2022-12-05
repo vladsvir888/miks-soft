@@ -1,16 +1,17 @@
 {% set input_type = input.type|default("text") %}
 
 {% if not input.checkbox %}
-  <div class="input-block {{ input.class }}">
+  <div class="input-block form-group {{ input.class }}">
     <input
       class="input input-block__input"
       id="{{ input.id }}"
       type="{{ input_type }}"
       placeholder="{{ input.placeholder }}"
       name="{{ input.name }}"
+      {{ input.attrs }}
     >
     <label class="input-block__label" for="{{ input.id }}">
-      {{ input.placeholder }}
+      {{ input.fake_placeholder }}
     </label>
   </div>
 {% else %}
@@ -21,6 +22,7 @@
         id="{{ input.id }}"
         type="{{ input_type }}"
         name="{{ input.name }}"
+        {{ input.attrs }}
       >
       <label for="{{ input.id }}">
         Yes, I have read and agree to the

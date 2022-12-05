@@ -5,16 +5,22 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 
-  // &:hover {
-  //   #{$this}__btn {
-  //     opacity: 1;
-  //     pointer-events: auto;
-  //     transform: translateX(0);
-  //   }
-  // }
+  @include media('1024', max) {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  &:hover {
+    #{$this}__text-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
   &__content {
-    grid-column: span 2;
+    @include media('1025', min) {
+      grid-column: span 2;
+    }
   }
 
   &__title {
@@ -24,6 +30,24 @@
     line-height: var(--lh140);
     letter-spacing: var(--ltsm04);
     text-transform: var(--ttu);
+
+    @include media('1024', max) {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    &-link {
+      color: inherit;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+      }
+    }
   }
 
   &__list {
@@ -36,6 +60,10 @@
       margin-left: 0.8rem;
       margin-bottom: 0.8rem;
     }
+
+    @include media('1024', max) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__text {
@@ -44,30 +72,48 @@
     line-height: var(--lh140);
     letter-spacing: var(--ltsm02);
     color: var(--pallette-gray-suit);
+
+    @include media('1024', max) {
+      margin-bottom: 0;
+      font-size: 1.2rem;
+    }
   }
 
   &__img-wrap {
-    grid-column: 4 / 7;
+    @include media('1025', min) {
+      grid-column: 4 / 7;
+    }
+
+    @include media('1024', max) {
+      grid-row: 1 / 2;
+    }
 
     img {
       @include img(cover);
     }
   }
 
-  // &__btn {
-  //   justify-content: flex-start;
-  //   // opacity: 0;
-  //   // pointer-events: none;
-  //   // transform: translateX(2rem);
+  &__text-arrow {
+    position: relative;
+    z-index: -1;
+    font-size: 1.8rem;
+    line-height: var(--lh140);
+    letter-spacing: var(--ltsm02);
+    opacity: 0;
+    transform: translateX(2rem);
+    transition: transform var(--transition), opacity var(--transition);
 
-  //   // &::before {
-  //   //   position: absolute;
-  //   //   top: 0;
-  //   //   left: 0;
-  //   //   bottom: 0;
-  //   //   right: 0;
-  //   //   z-index: 1;
-  //   //   content: '';
-  //   // }
-  // }
+    @include media('1024', max) {
+      display: none;
+    }
+
+    &-icon {
+      margin-left: 2.4rem;
+      width: 4rem;
+      height: 1.6rem;
+      flex-shrink: 0;
+      stroke: var(--pallette-white);
+      fill: transparent;
+    }
+  }
 }

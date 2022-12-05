@@ -15,14 +15,14 @@
 
   &__content {
     display: none;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     margin-top: 6.1rem;
 
     @include media('767', max) {
       margin-top: 2rem;
     }
 
-    &#{$this}__content--show {
+    &.js-show {
       display: grid;
 
       @include media('1024', max) {

@@ -1,0 +1,44 @@
+{
+  "burger_menu": {
+    "link": {
+      "href": "#",
+      "text": {
+        "text": "Discuss your project"
+      }
+    },
+    "list": {
+      "items": [{
+        "text": {
+          "text": "main page"
+        }
+      }, {
+        "text": {
+          "text": "Services"
+        }
+      }, {
+        "text": {
+          "text": "portfolio"
+        }
+      }]
+    },
+    "text": "Harju maakond, Tallinn, Kristiine linnaosa, A. H. Tammsaare tee 47, 11316",
+    "help_links": {
+      "items": [{
+        "href": "#",
+        "text": {
+          "text": "Facebook"
+        }
+      }, {
+        "href": "tel:+3726347351",
+        "text": {
+          "text": "+372 6347 351"
+        }
+      }, {
+        "href": "mailto:hello@miks-soft.com",
+        "text": {
+          "text": "hello@miks-soft.com"
+        }
+      }]
+    }
+  }
+}

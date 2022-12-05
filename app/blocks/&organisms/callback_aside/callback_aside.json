@@ -9,28 +9,37 @@
       "items": [{
         "class": "form__item form__item--mb",
         "id": "input_name_id",
+        "fake_placeholder": "Name<span>*</span>",
         "placeholder": "Name",
-        "name": "name"
+        "name": "name",
+        "attrs": "required data-pristine-required-message='Field incorrect'"
       }, {
         "class": "form__item form__item--mb",
         "id": "input_company_id",
+        "fake_placeholder": "Company<span>*</span>",
         "placeholder": "Company",
-        "name": "company"
+        "name": "company",
+        "attrs": "required data-pristine-required-message='Field incorrect'"
       }, {
         "class": "form__item form__item--mb",
         "id": "input_email_id",
         "type": "email",
+        "fake_placeholder": "Email<span>*</span>",
         "placeholder": "Email",
-        "name": "email"
+        "name": "email",
+        "attrs": "required data-pristine-required-message='Field incorrect'"
       }, {
         "class": "form__item form__item--mb",
         "id": "input_phone_id",
-        "type": "tel",
+        "type": "number",
+        "fake_placeholder": "Phone number<span>*</span>",
         "placeholder": "Phone number",
-        "name": "phone"
+        "name": "phone",
+        "attrs": "required data-pristine-required-message='Field incorrect'"
       }, {
         "class": "form__item form__item--5",
         "id": "input_message_id",
+        "fake_placeholder": "Few words about your project",
         "placeholder": "Few words about your project",
         "name": "message"
       }, {
@@ -38,7 +47,8 @@
         "class": "form__item--6",
         "id": "input_checkbox_id",
         "type": "checkbox",
-        "name": "is_checked"
+        "name": "is_checked",
+        "attrs": "required data-pristine-required-message='Field incorrect'"
       }],
       "button": {
         "submit": true,

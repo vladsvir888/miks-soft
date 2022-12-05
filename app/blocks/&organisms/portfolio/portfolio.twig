@@ -15,16 +15,18 @@
         </p>
       {% endif %}
 
-      {% if portfolio.items %}
-        <ul class="portfolio__list">
-          {% for item in portfolio.items %}
-            <li class="portfolio__item">
-              {% view "^portfolio_card" with {
-                portfolio_card: item
-              } %}
-            </li>
-          {% endfor %}
-        </ul>
+      {% if portfolio.tabs_contents %}
+        {% for tabs_content in portfolio.tabs_contents %}
+          <ul class="portfolio__list js-tabs-content {{ tabs_content.class }}" data-tab-content="{{ tabs_content.data.tab_content }}">
+            {% for item in tabs_content.items %}
+              <li class="portfolio__item">
+                {% view "^portfolio_card" with {
+                  portfolio_card: item
+                } %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
       {% endif %}
     </div>
   </div>

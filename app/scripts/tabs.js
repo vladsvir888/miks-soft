@@ -26,7 +26,7 @@ const Tabs = (selector) => {
 
     const tabContents = document.querySelectorAll(`${selector} .js-tabs-content`);
     tabContents.forEach(content => {
-      content.classList.remove('unique__content--show');
+      content.classList.remove('js-show');
     });
 
     const tabBtns = document.querySelectorAll(`${selector} .js-tabs-btn`);
@@ -35,7 +35,7 @@ const Tabs = (selector) => {
     });
 
     target.closest('.tabs-nav__item').classList.add('tabs-nav__item--active');
-    tabContent.classList.add('unique__content--show');
+    tabContent.classList.add('js-show');
   });
 };
 

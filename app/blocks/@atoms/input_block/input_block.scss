@@ -2,7 +2,12 @@
 .input-block {
   $this: &;
 
+  position: relative;
   border-bottom: 0.1rem solid var(--pallette-topaz);
+
+  &:focus-within {
+    border-color: var(--pallette-white);
+  }
 
   &__input {
     width: 100%;
@@ -31,11 +36,23 @@
     pointer-events: none;
     transform-origin: 0 0;
     transition: transform var(--transition);
+
+    span {
+      color: var(--pallette-light-taupe);
+    }
   }
 
   &__inner {
     display: flex;
     align-items: center;
+
+    + #{$this}__message {
+      bottom: 0.8rem;
+
+      @include media('1024', max) {
+        bottom: -2.4rem;
+      }
+    }
   }
 
   label {
@@ -43,6 +60,24 @@
     line-height: var(--lh140);
     letter-spacing: var(--lsm02);
     color: var(--pallette-topaz);
+  }
+
+  &--error {
+    border-color: var(--pallette-amaranth);
+
+    .input--checkbox {
+      border-color: var(--pallette-amaranth);
+    }
+  }
+
+  &__message {
+    position: absolute;
+    left: 0;
+    bottom: -2.4rem;
+    font-size: 1.4rem;
+    line-height: var(--lh140);
+    letter-spacing: var(--ltsm02);
+    color: var(--pallette-amaranth);
   }
 }
 
@@ -62,5 +97,23 @@
     border-radius: 0.2rem;
     border: 0.1rem solid var(--pallette-topaz);
     appearance: none;
+
+    &:checked {
+      background-image: url('../assets/images/checkbox.svg');
+      border: 0.1rem solid transparent;
+    }
   }
+}
+
+// for input type="number"
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
