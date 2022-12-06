@@ -51,18 +51,12 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -0.8rem;
-    margin-bottom: 5.9rem;
+    &:not(:last-child) {
+      margin-bottom: 6.7rem;
 
-    > * {
-      margin-left: 0.8rem;
-      margin-bottom: 0.8rem;
-    }
-
-    @include media('1024', max) {
-      margin-bottom: 1.6rem;
+      @include media('1024', max) {
+        margin-bottom: 1.6rem;
+      }
     }
   }
 

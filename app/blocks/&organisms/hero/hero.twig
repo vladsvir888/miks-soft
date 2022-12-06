@@ -16,15 +16,11 @@
     {% endif %}
 
     {% if hero.labels.items %}
-      <ul class="hero__list" role="list">
-        {% for item in hero.labels.items %}
-          {% view "@label" with {
-            label: item|merge({
-              attrs: 'data-sal="slide-up" data-sal-duration="800" data-sal-delay="400"'
-            })
-          } %}
-        {% endfor %}
-      </ul>
+      {% view "^tags" with {
+        tags: hero.labels|default({})|merge({
+          class: "hero__list"
+        })
+      } %}
     {% endif %}
 
     {% if hero.text %}

@@ -8,10 +8,13 @@
     },
     "labels": {
       "items": [{
+        "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='400'",
         "text": "Website"
       }, {
+        "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='400'",
         "text": "Custom software"
       }, {
+        "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='400'",
         "text": "App dev"
       }]
     },

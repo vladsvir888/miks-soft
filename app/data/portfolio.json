@@ -34,11 +34,15 @@
       },
       "items": [{
         "title": "Busking",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -49,11 +53,15 @@
         }
       }, {
         "title": "Naturino",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -64,11 +72,15 @@
         }
       }, {
         "title": "Jobbox",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -79,11 +91,15 @@
         }
       }, {
         "title": "Taurus",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -94,11 +110,15 @@
         }
       }, {
         "title": "Writers & artists",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -109,11 +129,15 @@
         }
       }, {
         "title": "q-pay",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -124,11 +148,15 @@
         }
       }, {
         "title": "voyage tour",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -139,11 +167,15 @@
         }
       }, {
         "title": "probit",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -154,11 +186,15 @@
         }
       }, {
         "title": "british american tobacco",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -169,11 +205,15 @@
         }
       }, {
         "title": "tichmi",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -189,11 +229,15 @@
       },
       "items": [{
         "title": "Busking",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -204,11 +248,15 @@
         }
       }, {
         "title": "Naturino",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -219,11 +267,15 @@
         }
       }, {
         "title": "Jobbox",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -234,11 +286,15 @@
         }
       }, {
         "title": "Taurus",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -249,11 +305,15 @@
         }
       }, {
         "title": "Writers & artists",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -264,11 +324,15 @@
         }
       }, {
         "title": "q-pay",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -279,11 +343,15 @@
         }
       }, {
         "title": "voyage tour",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -294,11 +362,15 @@
         }
       }, {
         "title": "probit",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -309,11 +381,15 @@
         }
       }, {
         "title": "british american tobacco",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -324,11 +400,15 @@
         }
       }, {
         "title": "tichmi",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -344,11 +424,15 @@
       },
       "items": [{
         "title": "Busking",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -359,11 +443,15 @@
         }
       }, {
         "title": "Naturino",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -374,11 +462,15 @@
         }
       }, {
         "title": "Jobbox",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -389,11 +481,15 @@
         }
       }, {
         "title": "Taurus",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -404,11 +500,15 @@
         }
       }, {
         "title": "Writers & artists",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -419,11 +519,15 @@
         }
       }, {
         "title": "q-pay",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -434,11 +538,15 @@
         }
       }, {
         "title": "voyage tour",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -449,11 +557,15 @@
         }
       }, {
         "title": "probit",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -464,11 +576,15 @@
         }
       }, {
         "title": "british american tobacco",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"
@@ -479,11 +595,15 @@
         }
       }, {
         "title": "tichmi",
-        "labels": [{
-          "text": "Web"
-        }, {
-          "text": "Soft"
-        }],
+        "labels": {
+          "items": [{
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Web"
+          }, {
+            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+            "text": "Soft"
+          }]
+        },
         "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
         "text_with_arrow": {
           "text": "Explore"

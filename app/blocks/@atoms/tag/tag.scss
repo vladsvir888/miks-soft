@@ -1,4 +1,4 @@
-.label {
+.tag {
   padding: 0.6rem 1rem;
   font-size: 1.8rem;
   line-height: var(--lh100);
@@ -6,6 +6,15 @@
   text-transform: var(--ttu);
   border-radius: var(--bdrs5);
   border: 0.1rem solid var(--pallette-topaz);
+
+  &--normal {
+    font-weight: var(--fw400);
+  }
+
+  &--white {
+    color: var(--pallette-black);
+    background-color: var(--pallette-white);
+  }
 
   @include media('1024', max) {
     font-size: 1rem;

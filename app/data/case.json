@@ -1,0 +1,107 @@
+{
+  "case": {
+    "promo": {
+      "title": {
+        "text": "Taurus Investment Group"
+      },
+      "labels": {
+        "items": [{
+          "class": "tag--white",
+          "text": "Web"
+        }]
+      },
+      "text": {
+        "text": "Taurus Investment Group is a group of companies providing premium services worldwide"
+      },
+      "image": {
+        "name": "case/01.jpg",
+        "alt": "Our projects"
+      }
+    },
+    "business_needs": {
+      "title": {
+        "level": 2,
+        "text": "Business needs"
+      },
+      "text": "The primary goal for our team was to develop a modern corporate website from scratch. A website that unites 5 independent companies under the common brand Taurus Investment Group.",
+      "labels": {
+        "items": [{
+          "class": "tag--normal",
+          "text": "Back-end"
+        }, {
+          "class": "tag--normal",
+          "text": "Front-end"
+        }, {
+          "class": "tag--normal",
+          "text": "Design"
+        }, {
+          "class": "tag--normal",
+          "text": "Support"
+        }]
+      }
+    },
+    "tech_stack": {
+      "title": {
+        "level": 2,
+        "text": "Technology stack"
+      },
+      "labels": {
+        "items": [{
+          "class": "tag--normal",
+          "text": "HTML5"
+        }, {
+          "class": "tag--normal",
+          "text": "CSS3"
+        }, {
+          "class": "tag--normal",
+          "text": "JS"
+        }, {
+          "class": "tag--normal",
+          "text": "Bitrix"
+        }, {
+          "class": "tag--normal",
+          "text": "Git"
+        }]
+      },
+      "icons_list": {
+        "items": [{
+          "name": "sprite-mono.svg#case_1"
+        }, {
+          "name": "sprite-mono.svg#case_2"
+        }, {
+          "name": "sprite-mono.svg#case_3"
+        }, {
+          "name": "sprite-mono.svg#case_4"
+        }, {
+          "style": true,
+          "name": "sprite-mono.svg#case_5"
+        }, {
+          "name": "sprite-mono.svg#case_6"
+        }, {
+          "name": "sprite-mono.svg#case_7"
+        }, {
+          "name": "sprite-mono.svg#case_8"
+        }, {
+          "name": "sprite-mono.svg#case_9"
+        }, {
+          "name": "sprite-mono.svg#case_10"
+        }, {
+          "name": "sprite-mono.svg#case_11"
+        }, {
+          "name": "sprite-mono.svg#case_12"
+        }, {
+          "name": "sprite-mono.svg#case_13"
+        }, {
+          "name": "sprite-mono.svg#case_14"
+        }]
+      }
+    },
+    "analysis_and_suggestion": {
+      "title": {
+        "level": 2,
+        "text": "Analysis and suggestion"
+      },
+      "text": "Initially, we were requested to develop several websites for each of the companies separately. After thoroughly analyzing the market, the strategic decision was made. We focused on creating one website that combines all the activities of the Taurus group of companies at once. <br /> MIKS took full responsibility for the impressive result, including business analysis, code, design and quality control."
+    }
+  }
+}

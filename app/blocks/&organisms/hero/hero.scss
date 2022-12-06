@@ -59,21 +59,12 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -1rem;
-
     &:not(:last-child) {
-      margin-bottom: 1.6rem;
+      margin-bottom: 2.6rem;
 
       @include media('1024', max) {
-        margin-bottom: 3.5rem;
+        margin-bottom: 4.5rem;
       }
-    }
-
-    > * {
-      margin-left: 1rem;
-      margin-bottom: 1rem;
     }
   }
 

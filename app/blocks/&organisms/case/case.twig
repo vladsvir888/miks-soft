@@ -1,0 +1,120 @@
+<div class="case main__section">
+  <div class="container">
+    {% if case.promo %}
+      <div class="promo case__section">
+        <div class="case__item promo__content">
+          {% if case.promo.title %}
+            {% view "@title" with {
+              title: case.promo.title|default({})|merge({
+                class: "js-title promo__title"
+              })
+            } %}
+          {% endif %}
+
+          {% if case.promo.labels %}
+            {% view "^tags" with {
+              tags: case.promo.labels|merge({
+                class: "promo__tags"
+              })
+            } %}
+          {% endif %}
+
+          {% if case.promo.text %}
+            <p class="promo__text">
+              {{ case.promo.text.text }}
+            </p>
+          {% endif %}
+        </div>
+        <div class="case__item promo__img">
+          {% view "@image" with {
+            image: case.promo.image
+          } %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if case.business_needs %}
+      <section class="business-needs case__section">
+        <div class="business-needs__item case__item">
+          {% if case.business_needs.title %}
+            {% view "@title" with {
+              title: case.business_needs.title|default({})|merge({
+                class: "case__title"
+              })
+            } %}
+          {% endif %}
+        </div>
+        <div class="business-needs__item case__item">
+          {% if case.business_needs.text %}
+            <p class="case__text business-needs__text">
+              {{ case.business_needs.text }}
+            </p>
+          {% endif %}
+
+          {% if case.business_needs.labels %}
+            {% view "^tags" with {
+              tags: case.business_needs.labels
+            } %}
+          {% endif %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if case.tech_stack %}
+      <section class="tech-stack case__section">
+        <div class="case__item">
+          {% if case.tech_stack.title %}
+            {% view "@title" with {
+              title: case.tech_stack.title|default({})|merge({
+                class: "case__title"
+              })
+            } %}
+          {% endif %}
+
+          {% if case.tech_stack.labels %}
+            {% view "^tags" with {
+              tags: case.tech_stack.labels
+            } %}
+          {% endif %}
+        </div>
+        <div class="case__item">
+          <ul class="tech-stack__icons">
+            {% for item in case.tech_stack.icons_list.items %}
+              <li
+                class="tech-stack__icons-item"
+                {% if item.style %}style="background: url('../assets/images/substrate.png') no-repeat 50% / contain;"{% endif %}
+              >
+                {% view "@icon" with {
+                  icon: item|merge({
+                    class: "tech-stack__icon"
+                  })
+                } %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if case.analysis_and_suggestion %}
+      <section class="analysis-suggestion case__section">
+        <div class="case__item">
+          {% if case.analysis_and_suggestion.title %}
+            {% view "@title" with {
+              title: case.analysis_and_suggestion.title|default({})|merge({
+                class: "case__title"
+              })
+            } %}
+          {% endif %}
+        </div>
+        <div class="case__item">
+          {% if case.analysis_and_suggestion.text %}
+            <p class="case__text">
+              {{ case.analysis_and_suggestion.text }}
+            </p>
+          {% endif %}
+        </div>
+      </section>
+    {% endif %}
+  </div>
+</div>

@@ -9,13 +9,11 @@
     {% endif %}
 
     {% if portfolio_card.labels %}
-      <ul class="portfolio-card__list" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
-        {% for item in portfolio_card.labels %}
-          {% view "@label" with {
-            label: item
-          } %}
-        {% endfor %}
-      </ul>
+      {% view "^tags" with {
+        tags: portfolio_card.labels|default({})|merge({
+          class: "portfolio-card__list"
+        })
+      } %}
     {% endif %}
 
     {% if portfolio_card.text %}

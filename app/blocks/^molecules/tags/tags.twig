@@ -1,0 +1,7 @@
+<ul class="tags {{ tags.class }}">
+  {% for tag in tags.items %}
+    {% view "@tag" with {
+      label: tag
+    } %}
+  {% endfor %}
+</ul>
