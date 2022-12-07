@@ -55,6 +55,11 @@
 
   // bdrs
   --bdrs5: 5rem;
+  --bdrs8: 8rem;
+
+  // backdrop-filter-blur
+  --bd-filter-blur1: 1rem;
+  --bd-filter-blur2: 2rem;
 
   // tabs gradient (todo: заменить 16-е значение цвета на css переменную)
   --tabs-gradient: linear-gradient(223.91deg, #483140 -1.11%, rgba(204, 86, 35, 0) 42.01%);

@@ -6,7 +6,7 @@
   height: 100vh;
   color: var(--pallette-white);
   background: rgba(28, 26, 34, 0.5);
-  backdrop-filter: blur(2rem);
+  backdrop-filter: var(--bd-filter-blur2);
   border-radius: 0 0 2.2rem 2.2rem;
   opacity: 0;
   pointer-events: none;

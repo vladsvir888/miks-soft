@@ -102,6 +102,153 @@
         "text": "Analysis and suggestion"
       },
       "text": "Initially, we were requested to develop several websites for each of the companies separately. After thoroughly analyzing the market, the strategic decision was made. We focused on creating one website that combines all the activities of the Taurus group of companies at once. <br /> MIKS took full responsibility for the impressive result, including business analysis, code, design and quality control."
+    },
+    "functionality_design": {
+      "title": {
+        "level": 2,
+        "text": "Functionality & design"
+      },
+      "items": [{
+        "content": {
+          "text": "MIKS’ design team paid particular attention to the user-friendly look and intuitive navigation of the project. We developed a logo and unique fonts to create a personal style for the large company. This website design is a combination of minimalism and restraint.",
+          "icons_list": {
+            "bottom": [{
+              "name": "sprite-mono.svg#case_13"
+            }, {
+              "name": "sprite-mono.svg#case_14"
+            }]
+          }
+        },
+        "image": {
+          "name": "case/02.jpg",
+          "alt": "Taurus group is a company providing premium services all over the world!"
+        }
+      }, {
+        "content": {
+          "text": "Our team organically divided the main page into categories that interest potential customers. The functional solution was to use video to accurately represent directions.",
+          "icons_list": {
+            "top": [{
+              "name": "sprite-mono.svg#case_7"
+            }],
+            "bottom": [{
+              "name": "sprite-mono.svg#case_2"
+            }]
+          }
+        },
+        "slider": {
+          "items": [{
+            "name": "case/03.jpg",
+            "alt": "Slide img 1"
+          }, {
+            "name": "case/02.jpg",
+            "alt": "Slide img 2"
+          }, {
+            "name": "case/03.jpg",
+            "alt": "Slide img 3"
+          }, {
+            "name": "case/02.jpg",
+            "alt": "Slide img 4"
+          }, {
+            "name": "case/03.jpg",
+            "alt": "Slide img 5"
+          }, {
+            "name": "case/02.jpg",
+            "alt": "Slide img 6"
+          }]
+        }
+      }, {
+        "content": {
+          "text": "The website density emphasizes premium market position. On the one hand, five landing pages differ in content and type of services while they are united by one corporate identity.",
+          "icons_list": {
+            "top": [{
+              "name": "sprite-mono.svg#case_4"
+            }],
+            "bottom": [{
+              "name": "sprite-mono.svg#case_5"
+            }]
+          }
+        },
+        "slider": {
+          "items": [{
+            "name": "case/04.jpg",
+            "alt": "Slide img 1"
+          }, {
+            "name": "case/03.jpg",
+            "alt": "Slide img 2"
+          }, {
+            "name": "case/02.jpg",
+            "alt": "Slide img 3"
+          }, {
+            "name": "case/04.jpg",
+            "alt": "Slide img 4"
+          }, {
+            "name": "case/03.jpg",
+            "alt": "Slide img 5"
+          }, {
+            "name": "case/02.jpg",
+            "alt": "Slide img 6"
+          }]
+        }
+      }, {
+        "content": {
+          "text": "It carried serious work to fill the site with content. Site visitors are greeted not only by a catalog of services but also by informative photos and texts. The last element of each page is a lead generation form for customer applications.",
+          "icons_list": {
+            "top": [{
+              "name": "sprite-mono.svg#case_8"
+            }],
+            "bottom": [{
+              "name": "sprite-mono.svg#case_3"
+            }, {
+              "name": "sprite-mono.svg#case_10"
+            }]
+          }
+        },
+        "image": {
+          "name": "case/05.jpg",
+          "alt": "Want work with us?"
+        }
+      }]
+    },
+    "resume": {
+      "title": {
+        "level": 2,
+        "text": "Resume"
+      },
+      "text": "MIKS has successfully resolved the key challenge — the development of a feature-rich yet entirely reliable corporate website. <br /> With our contribution, the client can use an exclusive website. It harmoniously combines a well-thought structure and a minimalistic design. Now all the client traffic falls on the common site. This has a positive effect on marketing metrics. The intuitive interface makes it easy for potential customers to find the service and place an order.",
+      "image": {
+        "name": "case/06.png",
+        "alt": ""
+      }
+    },
+    "project_work": {
+      "title": {
+        "level": 2,
+        "text": "At project work"
+      },
+      "labels": {
+        "items": [{
+          "class": "tag--normal",
+          "text": "PM"
+        }, {
+          "class": "tag--normal",
+          "text": "Designer"
+        }, {
+          "class": "tag--normal",
+          "text": "Bitrix developer"
+        }, {
+          "class": "tag--normal",
+          "text": "Front-end developer"
+        }, {
+          "class": "tag--normal",
+          "text": "BA"
+        }, {
+          "class": "tag--normal",
+          "text": "QA"
+        }, {
+          "class": "tag--normal",
+          "text": "Content-manager"
+        }]
+      }
     }
   }
 }

@@ -6,6 +6,7 @@
           {% if case.promo.title %}
             {% view "@title" with {
               title: case.promo.title|default({})|merge({
+                attrs: "data-sal='slide-up' data-sal-duration='800'",
                 class: "js-title promo__title"
               })
             } %}
@@ -20,12 +21,12 @@
           {% endif %}
 
           {% if case.promo.text %}
-            <p class="promo__text">
+            <p class="promo__text" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
               {{ case.promo.text.text }}
             </p>
           {% endif %}
         </div>
-        <div class="case__item promo__img">
+        <div class="case__item promo__img" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
           {% view "@image" with {
             image: case.promo.image
           } %}
@@ -39,6 +40,7 @@
           {% if case.business_needs.title %}
             {% view "@title" with {
               title: case.business_needs.title|default({})|merge({
+                attrs: "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
                 class: "case__title"
               })
             } %}
@@ -46,7 +48,7 @@
         </div>
         <div class="business-needs__item case__item">
           {% if case.business_needs.text %}
-            <p class="case__text business-needs__text">
+            <p class="case__text business-needs__text" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
               {{ case.business_needs.text }}
             </p>
           {% endif %}
@@ -66,6 +68,7 @@
           {% if case.tech_stack.title %}
             {% view "@title" with {
               title: case.tech_stack.title|default({})|merge({
+                attrs: "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
                 class: "case__title"
               })
             } %}
@@ -102,6 +105,7 @@
           {% if case.analysis_and_suggestion.title %}
             {% view "@title" with {
               title: case.analysis_and_suggestion.title|default({})|merge({
+                attrs: "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
                 class: "case__title"
               })
             } %}
@@ -109,9 +113,155 @@
         </div>
         <div class="case__item">
           {% if case.analysis_and_suggestion.text %}
-            <p class="case__text">
+            <p class="case__text" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
               {{ case.analysis_and_suggestion.text }}
             </p>
+          {% endif %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if case.functionality_design %}
+      <section class="functionality-design">
+        {% if case.functionality_design.title %}
+          {% view "@title" with {
+            title: case.functionality_design.title|default({})|merge({
+              attrs: "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+              class: "case__title functionality-design__title"
+            })
+          } %}
+        {% endif %}
+
+        {% if case.functionality_design.items %}
+        <div class="functionality-design__inner">
+          {% for item in case.functionality_design.items %}
+            <div class="functionality-design__subinner">
+              <div class="functionality-design__item">
+                {% if item.content.icons_list.top %}
+                  <ul class="functionality-design__icons-list functionality-design__icons-list--top">
+                    {% for icon in item.content.icons_list.top %}
+                      <li class="functionality-design__icons-item">
+                        {% view "@icon" with {
+                          icon: icon|merge({
+                            class: "functionality-design__icon"
+                          })
+                        } %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+
+                {% if item.content.text %}
+                  <p class="case__text functionality-design__text" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
+                    {{ item.content.text }}
+                  </p>
+                {% endif %}
+
+                {% if item.content.icons_list.bottom %}
+                  <ul class="functionality-design__icons-list functionality-design__icons-list--bottom">
+                    {% for icon in item.content.icons_list.bottom %}
+                      <li class="functionality-design__icons-item">
+                        {% view "@icon" with {
+                          icon: icon|merge({
+                            class: "functionality-design__icon"
+                          })
+                        } %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+              <div class="functionality-design__item" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
+                {% if item.image %}
+                  {% view "@image" with {
+                    image: item.image|default({})|merge({
+                      class: "functionality-design__img"
+                    })
+                  } %}
+                {% endif %}
+
+                {% if item.slider %}
+                  <div class="functionality-design__slider">
+                    <div class="swiper js-case">
+                      <div class="swiper-wrapper">
+                        {% for item in item.slider.items %}
+                          <div class="swiper-slide">
+                            {% view "@image" with {
+                              image: item
+                            } %}
+                          </div>
+                        {% endfor %}
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-next">
+                        {% view "@icon" with {
+                          icon: {
+                            name: "sprite-mono.svg#arrow-slider-right"
+                          }
+                        } %}
+                      </div>
+                      <div class="swiper-button-prev">
+                        {% view "@icon" with {
+                          icon: {
+                            name: "sprite-mono.svg#arrow-slider-left"
+                          }
+                        } %}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </section>
+    {% endif %}
+
+    {% if case.resume %}
+      <section class="resume case__section">
+        <div class="resume__item resume__item-content">
+          {% if case.resume.title %}
+            {% view "@title" with {
+              title: case.resume.title|default({})|merge({
+                attrs: "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+                class: "case__title"
+              })
+            } %}
+          {% endif %}
+
+          {% if case.resume.text %}
+            <p class="case__text resume__text" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
+              {{ case.resume.text }}
+            </p>
+          {% endif %}
+        </div>
+        <div class="resume__item resume__item-img" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
+          {% view "@image" with {
+            image: case.resume.image
+          } %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if case.project_work %}
+      <section class="project-work case__section">
+        <div class="project-work__item">
+          {% if case.project_work.title %}
+            {% view "@title" with {
+              title: case.project_work.title|default({})|merge({
+                attrs: "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
+                class: "case__title"
+              })
+            } %}
+          {% endif %}
+
+          {% if case.project_work.labels %}
+            {% view "^tags" with {
+              tags: case.project_work.labels|default({})|merge({
+                class: "project-work__tags"
+              })
+            } %}
           {% endif %}
         </div>
       </section>

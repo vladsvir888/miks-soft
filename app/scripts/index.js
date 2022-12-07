@@ -6,6 +6,7 @@ import SeveralExamples from './severalExamples';
 import Tabs from './tabs';
 import Validation from './validation';
 import BurgerMenu from './burgerMenu';
+import Case from './case';
 
 document.addEventListener('DOMContentLoaded', () => {
   new LazyLoad();
@@ -17,4 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
   Tabs('.portfolio');
   Validation();
   BurgerMenu();
+  Case();
 });

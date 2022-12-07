@@ -147,6 +147,208 @@
   }
 }
 
+// functionality-design
+.functionality-design {
+  $this: &;
+
+  padding: 7rem 0 10rem;
+  border-bottom: 0.1rem solid var(--pallette-onyx);
+
+  @include media('1024', max) {
+    padding: 2rem 0;
+  }
+
+  &__inner {
+    display: grid;
+    gap: 8rem;
+
+    @include media('1024', max) {
+      gap: 4rem;
+    }
+
+    @include media('767', max) {
+      gap: 2.5rem;
+    }
+  }
+
+  &__subinner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+
+    @include media('1024', max) {
+      grid-template-columns: 1fr;
+    }
+
+    &:nth-child(odd) {
+      #{$this}__item {
+        &:first-child {
+          @include media('1025', min) {
+            grid-column: 1 / 4;
+          }
+        }
+
+        &:last-child {
+          @include media('1025', min) {
+            grid-column: 4 / 7;
+          }
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      #{$this}__item {
+        &:first-child {
+          #{$this}__icons-list {
+            &--top {
+              margin-left: auto;
+            }
+          }
+
+          @include media('1025', min) {
+            grid-column: 4 / 7;
+            max-width: 55.7rem;
+            margin-left: auto;
+          }
+        }
+
+        &:last-child {
+          @include media('1025', min) {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+          }
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    &--top {
+      margin-bottom: 1rem;
+    }
+
+    &--bottom {
+      margin-top: 1rem;
+    }
+
+    @include media('1024', max) {
+      display: none;
+    }
+  }
+
+  &__text {
+    margin: auto 0;
+  }
+
+  &__img {
+    @include media('1024', max) {
+      margin: 0 auto;
+    }
+  }
+
+  .case__text {
+    @include media('1024', max) {
+      max-width: 100%;
+    }
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    flex-shrink: 0;
+    stroke: var(--pallette-white);
+    fill: transparent;
+  }
+
+  // swiper
+  &__slider {
+    position: relative;
+    width: 69rem;
+    height: 43.2rem;
+
+    @include media('1024', max) {
+      margin: 0 auto;
+    }
+
+    @include media('767', max) {
+      width: 34.3rem;
+      height: 21.6rem;
+    }
+
+    img {
+      @include img(cover);
+    }
+
+    .swiper {
+      position: static;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      &::after {
+        content: none;
+      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.6rem;
+      height: 3.6rem;
+      background: rgba(28, 26, 34, 0.2);
+      backdrop-filter: var(--bd-filter-blur1);
+      border-radius: var(--bdrs8);
+
+      .icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        flex-shrink: 0;
+        fill: transparent;
+        stroke: var(--pallette-white);
+      }
+
+      @include media('767', max) {
+        display: none;
+      }
+    }
+
+    .swiper-button-next {
+      right: -2rem;
+    }
+
+    .swiper-button-prev {
+      left: -2rem;
+    }
+
+    .swiper-pagination {
+      bottom: -3rem;
+
+      @include media('767', max) {
+        bottom: -2rem;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background: var(--pallette-topaz);
+      opacity: 1;
+      height: 0.6rem;
+      width: 0.6rem;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--pallette-white);
+    }
+  }
+}
+
 // tech-stack
 .tech-stack {
   padding: 4rem 0;
@@ -192,6 +394,66 @@
     @include media('1024', max) {
       width: 2.4rem;
       height: 2.4rem;
+    }
+  }
+}
+
+// resume
+.resume {
+  padding: 4rem 0 9.5rem;
+  align-items: center;
+
+  @include media('1024', max) {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+    padding: 2rem 0 6rem;
+  }
+
+  &__item {
+    &-content {
+      grid-column: span 4;
+    }
+
+    &-img {
+      grid-column: span 2;
+      margin-left: 10rem;
+
+      @include media('1024', max) {
+        @include flex-center-x;
+
+        margin-left: 0;
+      }
+    }
+
+    @include media('1024', max) {
+      grid-column: initial;
+    }
+  }
+
+  &__text {
+    max-width: unset;
+  }
+}
+
+// project-work
+.project-work {
+  padding: 4rem 0;
+
+  @include media('767', max) {
+    padding: 2rem 0 5.2rem;
+  }
+
+  &__item {
+    grid-column: span 4;
+
+    @include media('767', max) {
+      grid-column: initial;
+    }
+  }
+
+  &__tags {
+    @include media('767', max) {
+      gap: 0.4rem;
     }
   }
 }
