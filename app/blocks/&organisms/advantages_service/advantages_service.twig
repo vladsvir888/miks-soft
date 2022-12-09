@@ -1,0 +1,56 @@
+<section class="advantages-service">
+  <div class="container">
+    <div class="advantages-service__inner">
+      {% if advantages_service.title %}
+        {% view "@title" with {
+          title: advantages_service.title|default({})|merge({
+            level: 2,
+            attrs: 'data-sal="slide-up" data-sal-duration="800"',
+            class: "title--h2 advantages-service__title"
+          })
+        } %}
+      {% endif %}
+
+      {% if advantages_service.awards %}
+        <ul class="advantages-service__awards" role="list">
+          {% for item in advantages_service.awards.items %}
+            <li class="advantages-service__awards-item">
+              <img
+                class="lazy advantages-service__awards-img"
+                src="./assets/images/pixel.png"
+                data-src="{{ item.path }}"
+                alt="{{ item.text }}"
+              >
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if advantages_service.items %}
+        <ul class="advantages-service__items offset-y">
+          {% for item in advantages_service.items %}
+            <li class="advantages-service__item" data-sal="slide-up" data-sal-duration="800">
+              {% if item.title %}
+                <h3 class="advantages-service__item-title">
+                  {{ item.title }}
+                </h3>
+              {% endif %}
+
+              {% if item.text %}
+                <p class="advantages-service__item-text">
+                  {{ item.text }}
+                </p>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if advantages_service.video %}
+        <div class="advantages-service__video">
+          <video src="{{ advantages_service.video.path }}" preload="metadata" autoplay="autoplay" loop muted playsinline></video>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,6 +1,20 @@
 <div class="hero-inner main__section">
   <div class="container">
     <div class="hero-inner__wrap">
+      {% if hero_inner.uptitle %}
+        {% view "@title" with {
+            title: hero_inner.uptitle|default({})|merge({
+                class: "js-title hero-inner__title hero-inner__title--big"
+            })
+        } %}
+      {% endif %}
+
+      {% if hero_inner.video %}
+        <div class="hero-inner__video">
+          <video src="{{ hero_inner.video.path }}" preload="metadata" autoplay="autoplay" loop muted playsinline></video>
+        </div>
+      {% endif %}
+
       {% if hero_inner.text %}
         <p class="hero-inner__text">{{ hero_inner.text }}</p>
       {% endif %}
@@ -8,7 +22,7 @@
       {% if hero_inner.title %}
         {% view "@title" with {
           title: hero_inner.title|default({})|merge({
-            class: "js-title hero-inner__title"
+            class: "js-title hero-inner__title hero-inner__title--small"
           })
         } %}
       {% endif %}

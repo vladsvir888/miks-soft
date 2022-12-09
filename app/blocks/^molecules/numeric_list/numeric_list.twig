@@ -1,0 +1,32 @@
+<div class="numeric-list-wrap">
+  <div class="container">
+    <ul class="numeric-list">
+      {% for item in numeric_list.items %}
+        <li class="numeric-list__item" data-sal="slide-up" data-sal-duration="800">
+          {% if item.title %}
+            <h2 class="numeric-list__title">
+              {{ item.title }}
+            </h2>
+          {% endif %}
+
+          {% if item.text %}
+            <p class="numeric-list__text">
+              {{ item.text }}
+            </p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    {% if numeric_list.button %}
+      {% view "@button" with {
+        button: numeric_list.button|default({})|merge({
+          class: "btn--secondary numeric-list-wrap__btn",
+          icon: {
+            name: "sprite-mono.svg#btn-figure"
+          }
+        })
+      } %}
+    {% endif %}
+  </div>
+</div>

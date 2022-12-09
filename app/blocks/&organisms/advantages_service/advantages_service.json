@@ -1,0 +1,44 @@
+{
+  "advantages_service": {
+    "title": {
+      "text": "Advantages of&nbsp;MIKS"
+    },
+    "awards": {
+      "items": [{
+        "path": "./assets/images/awards/awwwards.svg",
+        "text": "Awwwards"
+      }, {
+        "path": "./assets/images/awards/css_design_awards.svg",
+        "text": "CSSDesignAwards"
+      }, {
+        "path": "./assets/images/awards/cssfox.svg",
+        "text": "cssfox"
+      }, {
+        "path": "./assets/images/awards/cms_magazine.svg",
+        "text": "cms_magazine"
+      }, {
+        "path": "./assets/images/awards/behance.svg",
+        "text": "behance"
+      }]
+    },
+    "items": [{
+        "title": "Process Order",
+        "text": "Regular Agile/SCRUM processes and Iterative Work"
+    }, {
+        "title": "Exclusive rights",
+        "text": "The result should belong only to you"
+    }, {
+        "title": "Own team",
+        "text": "Well-coordinated work of middle and senior specialists ensures quality on time"
+    }, {
+        "title": "10+ years of experience",
+        "text": "The leaders of the international market trust us"
+    }, {
+        "title": "Individual approach to the choice of payment model",
+        "text": "Time and Materials, Retainer or Fixed Price"
+    }],
+    "video": {
+        "path": "./assets/services_advantages_video.mp4"
+    }
+  }
+}

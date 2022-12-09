@@ -1,0 +1,58 @@
+{
+  "technologies": {
+    "title": {
+      "text": "We select the stack individually for a specific task and budget"
+    },
+    "items": [{
+      "image": {
+        "src": "./assets/images/technologies/nodejs.svg",
+        "text": "Node.js"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/magento.svg",
+        "text": "Magento"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/laravel.svg",
+        "text": "Laravel"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/wp.svg",
+        "text": "WP"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/vuejs.svg",
+        "text": "Vue"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/react.svg",
+        "text": "React"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/angular.svg",
+        "text": "Angular"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/drupal.svg",
+        "text": "Drupal"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/yii.svg",
+        "text": "Yii"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/symfony.svg",
+        "text": "Symfony"
+      }
+    }]
+  }
+}

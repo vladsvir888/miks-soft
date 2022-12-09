@@ -1,0 +1,13 @@
+{
+    "services": {
+        "hero_inner": {
+            "uptitle": {
+                "text": "We are miks"
+            },
+            "text": "We create the best solution due to design, Modern technologies and long-term experience of the&nbsp;team",
+            "video": {
+                "path": "./assets/services_first_screen_video.mp4"
+            }
+        }
+    }
+}

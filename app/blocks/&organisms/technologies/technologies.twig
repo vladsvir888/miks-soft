@@ -1,0 +1,29 @@
+<section class="technologies">
+  <div class="container">
+    {% if technologies.title %}
+      {% view "@title" with {
+        title: technologies.title|default({})|merge({
+            attrs: 'data-sal="slide-up" data-sal-duration="800"',
+            level: 2,
+            class: "technologies__title"
+        })
+      } %}
+    {% endif %}
+
+    {% if technologies.items %}
+      <ul class="technologies__list" role="list">
+        {% for item in technologies.items %}
+          <li class="technologies__item">
+            <img
+                class="lazy technologies__img"
+                src="./assets/images/pixel.png"
+                data-src="{{ item.image.src }}"
+                alt="{{ item.image.text }}"
+                {% if item.image.attrs %}{{ item.image.attrs }}{% endif %}
+            >
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</section>

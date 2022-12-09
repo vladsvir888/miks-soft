@@ -1,0 +1,28 @@
+{
+  "numeric_list": {
+    "items": [{
+      "title": "Development of websites and services",
+      "text": "We create spectacular and functional marketing tool. Develop from scratch or develop existing projects"
+    }, {
+      "title": "Mobile application development",
+      "text": "We will conduct analytics, highlight the MVP and bring the concept to a full-fledged product"
+    }, {
+      "title": "Software development",
+      "text": "We will create a system of any level of complexity for you"
+    }, {
+      "title": "Technical support",
+      "text": "Let's figure out the finished project and improve it. We will conduct a code review, update modules and libraries, fix the UX/UI"
+    }, {
+      "title": "Design",
+      "text": "We will develop a unique UX/UI design. Let's make the interaction with your product intuitive and the design memorable to the audience"
+    }, {
+      "title": "Outstaff",
+      "text": "We will form the necessary team of middle or senior level specialists. Quickly integrate into your project, according to the Time and Materials model"
+    }],
+    "button": {
+      "text": {
+        "text": "Discuss your project"
+      }
+    }
+  }
+}
