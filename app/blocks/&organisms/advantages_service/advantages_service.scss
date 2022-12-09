@@ -105,7 +105,6 @@
       line-height: var(--lh140);
       letter-spacing: var(--ltsm02);
       color: var(--pallette-gray-suit);
-      line-height: var(--lh140);
 
       @include media('767', max) {
         font-size: 1.2rem;
@@ -115,7 +114,7 @@
 
   &__video {
     width: 75rem;
-    height: 75rem;
+    height: 65rem;
     position: absolute;
     right: -40rem;
     top: 0;

@@ -12,7 +12,7 @@
 
     @include flex-center-between;
 
-    padding: 2.5rem 1rem 2.5rem 1.6rem;
+    padding: 2rem 1rem 2rem 1.6rem;
     border-bottom: 0.1rem solid var(--pallette-onyx);
 
     @include media('500', max) {
@@ -21,7 +21,7 @@
   }
 
   &--active {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 
     #{$this}__inner {
       background: rgba(28, 26, 34, 0.5);
@@ -40,6 +40,7 @@
     .burger-menu {
       opacity: 1;
       pointer-events: auto;
+      visibility: visible;
     }
 
     .burger__icon {
@@ -71,7 +72,7 @@
   }
 
   &__menu {
-    @include media('767', max) {
+    @include media('1024', max) {
       display: none;
     }
   }
@@ -79,6 +80,14 @@
   &__list {
     --offset-x: 2.4rem;
     display: flex;
+  }
+
+  &__item {
+    &--current {
+      #{$this}__link {
+        background-color: var(--pallette-light-taupe);
+      }
+    }
   }
 
   &__end {
@@ -102,7 +111,7 @@
   }
 
   &__discuss-link {
-    @include media('767', max) {
+    @include media('1024', max) {
       display: none;
     }
   }

@@ -4,7 +4,7 @@
   display: none;
   cursor: pointer;
 
-  @include media('767', max) {
+  @include media('1024', max) {
     display: flex;
   }
 
@@ -12,11 +12,11 @@
     top: 0.5rem;
 
     &:first-child {
-      transform: rotate(45deg)
+      transform: rotate(45deg);
     }
 
     &:last-child {
-      transform: rotate(-45deg)
+      transform: rotate(-45deg);
     }
   }
 

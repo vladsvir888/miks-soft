@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding-bottom: 28.8rem;
+  padding-bottom: 28.6rem;
 
   @include media('1024', max) {
     padding-bottom: 6.9rem;
@@ -98,7 +98,7 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem 23rem;
     align-items: center;
-    padding-top: 2.7rem;
+    padding-top: 2rem;
     border-top: 0.1rem solid var(--pallette-onyx);
 
     @include media('1024', max) {

@@ -4,7 +4,8 @@
       {% if hero_inner.uptitle %}
         {% view "@title" with {
             title: hero_inner.uptitle|default({})|merge({
-                class: "js-title hero-inner__title hero-inner__title--big"
+              attrs: 'data-sal="slide-up" data-sal-duration="800" data-sal-delay="100"',
+              class: "js-title hero-inner__title hero-inner__title--big"
             })
         } %}
       {% endif %}
@@ -16,19 +17,20 @@
       {% endif %}
 
       {% if hero_inner.text %}
-        <p class="hero-inner__text">{{ hero_inner.text }}</p>
+        <p class="hero-inner__text" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">{{ hero_inner.text }}</p>
       {% endif %}
 
       {% if hero_inner.title %}
         {% view "@title" with {
           title: hero_inner.title|default({})|merge({
+            attrs: 'data-sal="slide-up" data-sal-duration="800" data-sal-delay="200"',
             class: "js-title hero-inner__title hero-inner__title--small"
           })
         } %}
       {% endif %}
 
       {% if hero_inner.subtitle %}
-        <p class="hero-inner__subtitle">
+        <p class="hero-inner__subtitle" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
           {{ hero_inner.subtitle }}
         </p>
       {% endif %}

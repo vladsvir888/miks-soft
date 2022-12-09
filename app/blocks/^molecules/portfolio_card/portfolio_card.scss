@@ -4,6 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
 
   @include media('1024', max) {
     grid-template-columns: 1fr;
@@ -20,6 +21,7 @@
   &__content {
     @include media('1025', min) {
       grid-column: span 2;
+      padding-top: 5rem;
     }
   }
 
@@ -62,7 +64,7 @@
 
   &__text {
     margin-bottom: 12.9rem;
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     line-height: var(--lh140);
     letter-spacing: var(--ltsm02);
     color: var(--pallette-gray-suit);
@@ -82,9 +84,9 @@
       grid-row: 1 / 2;
     }
 
-    img {
-      @include img(cover);
-    }
+    // img {
+    //   @include img(cover);
+    // }
   }
 
   &__text-arrow {

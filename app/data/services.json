@@ -1,13 +1,46 @@
 {
-    "services": {
-        "hero_inner": {
-            "uptitle": {
-                "text": "We are miks"
-            },
-            "text": "We create the best solution due to design, Modern technologies and long-term experience of the&nbsp;team",
-            "video": {
-                "path": "./assets/services_first_screen_video.mp4"
-            }
+  "title_page": "Our services - Miks Soft",
+  "header_type": "services",
+  "services": {
+    "header": {
+      "logo": {
+        "text": "Miks Soft Home",
+        "path": "./assets/images/logo.svg"
+      },
+      "menu": {
+        "items": [{
+          "href": "#",
+          "text": {
+            "text": "Main page"
+          }
+        }, {
+          "current": true,
+          "href": "#",
+          "text": {
+            "text": "Services"
+          }
+        }, {
+          "href": "#",
+          "text": {
+            "text": "Portfolio"
+          }
+        }]
+      },
+      "discuss_link": {
+        "href": "#",
+        "text": {
+          "text": "Discuss your project"
         }
+      }
+    },
+    "hero_inner": {
+      "uptitle": {
+        "text": "We are miks"
+      },
+      "text": "We create the best solution due to design, Modern technologies and long-term experience of the&nbsp;team",
+      "video": {
+        "path": "./assets/services_first_screen_video.mp4"
+      }
     }
+  }
 }

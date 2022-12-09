@@ -14,7 +14,7 @@ const Header = () => {
     });
   };
 
-  const observer = new IntersectionObserver(callback, { rootMargin: '-350px' });
+  const observer = new IntersectionObserver(callback, { rootMargin: '-250px' });
 
   observer.observe(target);
 };

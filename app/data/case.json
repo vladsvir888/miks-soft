@@ -1,5 +1,38 @@
 {
+  "title_page": "Our cases - Miks Soft",
+  "header_type": "case",
   "case": {
+    "header": {
+      "logo": {
+        "text": "Miks Soft Home",
+        "path": "./assets/images/logo.svg"
+      },
+      "menu": {
+        "items": [{
+          "href": "#",
+          "text": {
+            "text": "Main page"
+          }
+        }, {
+          "href": "#",
+          "text": {
+            "text": "Services"
+          }
+        }, {
+          "current": true,
+          "href": "#",
+          "text": {
+            "text": "Portfolio"
+          }
+        }]
+      },
+      "discuss_link": {
+        "href": "#",
+        "text": {
+          "text": "Discuss your project"
+        }
+      }
+    },
     "promo": {
       "title": {
         "text": "Taurus Investment Group"

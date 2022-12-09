@@ -10,7 +10,11 @@
     {% view "^tabs_nav" %}
 
     {% for content in unique.contents %}
-      <section class="unique__content js-tabs-content {{ content.class }}" data-tab-content="{{ content.data.tab_content }}">
+      <section
+        class="unique__content js-tabs-content {{ content.class }}"
+        data-tab-content="{{ content.data.tab_content }}"
+        {{ content.attrs }}
+      >
         <div class="unique__content-item">
           {% if content.description %}
             <div class="unique__text-block offset-y">

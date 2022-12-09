@@ -5,6 +5,7 @@
       "text": "Unique digital products"
     },
     "contents": [{
+      "attrs": "id='tab-content-1' aria-labelledby='tab_1' role='tabpanel'",
       "class": "js-show",
       "data": {
         "tab_content": "tab_1"
@@ -90,6 +91,7 @@
         }
       }
     }, {
+      "attrs": "id='tab-content-2' aria-labelledby='tab_2' role='tabpanel'",
       "data": {
         "tab_content": "tab_2"
       },
@@ -159,6 +161,7 @@
         }
       }
     }, {
+      "attrs": "id='tab-content-3' aria-labelledby='tab_3' role='tabpanel'",
       "data": {
         "tab_content": "tab_3"
       },

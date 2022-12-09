@@ -20,7 +20,21 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-  {% view "&header" %}
+  {% if header_type == 'case' %}
+    {% view "&header" with {
+      header: case.header
+    } %}
+  {% elseif header_type == 'services' %}
+    {% view "&header" with {
+      header: services.header
+    } %}
+  {% elseif header_type == 'portfolio' %}
+    {% view "&header" with {
+      header: portfolio.header
+    } %}
+  {% else %}
+    {% view "&header" %}
+  {% endif %}
 
   {% block content %}{% endblock %}
 

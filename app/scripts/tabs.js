@@ -32,6 +32,8 @@ const Tabs = (selector) => {
     const tabBtns = document.querySelectorAll(`${selector} .js-tabs-btn`);
     tabBtns.forEach(btn => {
       btn.closest('.tabs-nav__item').classList.remove('tabs-nav__item--active');
+      btn.setAttribute('aria-selected', false);
+      target.setAttribute('aria-selected', true);
     });
 
     target.closest('.tabs-nav__item').classList.add('tabs-nav__item--active');

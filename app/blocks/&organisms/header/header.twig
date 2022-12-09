@@ -13,7 +13,7 @@
         <nav class="menu header__menu" aria-label="Main">
           <ul class="header__list offset-x" role="list">
             {% for item in header.menu.items %}
-              <li class="header__item">
+              <li class="header__item {% if item.current %}header__item--current{% endif %}">
                 {% view "@button" with {
                   button: item|merge({
                     class: "header__link"
