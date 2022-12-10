@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 
-const SeveralExamples = () => {
+const SeveralExamplesSlider = () => {
   new Swiper('.js-several-examples', {
     slidesPerView: 1.4,
     spaceBetween: 20,
@@ -15,4 +15,4 @@ const SeveralExamples = () => {
   });
 };
 
-export default SeveralExamples;
+export default SeveralExamplesSlider;

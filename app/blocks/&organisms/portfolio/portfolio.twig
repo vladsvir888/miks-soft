@@ -19,7 +19,6 @@
         {% for tabs_content in portfolio.tabs_contents %}
           <ul
             class="portfolio__list js-tabs-content {{ tabs_content.class }}"
-            data-tab-content="{{ tabs_content.data.tab_content }}"
             {{ tabs_content.attrs }}
           >
             {% for item in tabs_content.items %}

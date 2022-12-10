@@ -7,9 +7,6 @@
     "contents": [{
       "attrs": "id='tab-content-1' aria-labelledby='tab_1' role='tabpanel'",
       "class": "js-show",
-      "data": {
-        "tab_content": "tab_1"
-      },
       "description": [{
         "text": "A fast, adaptive website for all types of devices with intuitive navigation, designed in your design concept and with a properly structured content structure is not a dream, but a modern necessity for a business wishing to have a high online conversion."
       }, {
@@ -92,9 +89,6 @@
       }
     }, {
       "attrs": "id='tab-content-2' aria-labelledby='tab_2' role='tabpanel'",
-      "data": {
-        "tab_content": "tab_2"
-      },
       "description": [{
         "text": "A fast, adaptive website for all types of devices with intuitive navigation, designed in your design concept and with a properly structured content structure is not a dream, but a modern necessity for a business wishing to have a high online conversion."
       }, {
@@ -162,9 +156,6 @@
       }
     }, {
       "attrs": "id='tab-content-3' aria-labelledby='tab_3' role='tabpanel'",
-      "data": {
-        "tab_content": "tab_3"
-      },
       "advantages_block": {
         "title": {
           "text": "One of the important advantages"

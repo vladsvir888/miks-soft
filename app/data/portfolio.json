@@ -66,9 +66,6 @@
     "tabs_contents": [{
       "attrs": "id='tab-content-1' aria-labelledby='tab_1' role='tabpanel'",
       "class": "js-show",
-      "data": {
-        "tab_content": "tab_1"
-      },
       "items": [{
         "title": "Busking",
         "labels": {
@@ -282,115 +279,7 @@
       }]
     }, {
       "attrs": "id='tab-content-2' aria-labelledby='tab_2' role='tabpanel'",
-      "data": {
-        "tab_content": "tab_2"
-      },
       "items": [{
-        "title": "Busking",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "Busking",
-          "name": "portfolio/01.jpg"
-        }
-      }, {
-        "title": "Naturino",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "Naturino",
-          "name": "portfolio/02.jpg"
-        }
-      }, {
-        "title": "Jobbox",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "Jobbox",
-          "name": "portfolio/03.jpg"
-        }
-      }, {
-        "title": "Taurus",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "Taurus",
-          "name": "portfolio/04.jpg"
-        }
-      }, {
-        "title": "Writers & artists",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "Writers & artists",
-          "name": "portfolio/05.jpg"
-        }
-      }, {
         "title": "q-pay",
         "labels": {
           "items": [{
@@ -498,9 +387,6 @@
       }]
     }, {
       "attrs": "id='tab-content-3' aria-labelledby='tab_3' role='tabpanel'",
-      "data": {
-        "tab_content": "tab_3"
-      },
       "items": [{
         "title": "Busking",
         "labels": {
@@ -605,111 +491,6 @@
         "image": {
           "alt": "Writers & artists",
           "name": "portfolio/05.jpg"
-        }
-      }, {
-        "title": "q-pay",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "q-pay",
-          "name": "portfolio/06.jpg"
-        }
-      }, {
-        "title": "voyage tour",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "voyage tour",
-          "name": "portfolio/07.jpg"
-        }
-      }, {
-        "title": "probit",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "probit",
-          "name": "portfolio/08.jpg"
-        }
-      }, {
-        "title": "british american tobacco",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "british american tobacco",
-          "name": "portfolio/09.jpg"
-        }
-      }, {
-        "title": "tichmi",
-        "labels": {
-          "items": [{
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Web"
-          }, {
-            "class": "tag--normal",
-            "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'",
-            "text": "Soft"
-          }]
-        },
-        "text": "Fjord is a UGC blog platform about Scandinavia. The&nbsp;goal is to unite all Scandinavian lovers in one place.",
-        "text_with_arrow": {
-          "text": "Explore"
-        },
-        "image": {
-          "alt": "tichmi",
-          "name": "portfolio/10.jpg"
         }
       }]
     }]

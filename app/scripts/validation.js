@@ -18,11 +18,11 @@ const Validation = () => {
     const pristine = new Pristine(form, config);
 
     form.addEventListener('submit', function (e) {
-       const valid = pristine.validate();
+      const valid = pristine.validate();
 
-       if (!valid) { // если не валидно, то запрещаем отправку формы
+      if (!valid) { // если не валидно, то запрещаем отправку формы
         e.preventDefault();
-       }
+      }
     });
   });
 };

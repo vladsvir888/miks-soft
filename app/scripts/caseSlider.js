@@ -1,6 +1,6 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
-const Case = () => {
+const CaseSlider = () => {
   new Swiper('.js-case', {
     modules: [Navigation, Pagination],
     pagination: {
@@ -14,4 +14,4 @@ const Case = () => {
   });
 };
 
-export default Case;
+export default CaseSlider;
