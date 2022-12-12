@@ -11,7 +11,7 @@
       </div>
       <div class="header__end offset-x">
         <nav class="menu header__menu" aria-label="Main">
-          <ul class="header__list offset-x" role="list">
+          <ul class="header__list offset-x">
             {% for item in header.menu.items %}
               <li class="header__item {% if item.current %}header__item--current{% endif %}">
                 {% view "@button" with {

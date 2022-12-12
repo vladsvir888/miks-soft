@@ -41,7 +41,7 @@
     {% endif %}
 
     {% if hero.awards %}
-      <ul class="hero__awards" role="list">
+      <ul class="hero__awards">
         {% for item in hero.awards.items %}
           <li {% if item.attrs %}{{ item.attrs }}{% endif %}>
             <img

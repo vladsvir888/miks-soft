@@ -1,0 +1,25 @@
+<section class="workflow">
+  <div class="container">
+    <div class="workflow__inner">
+      <div class="workflow__header">
+        {% if workflow.title %}
+          {% view "@title" with {
+            title: workflow.title|default({})|merge({
+              level: 2,
+              class: "title--h2 workflow__title"
+            })
+          } %}
+        {% endif %}
+
+        {% if workflow.text %}
+          <p class="workflow__text">
+            {{ workflow.text }}
+          </p>
+        {% endif %}
+      </div>
+      <div class="worklow__footer">
+        {% view "^numeric_line_list" %}
+      </div>
+    </div>
+  </div>
+</section>

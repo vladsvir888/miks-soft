@@ -1,4 +1,5 @@
 <section class="portfolio">
+  <h2 class="visually-hidden">It's our portfolio</h2>
   <div class="container">
     <div class="portfolio__inner offset-y">
       {% if portfolio.tabs_nav %}
@@ -17,18 +18,18 @@
 
       {% if portfolio.tabs_contents %}
         {% for tabs_content in portfolio.tabs_contents %}
-          <ul
+          <div
             class="portfolio__list js-tabs-content {{ tabs_content.class }}"
             {{ tabs_content.attrs }}
           >
             {% for item in tabs_content.items %}
-              <li class="portfolio__item">
+              <div class="portfolio__item">
                 {% view "^portfolio_card" with {
                   portfolio_card: item
                 } %}
-              </li>
+              </div>
             {% endfor %}
-          </ul>
+          </div>
         {% endfor %}
       {% endif %}
     </div>

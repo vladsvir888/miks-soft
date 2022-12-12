@@ -1,0 +1,47 @@
+.workflow {
+  padding: 5.6rem 0 6.5rem;
+  margin-bottom: 10rem;
+  background-color: var(--pallette-cinder);
+
+  @include media('1024', max) {
+    padding: 4rem 0;
+    margin-bottom: 6rem;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    margin-bottom: 9.3rem;
+
+    @include media('1024', max) {
+      grid-template-columns: 1fr;
+      margin-bottom: 3.6rem;
+    }
+  }
+
+  &__title {
+    @include media('1025', min) {
+        grid-column: span 2;
+    }
+
+    @include media('767', max) {
+      text-align: var(--tac);
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: var(--lh140);
+    letter-spacing: var(--ltsm02);
+    color: var(--pallette-gray-suit);
+
+    @include media('1025', min) {
+        grid-column: 4 / 7;
+    }
+
+    @include media('767', max) {
+      font-size: 1.2rem;
+    }
+  }
+}

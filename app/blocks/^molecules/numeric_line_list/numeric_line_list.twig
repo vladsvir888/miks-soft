@@ -1,0 +1,16 @@
+<ul class="numeric-line-list">
+  {% for item in numeric_line_list.items %}
+    <li class="numeric-line-list__item">
+      {% if item.number %}
+        <span class="numeric-line-list__number">
+          {{ item.number }}
+        </span>
+      {% endif %}
+      {% if item.text %}
+        <h3 class="numeric-line-list__title">
+          {{ item.text }}
+        </h3>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
