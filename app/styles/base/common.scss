@@ -79,6 +79,11 @@ body {
   font-family: var(--font1);
   color: var(--pallette-white);
   background-color: var(--pallette-black);
+  padding-top: 18.8rem;
+
+  @include media('1024', max) {
+    padding-top: 15.9rem;
+  }
 }
 
 .header {
@@ -137,13 +142,13 @@ body {
     }
   }
 
-  &__section {
-    padding-top: 18.8rem;
+  // &__section {
+  //   padding-top: 18.8rem;
 
-    @include media('1024', max) {
-      padding-top: 15.9rem;
-    }
-  }
+  //   @include media('1024', max) {
+  //     padding-top: 15.9rem;
+  //   }
+  // }
 
   &--error {
     overflow: hidden;

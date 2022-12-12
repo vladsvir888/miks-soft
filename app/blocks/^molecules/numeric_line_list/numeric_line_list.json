@@ -1,23 +1,17 @@
 {
   "numeric_line_list": {
     "items": [{
-        "number": "01",
-        "text": "Defining project goals, audience and market research"
+      "text": "Defining project goals, audience and market research"
     }, {
-        "number": "02",
-        "text": "Prototyping and concept development"
+      "text": "Prototyping and concept development"
     }, {
-        "number": "03",
-        "text": "Final design + style guide/design system"
+      "text": "Final design + style guide/design system"
     }, {
-        "number": "04",
-        "text": "Technical implementation (frontend + backend)"
+      "text": "Technical implementation (frontend + backend)"
     }, {
-        "number": "05",
-        "text": "Product testing and release"
+      "text": "Product testing and release"
     }, {
-        "number": "06",
-        "text": "Product support and development (optional)"
+      "text": "Product support and development (optional)"
     }]
   }
 }

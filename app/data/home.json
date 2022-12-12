@@ -4,7 +4,7 @@
     "grid_logos": {
       "class": "main__grid-logos",
       "items": [{
-        "text": "They trust us"
+        "text": "They trust&nbsp;us"
       }, {
         "image": {
           "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='100'",

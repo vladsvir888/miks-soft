@@ -1,21 +1,41 @@
 .grid-logos {
   &__list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.1rem;
+    --cards: 5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
     background-color: var(--pallette-onyx);
+    border-bottom: 1px solid var(--pallette-onyx);
+
+    &::after {
+      content: '';
+      flex: 1 0 0px;
+      margin-right: -1px;
+      background-color: var(--pallette-black);
+    }
 
     @include media('1024', max) {
-      grid-template-columns: repeat(3, 1fr);
+      --cards: 3;
     }
   }
 
   &__item {
+    --span: 1;
+    overflow: hidden;
+    width: calc((100% - (var(--cards) - 1) * 1px) / var(--cards) * var(--span) + (var(--span) - 1) * 1px);
     @include flex-center;
 
     min-height: 16rem;
     padding: 1rem;
     background-color: var(--pallette-black);
+
+    &:first-child {
+        --span: 2;
+
+        @include media('1024', max) {
+          --span: 1;
+        }
+    }
 
     @include media('767', max) {
       min-height: 10rem;
@@ -24,31 +44,23 @@
     @include media('500', max) {
       padding: 0.2rem;
     }
-
-    &:first-child {
-      grid-column: span 2;
-
-      @include media('1024', max) {
-        grid-column: inherit;
-      }
-    }
   }
 
   &__img {
-    width: 27.6rem;
-    height: 15.1rem;
-    object-fit: contain;
+    // width: 27.6rem;
+    // height: 15.1rem;
+    // object-fit: contain;
     transition: transform var(--transition2);
 
     &:hover {
       transform: scale(1.05);
     }
 
-    @include media('500', max) {
-      width: auto;
-      height: auto;
-      padding: 2rem;
-    }
+    // @include media('500', max) {
+    //   width: auto;
+    //   height: auto;
+    //   padding: 2rem;
+    // }
   }
 
   &__title {
@@ -58,7 +70,7 @@
     font-family: var(--font2);
     font-weight: var(--fw400);
 
-    @include media('767', max) {
+    @include media('1024', max) {
       font-size: 2.2rem;
     }
   }
