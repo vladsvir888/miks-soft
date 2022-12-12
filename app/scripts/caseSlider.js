@@ -2,6 +2,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
 const CaseSlider = () => {
   new Swiper('.js-case', {
+    loop: true,
     modules: [Navigation, Pagination],
     pagination: {
       el: '.swiper-pagination',
