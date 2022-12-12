@@ -1,5 +1,8 @@
 {
   "title_page": "Our portfolio - Miks Soft",
+  "meta": {
+    "description": "Our portfolio - Miks Soft"
+  },
   "header_type": "portfolio",
   "portfolio": {
     "header": {
@@ -42,20 +45,20 @@
     },
     "tabs_nav": {
       "items": [{
-        "attrs": "role='tab' aria-selected='true' aria-controls='tab-content-1'",
+        "attrs": "aria-selected='true' aria-controls='tab-content-1'",
         "id": "tab_1",
         "class": "tabs-nav__item--active",
         "text": {
           "text": "Website"
         }
       }, {
-        "attrs": "role='tab' aria-selected='false' aria-controls='tab-content-2'",
+        "attrs": "aria-selected='false' aria-controls='tab-content-2'",
         "id": "tab_2",
         "text": {
           "text": "Custom software"
         }
       }, {
-        "attrs": "role='tab' aria-selected='false' aria-controls='tab-content-3'",
+        "attrs": "aria-selected='false' aria-controls='tab-content-3'",
         "id": "tab_3",
         "text": {
           "text": "App dev"

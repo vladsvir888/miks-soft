@@ -85,7 +85,7 @@
             {% for item in case.tech_stack.icons_list.items %}
               <li
                 class="tech-stack__icons-item"
-                {% if item.style %}style="background: url('../assets/images/substrate.png') no-repeat 50% / contain;"{% endif %}
+                {% if item.style %}style="background: url('./assets/images/substrate.png') no-repeat 50% / contain;"{% endif %}
               >
                 {% view "@icon" with {
                   icon: item|merge({

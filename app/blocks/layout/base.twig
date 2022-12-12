@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+
+{% set html_lang = html_lang|default('en') %}
+
+<html lang="{{ html_lang }}">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title_page }}</title>
+  <meta name="description" content="{{ meta.description }}">
 
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">

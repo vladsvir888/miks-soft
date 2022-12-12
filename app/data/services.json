@@ -1,5 +1,8 @@
 {
   "title_page": "Our services - Miks Soft",
+  "meta": {
+    "description": "Our services - Miks Soft"
+  },
   "header_type": "services",
   "services": {
     "header": {
