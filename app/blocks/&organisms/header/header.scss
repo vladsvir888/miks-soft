@@ -82,14 +82,6 @@
     display: flex;
   }
 
-  &__item {
-    &--current {
-      #{$this}__link {
-        background-color: var(--pallette-light-taupe);
-      }
-    }
-  }
-
   &__end {
     --offset-x: 6rem;
 
@@ -103,6 +95,10 @@
     line-height: var(--lh100);
     border-radius: var(--bdrs5);
     transition: color var(--transition), background-color var(--transition);
+
+    &[aria-current="page"] {
+      background-color: var(--pallette-light-taupe);
+    }
 
     &:hover {
       color: var(--pallette-black);

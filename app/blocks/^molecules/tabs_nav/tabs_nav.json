@@ -1,20 +1,20 @@
 {
   "tabs_nav": {
     "items": [{
-      "attrs": "data-color='#483140' aria-selected='true' aria-controls='tab-content-1'",
+      "attrs": "data-color='#483140' aria-selected='true' aria-controls='tab-content-1' role='tab'",
       "id": "tab_1",
       "class": "tabs-nav__item--active",
       "text": {
         "text": "Website"
       }
     }, {
-      "attrs": "data-color='#353458' aria-selected='false' aria-controls='tab-content-2'",
+      "attrs": "data-color='#353458' aria-selected='false' aria-controls='tab-content-2' role='tab'",
       "id": "tab_2",
       "text": {
         "text": "Custom software"
       }
     }, {
-      "attrs": "data-color='#1E4364' aria-selected='false' aria-controls='tab-content-3'",
+      "attrs": "data-color='#1E4364' aria-selected='false' aria-controls='tab-content-3' role='tab'",
       "id": "tab_3",
       "text": {
         "text": "App dev"

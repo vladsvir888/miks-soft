@@ -22,7 +22,7 @@
             "text": "Services"
           }
         }, {
-          "current": true,
+          "attrs": "aria-current='page'",
           "href": "#",
           "text": {
             "text": "Portfolio"
@@ -45,20 +45,20 @@
     },
     "tabs_nav": {
       "items": [{
-        "attrs": "aria-selected='true' aria-controls='tab-content-1'",
+        "attrs": "aria-selected='true' aria-controls='tab-content-1' role='tab'",
         "id": "tab_1",
         "class": "tabs-nav__item--active",
         "text": {
           "text": "Website"
         }
       }, {
-        "attrs": "aria-selected='false' aria-controls='tab-content-2'",
+        "attrs": "aria-selected='false' aria-controls='tab-content-2' role='tab'",
         "id": "tab_2",
         "text": {
           "text": "Custom software"
         }
       }, {
-        "attrs": "aria-selected='false' aria-controls='tab-content-3'",
+        "attrs": "aria-selected='false' aria-controls='tab-content-3' role='tab'",
         "id": "tab_3",
         "text": {
           "text": "App dev"

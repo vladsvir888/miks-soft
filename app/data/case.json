@@ -22,7 +22,7 @@
             "text": "Services"
           }
         }, {
-          "current": true,
+          "attrs": "aria-current='page'",
           "href": "#",
           "text": {
             "text": "Portfolio"

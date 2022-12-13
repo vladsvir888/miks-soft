@@ -17,7 +17,7 @@
             "text": "Main page"
           }
         }, {
-          "current": true,
+          "attrs": "aria-current='page'",
           "href": "#",
           "text": {
             "text": "Services"

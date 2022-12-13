@@ -1,7 +1,7 @@
 <nav class="tabs-nav" aria-label="Tabs">
   <ul class="tabs-nav__list" role="tablist">
     {% for item in tabs_nav.items %}
-      <li class="tabs-nav__item {{ item.class }}" role="tab">
+      <li class="tabs-nav__item {{ item.class }}">
         {% view "@button" with {
           button: item|default({})|merge({
             class: "tabs-nav__btn js-tabs-btn"
