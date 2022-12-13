@@ -142,13 +142,17 @@ body {
     }
   }
 
-  // &__section {
-  //   padding-top: 18.8rem;
+  &--services {
+    padding-top: 1.3rem;
 
-  //   @include media('1024', max) {
-  //     padding-top: 15.9rem;
-  //   }
-  // }
+    @include media('500', max) {
+      padding-top: 0;
+
+      .hero-inner__text {
+        margin-bottom: 0;
+      }
+    }
+  }
 
   &--error {
     overflow: hidden;

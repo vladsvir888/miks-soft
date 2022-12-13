@@ -1,9 +1,9 @@
 .hero {
   position: relative;
-  padding-bottom: 28.6rem;
+  padding-bottom: 26.6rem;
 
   @include media('1024', max) {
-    padding-bottom: 6.9rem;
+    padding-bottom: 5.9rem;
     overflow: hidden;
   }
 

@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  padding-top: 28rem;
+  padding-top: 18rem;
   overflow: hidden;
   color: var(--pallette-white);
   font-weight: var(--fw400);
@@ -10,6 +10,10 @@
 
   @include media('1024', max) {
     padding-top: 18rem;
+  }
+
+  @include media('500', max) {
+    padding-top: 9rem;
   }
 
   &__video {

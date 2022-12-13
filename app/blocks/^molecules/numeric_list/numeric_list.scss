@@ -2,6 +2,10 @@
   margin-bottom: 6.8rem;
   counter-reset: numeric-list;
 
+  @include media('500', max) {
+    margin-bottom: 2rem;
+  }
+
   &__item {
     position: relative;
     display: grid;
@@ -63,7 +67,7 @@
   }
 
   &__text {
-    max-width: 55.4rem;
+    max-width: 58.4rem;
     font-size: 1.8rem;
     line-height: var(--lh140);
     letter-spacing: var(--ltsm02);
@@ -80,7 +84,7 @@
 }
 
 .numeric-list-wrap {
-  padding-bottom: 15.5rem;
+  padding-bottom: 14.5rem;
 
   @include media('1024', max) {
     padding-bottom: 6rem;

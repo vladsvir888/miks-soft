@@ -8,6 +8,10 @@
     margin-bottom: 6rem;
   }
 
+  @include media('500', max) {
+    margin-bottom: 4rem;
+  }
+
   &__header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -22,7 +26,7 @@
 
   &__title {
     @include media('1025', min) {
-        grid-column: span 2;
+      grid-column: span 2;
     }
 
     @include media('767', max) {
@@ -37,7 +41,7 @@
     color: var(--pallette-gray-suit);
 
     @include media('1025', min) {
-        grid-column: 4 / 7;
+      grid-column: 4 / 7;
     }
 
     @include media('767', max) {

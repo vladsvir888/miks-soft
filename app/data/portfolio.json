@@ -37,7 +37,7 @@
       }
     },
     "hero_inner": {
-      "text": "Our team has completed more than",
+      "text": "Our team has completed more&nbsp;than",
       "title": {
         "text": "500 projects in 10 years"
       },

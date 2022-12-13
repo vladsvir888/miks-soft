@@ -6,6 +6,10 @@
     padding-top: 2rem;
   }
 
+  @include media('767', max) {
+    padding-bottom: 7rem;
+  }
+
   &__inner {
     --offset-y: 4rem;
 

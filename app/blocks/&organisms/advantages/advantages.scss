@@ -10,6 +10,10 @@
   &__title {
     margin-bottom: 6.8rem;
     text-align: var(--tac);
+
+    @include media('500', max) {
+      margin-bottom: 3.6rem;
+    }
   }
 
   &__grid {
@@ -29,7 +33,7 @@
 
   &__item {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 18rem;
     gap: 1rem;
     grid-column: span 2;
     align-items: flex-start;
@@ -49,12 +53,22 @@
       padding-left: 1rem;
     }
 
+    @include media('500', max) {
+      grid-template-columns: 1fr 15rem;
+      padding-left: 0;
+      padding-top: 2.5rem;
+    }
+
     &--button {
       --offset-y: 2.4rem;
 
       @include flex-center-column;
 
       text-align: var(--tac);
+
+      @include media('500', max) {
+        padding-top: 4rem;
+      }
     }
 
     &:hover {
@@ -85,7 +99,7 @@
   }
 
   &__content {
-    --offset-y: 3.2rem;
+    --offset-y: 2.2rem;
   }
 
   &__subtitle {
@@ -108,14 +122,15 @@
       font-weight: var(--fw400);
       font-size: 5.2rem;
       font-family: var(--font2);
+      line-height: var(--lh140);
 
       @include media('1024', max) {
         font-size: 4rem;
       }
-    }
 
-    span {
-      margin-top: -1.2rem;
+      @include media('500', max) {
+        line-height: var(--lh100);
+      }
     }
   }
 
@@ -138,11 +153,9 @@
     position: relative;
     display: block;
     overflow: hidden;
-    width: 20rem;
-    height: 20.4rem;
+    height: 18rem;
 
     @include media('500', max) {
-      width: 14.7rem;
       height: 15rem;
     }
   }

@@ -1,11 +1,15 @@
 .unique {
   $this: &;
 
-  padding: 11.2rem 0 8.8rem;
+  padding: 10.2rem 0 8.8rem;
   background: var(--tabs-gradient);
 
   @include media('767', max) {
     padding: 4rem 0;
+  }
+
+  @include media('500', max) {
+    padding: 2.6rem 0 4rem;
   }
 
   &__title {
@@ -38,6 +42,10 @@
 
         grid-column: 5 / 7;
         margin-bottom: 5.6rem;
+
+        @include media('500', max) {
+          --offset-y: 2rem;
+        }
       }
 
       &--slider {
@@ -70,6 +78,7 @@
   }
 
   &__text-block {
+    --offset-y: 2rem;
     max-width: 65.5rem;
     margin-bottom: 6rem;
 
@@ -89,10 +98,14 @@
 
   &__subtitle {
     color: var(--pallette-white);
+
+    @include media('500', max) {
+      max-width: 30rem;
+    }
   }
 
   &__slider {
-    height: 48rem;
+    height: 45rem;
 
     @include media('1024', max) {
       height: 40rem;
@@ -103,7 +116,7 @@
     }
 
     @include media('500', max) {
-      height: 30rem;
+      height: 26rem;
     }
   }
 
