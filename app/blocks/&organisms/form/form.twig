@@ -14,5 +14,13 @@
         }
       })
     } %}
+
+    {% view "@notification" with {
+      notification: {
+        class: "form__notification"
+      }
+    } %}
   </div>
+
+  {% view "@loader" %}
 </form>

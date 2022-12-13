@@ -1,10 +1,26 @@
 .form {
+  $this: &;
+  position: relative;
+
+  &--sending {
+    #{$this}__content {
+      opacity: 0.2;
+      pointer-events: none;
+    }
+
+    .loader {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3.4rem 2rem;
     max-width: 92.6rem;
     margin: 0 auto;
+    transition: opacity var(--transition);
 
     @include media('767', max) {
       gap: 3.6rem 2rem;
@@ -57,5 +73,17 @@
 
   &__link {
     color: var(--pallette-white);
+  }
+
+  &__notification {
+    grid-column: 2 / 4;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition);
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }

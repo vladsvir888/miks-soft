@@ -4,7 +4,7 @@ import sal from 'sal.js';
 import Header from './header';
 import SeveralExamplesSlider from './severalExamplesSlider';
 import Tabs from './tabs';
-import Validation from './validation';
+import Form from './form';
 import BurgerMenu from './burgerMenu';
 import CaseSlider from './caseSlider';
 
@@ -16,7 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
   SeveralExamplesSlider();
   new Tabs('.unique');
   new Tabs('.portfolio');
-  Validation();
+
+  document.querySelectorAll('.js-form').forEach(form => {
+    new Form(form);
+  });
+
   BurgerMenu();
   CaseSlider();
 });
