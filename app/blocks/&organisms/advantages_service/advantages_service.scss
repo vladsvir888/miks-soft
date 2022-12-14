@@ -1,9 +1,14 @@
 .advantages-service {
   overflow: hidden;
   padding-bottom: 19.8rem;
+  padding-top: 13.5rem;
 
   @include media('1024', max) {
     padding-bottom: 5.6rem;
+  }
+
+  @include media('767', max) {
+    padding-top: 0;
   }
 
   &__inner {
@@ -113,25 +118,25 @@
   }
 
   &__video {
-    width: 75rem;
-    height: 65rem;
+    width: 83rem;
+    height: 83rem;
     position: absolute;
-    right: -40rem;
-    top: 0;
+    right: -56rem;
+    top: -10rem;
     z-index: -1;
 
-    @include media('500', max) {
-      right: -10rem;
-      top: 5rem;
-      width: 32rem;
-      height: 39.2rem;
+    @include media('767', max) {
+      right: -20rem;
+      top: 7rem;
+      width: 36rem;
+      height: 40rem;
     }
 
     &::before {
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 100%;
+      width: 60%;
       height: 80rem;
       background: linear-gradient(62deg, var(--pallette-black) 23.21%, rgba(29, 25, 35, 0) 73.87%);
       z-index: 1;
