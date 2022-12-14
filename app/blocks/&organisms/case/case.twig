@@ -136,7 +136,7 @@
         <div class="functionality-design__inner">
           {% for item in case.functionality_design.items %}
             <div class="functionality-design__subinner">
-              <div class="functionality-design__item">
+              <div class="functionality-design__item functionality-design__item--text">
                 {% if item.content.icons_list.top %}
                   <ul class="functionality-design__icons-list functionality-design__icons-list--top">
                     {% for icon in item.content.icons_list.top %}
@@ -171,7 +171,7 @@
                   </ul>
                 {% endif %}
               </div>
-              <div class="functionality-design__item" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
+              <div class="functionality-design__item functionality-design__item--graphic" data-sal='slide-up' data-sal-duration='800' data-sal-delay='200'>
                 {% if item.image %}
                   {% view "@image" with {
                     image: item.image|default({})|merge({
@@ -187,7 +187,9 @@
                         {% for item in item.slider.items %}
                           <div class="swiper-slide">
                             {% view "@image" with {
-                              image: item
+                              image: item|merge({
+                                lazy: false
+                              })
                             } %}
                           </div>
                         {% endfor %}

@@ -76,23 +76,23 @@
         opacity: 1;
 
         &--1 {
-          transform: rotate(-15deg) /* scale(1.09) */;
+          transform: rotate(-15deg) /* scale(1.09) */ scale(1.08);
         }
 
         &--2 {
-          transform: rotate(-10.04deg) /* scale(1.03) */;
+          transform: rotate(-10.04deg) /* scale(1.03) */ scale(1.07);
         }
 
         &--3 {
-          transform: rotate(-14.86deg) /* scale(1.14) */;
+          transform: rotate(-14.86deg) /* scale(1.14) */ scale(1.07);
         }
 
         &--4 {
-          transform: rotate(-11.75deg) /* scale(1.05) */;
+          transform: rotate(-11.75deg) /* scale(1.05) */ scale(1.09);
         }
 
         &--5 {
-          transform: rotate(-12.01deg) /* cale(1.12) */;
+          transform: rotate(-12.01deg) /* scale(1.12) */ scale(1.12);
         }
       }
     }

@@ -94,6 +94,21 @@
       }, {
         "text": "A single-page website or a large online store with a service - it doesn't matter! <br> We will select the best technological solutions for the implementation of the most ambitious ideas."
       }],
+      "advantages_block": {
+        "title": {
+          "text": "One of the important advantages"
+        },
+        "text": "When working with us, you get exclusive ownership of the product. We will not repeat your program code in other projects. For us, each project is unique, and you are its owner."
+      },
+      "perfomance_block": {
+        "title": {
+          "text": "To ensure the best performance, we&nbsp;choose:"
+        },
+        "image": {
+          "name": "unique_tech/unique_tech_all.png",
+          "alt": "To ensure the best performance, we choose"
+        }
+      },
       "several_examples": {
         "title": {
           "text": "Several examples"
@@ -162,6 +177,11 @@
         },
         "text": "When working with us, you get exclusive ownership of the product. We will not repeat your program code in other projects. For us, each project is unique, and you are its owner."
       },
+      "description": [{
+        "text": "A fast, adaptive website for all types of devices with intuitive navigation, designed in your design concept and with a properly structured content structure is not a dream, but a modern necessity for a business wishing to have a high online conversion."
+      }, {
+        "text": "A single-page website or a large online store with a service - it doesn't matter! <br> We will select the best technological solutions for the implementation of the most ambitious&nbsp;ideas."
+      }],
       "perfomance_block": {
         "title": {
           "text": "To ensure the best performance, we&nbsp;choose:"

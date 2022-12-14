@@ -37,6 +37,7 @@
       class="img {% if image.class %}{{ image.class }}{% endif %}"
       src="{{ path ~ image.name }}"
       {% if image.alt %}alt="{{ image.alt }}"{% endif %}
+      {% if image.attrs %}{{ image.attrs }}{% endif %}
     >
   </picture>
 {% endif %}

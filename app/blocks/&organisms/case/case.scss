@@ -225,6 +225,12 @@
   &__item {
     display: flex;
     flex-direction: column;
+
+    @include media('500', max) {
+      &--graphic {
+        grid-row: 1 / 2;
+      }
+    }
   }
 
   &__icons-list {
@@ -332,7 +338,7 @@
       bottom: -3rem;
 
       @include media('767', max) {
-        bottom: -2rem;
+        bottom: -1.6rem;
       }
     }
 

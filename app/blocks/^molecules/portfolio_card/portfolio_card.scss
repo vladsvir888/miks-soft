@@ -82,6 +82,7 @@
 
     @include media('1024', max) {
       grid-row: 1 / 2;
+      margin: 0 auto;
     }
 
     // img {
