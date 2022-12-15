@@ -1,7 +1,7 @@
 {
   "hero": {
     "video": {
-      "path": "./assets/hero_video.mp4"
+      "path": "./assets/main_screen_video.mp4"
     },
     "title": {
       "text": "We create the&nbsp;effective <b>digital&nbsp;solutions for business</b>"

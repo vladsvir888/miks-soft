@@ -20,7 +20,6 @@ class Tabs {
 
     this.tabs = [...this.wrap.querySelectorAll(SELECTORS.BUTTON)];
     this.firstTab = this.tabs[0];
-    // this.lastTab = this.tabs.at(-1);
     this.lastTab = this.tabs[this.tabs.length - 1];
 
     this.tabs.forEach(tab => {
