@@ -44,5 +44,64 @@
         "path": "./assets/services_first_screen_video.mp4"
       }
     }
+  },
+  "callback_aside": {
+    "title": {
+      "level": 2,
+      "text": "Lets discuss your project"
+    },
+    "subtitle": "Fill out the form below and we`ll get back to you shortly.",
+    "form": {
+      "items": [{
+        "class": "form__item form__item--mb",
+        "id": "input_name_id",
+        "fake_placeholder": "Name<span>*</span>",
+        "placeholder": "Name",
+        "name": "name",
+        "attrs": "required data-pristine-required-message='Field incorrect'"
+      }, {
+        "class": "form__item form__item--mb",
+        "id": "input_company_id",
+        "fake_placeholder": "Company<span>*</span>",
+        "placeholder": "Company",
+        "name": "company",
+        "attrs": "required data-pristine-required-message='Field incorrect'"
+      }, {
+        "class": "form__item form__item--mb",
+        "id": "input_email_id",
+        "type": "email",
+        "fake_placeholder": "Email<span>*</span>",
+        "placeholder": "Email",
+        "name": "email",
+        "attrs": "required data-pristine-required-message='Field incorrect'"
+      }, {
+        "class": "form__item form__item--mb",
+        "id": "input_phone_id",
+        "type": "number",
+        "fake_placeholder": "Phone number<span>*</span>",
+        "placeholder": "Phone number",
+        "name": "phone",
+        "attrs": "required data-pristine-required-message='Field incorrect'"
+      }, {
+        "class": "form__item form__item--5",
+        "id": "input_message_id",
+        "fake_placeholder": "Few words about your project",
+        "placeholder": "Few words about your project",
+        "name": "message"
+      }, {
+        "checkbox": true,
+        "class": "form__item--6",
+        "id": "input_checkbox_id",
+        "type": "checkbox",
+        "name": "is_checked",
+        "attrs": "required data-pristine-required-message='Field required'"
+      }],
+      "button": {
+        "submit": true,
+        "text": {
+          "text": "Send request"
+        }
+      }
+    }
   }
 }

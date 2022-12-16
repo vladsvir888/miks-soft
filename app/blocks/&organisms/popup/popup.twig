@@ -1,0 +1,30 @@
+<div class="callback-aside popup__inner">
+  {% if callback_aside.title %}
+    {% view "@title" with {
+      title: callback_aside.title|merge({
+        class: "title--h2 callback-aside__title"
+      })
+    } %}
+  {% endif %}
+
+  {% if callback_aside.subtitle %}
+    <p class="callback-aside__text">
+      {{ callback_aside.subtitle }}
+    </p>
+  {% endif %}
+
+  {% if callback_aside.form %}
+    {% view "&form" with {
+      form: callback_aside.form
+    } %}
+  {% endif %}
+
+  <button class="popup__close">
+    {% view "@icon" with {
+      icon: {
+        class: "popup__close-icon",
+        name: "sprite-mono.svg#close"
+      }
+    } %}
+  </button>
+</div>

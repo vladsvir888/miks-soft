@@ -21,7 +21,7 @@
     {% if numeric_list.button %}
       {% view "@button" with {
         button: numeric_list.button|default({})|merge({
-          class: "btn--secondary numeric-list-wrap__btn",
+          class: "btn--secondary numeric-list-wrap__btn js-modal-btn",
           icon: {
             name: "sprite-mono.svg#btn-figure"
           }

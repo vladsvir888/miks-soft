@@ -1,0 +1,60 @@
+.popup {
+  .swal2-html-container {
+    margin: 0;
+  }
+
+  .swal2-popup {
+    padding: 0;
+    color: var(--pallette-white);
+    background: transparent;
+  }
+
+  &.swal2-container.swal2-backdrop-show {
+    background: transparent;
+  }
+
+  &.swal2-container.swal2-backdrop-show .popup__inner {
+    display: block;
+  }
+
+  &__inner {
+    position: relative;
+    display: none;
+    padding: 10.2rem 12rem 5rem;
+    background: rgba(28, 26, 34, 0.5);
+    border: 0.1rem solid var(--pallette-onyx);
+    backdrop-filter: var(--bd-filter-blur3);
+    border-radius: 1rem;
+
+    @include media('1024', max) {
+      padding: 2.5rem 1rem 1rem;
+
+      .callback-aside__text {
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  &__close {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+
+    @include media('767', max) {
+      top: 1rem;
+      right: 1rem;
+    }
+
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+      fill: var(--pallette-gray-suit);
+    }
+  }
+}

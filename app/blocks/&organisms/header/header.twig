@@ -26,7 +26,7 @@
 
         {% view "@button" with {
           button: header.discuss_link|merge({
-            class: "btn--primary header__discuss-link",
+            class: "btn--primary header__discuss-link js-modal-btn",
             icon: {
               name: "sprite-mono.svg#btn-figure"
             }
@@ -35,8 +35,8 @@
       </div>
 
       {% view "@burger" %}
-
-      {% view "^burger_menu" %}
     </div>
+
+    {% view "^burger_menu" %}
   </div>
 </header>

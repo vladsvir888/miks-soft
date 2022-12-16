@@ -42,7 +42,7 @@
             {% if item.button %}
               {% view "@button" with {
                 button: item.button|default({})|merge({
-                  class: "btn--secondary advantages__btn",
+                  class: "btn--secondary advantages__btn js-modal-btn",
                   icon: {
                     name: "sprite-mono.svg#btn-figure"
                   }

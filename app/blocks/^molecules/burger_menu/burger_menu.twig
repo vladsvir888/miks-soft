@@ -3,7 +3,7 @@
     {% if burger_menu.link %}
       {% view "@button" with {
         button: burger_menu.link|merge({
-          class: "btn--primary burger-menu__btn",
+          class: "btn--primary burger-menu__btn js-modal-btn",
           icon: {
             name: "sprite-mono.svg#btn-figure"
           }
@@ -37,7 +37,7 @@
           <li class="burger-menu__help-item">
             {% view "@button" with {
               button: item|merge({
-                class: "burger-menu__help-link"
+                class: "burger-menu__help-link js-modal-btn"
               })
             } %}
           </li>

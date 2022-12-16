@@ -7,6 +7,7 @@ import Tabs from './tabs';
 import Form from './form';
 import BurgerMenu from './burgerMenu';
 import CaseSlider from './caseSlider';
+import Modal from './modal';
 
 document.addEventListener('DOMContentLoaded', () => {
   new LazyLoad();
@@ -23,4 +24,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   BurgerMenu();
   CaseSlider();
+  Modal();
 });

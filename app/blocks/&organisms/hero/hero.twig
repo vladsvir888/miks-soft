@@ -2,7 +2,7 @@
   <div class="container hero__container">
     {% if hero.video %}
       <div class="hero__video">
-        <video src="{{ hero.video.path }}" preload="metadata" autoplay="autoplay" loop muted playsinline></video>
+        <video src="{{ hero.video.path }}" autoplay="autoplay" loop muted playsinline></video>
       </div>
     {% endif %}
 
@@ -32,7 +32,7 @@
     {% if hero.button %}
       {% view "@button" with {
         button: hero.button|default({})|merge({
-          class: "btn--secondary hero__btn",
+          class: "btn--secondary hero__btn js-modal-btn",
           icon: {
             name: "sprite-mono.svg#btn-figure"
           }
