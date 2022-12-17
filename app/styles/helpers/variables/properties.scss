@@ -64,8 +64,9 @@
   --bd-filter-blur2: saturate(180%) blur(2rem);
   --bd-filter-blur3: blur(2rem);
 
-  // tabs gradient (todo: заменить 16-е значение цвета на css переменную)
-  --tabs-gradient: linear-gradient(223.91deg, #483140 -1.11%, rgba(204, 86, 35, 0) 42.01%);
+  // tabs gradient
+  --tabs-gradient-top: linear-gradient(223.91deg, #483140 -1.11%, rgba(204, 86, 35, 0) 42.01%);
+  --tabs-gradient-bottom: linear-gradient(15.6deg, #483140 -295.49%, rgba(204, 116, 35, 0) 46.47%);
 
   // ta
   --tac: center;

@@ -3,7 +3,7 @@
 
   position: relative;
   padding: 10.2rem 0 8.8rem;
-  background: var(--tabs-gradient);
+  background: var(--tabs-gradient-top);
 
   @include media('767', max) {
     padding: 4rem 0;

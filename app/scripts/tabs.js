@@ -1,7 +1,8 @@
 const SELECTORS = {
   BUTTON: '.js-tabs-btn',
   CONTENT: '.js-tabs-content',
-  NAV_ITEM: '.tabs-nav__item'
+  NAV_ITEM: '.tabs-nav__item',
+  BOTTOM_GRADIENT: '.bottom-gradient'
 };
 
 const CLASSES = {
@@ -17,6 +18,8 @@ class Tabs {
     this.wrap = document.querySelector(selector);
 
     if (!this.wrap) return;
+
+    this.bottomGradient = this.wrap.querySelector(SELECTORS.BOTTOM_GRADIENT);
 
     this.tabs = [...this.wrap.querySelectorAll(SELECTORS.BUTTON)];
     this.firstTab = this.tabs[0];
@@ -36,7 +39,8 @@ class Tabs {
     const { color } = tab.dataset;
 
     if (color) {
-      this.wrap.style.setProperty('--tabs-gradient', `linear-gradient(223.91deg, ${color} -1.11%, rgba(204, 86, 35, 0) 42.01%)`);
+      this.wrap.style.setProperty('--tabs-gradient-top', `linear-gradient(223.91deg, ${color} -1.11%, rgba(204, 86, 35, 0) 42.01%)`);
+      this.bottomGradient.style.setProperty('--tabs-gradient-bottom', `linear-gradient(15.6deg, ${color} -295.49%, rgba(204, 116, 35, 0) 46.47%)`);
     }
 
     const tabContent = this.wrap.querySelector(`[aria-labelledby="${id}"]`);
