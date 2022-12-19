@@ -22,8 +22,8 @@ const Modal = () => {
   });
 
   modalClose.addEventListener('click', () => {
-    console.log(1);
     Swal.close();
+    document.body.removeAttribute('style');
   });
 };
 

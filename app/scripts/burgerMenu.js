@@ -1,4 +1,4 @@
-import * as focusTrap from 'focus-trap';
+// import * as focusTrap from 'focus-trap';
 
 const BurgerMenu = () => {
   const burger = document.querySelector('.burger');
@@ -7,7 +7,7 @@ const BurgerMenu = () => {
 
   if (!burger) return;
 
-  const trap = focusTrap.createFocusTrap('.header__inner');
+  // const trap = focusTrap.createFocusTrap('.header__container');
 
   burger.addEventListener('click', () => {
     if (!header.classList.contains('header--show-burger-menu')) {
@@ -15,13 +15,13 @@ const BurgerMenu = () => {
       burgerBtn.setAttribute('aria-expanded', true);
       document.body.style.overflowY = 'hidden';
 
-      trap.activate();
+      // trap.activate();
     } else {
       header.classList.remove('header--show-burger-menu');
       burgerBtn.setAttribute('aria-expanded', false);
       document.body.removeAttribute('style');
 
-      trap.deactivate();
+      // trap.deactivate();
     }
   });
 
