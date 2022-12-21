@@ -11,9 +11,9 @@
       }, {
         "image": {
           "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='100'",
-          "src": "./assets/images/brands/myllyn_paras.svg",
-          "src_mob": "./assets/images/brands/myllyn_paras_mob.svg",
-          "text": "Myllyn Paras"
+          "src": "./assets/images/brands/shell.svg",
+          "src_mob": "./assets/images/brands/shell_mob.svg",
+          "text": "Shell"
         }
       }, {
         "image": {
@@ -25,9 +25,9 @@
       }, {
         "image": {
           "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='300'",
-          "src": "./assets/images/brands/melon.svg",
-          "src_mob": "./assets/images/brands/melon_mob.svg",
-          "text": "Melon Fashion Group"
+          "src": "./assets/images/brands/sony.svg",
+          "src_mob": "./assets/images/brands/sony_mob.svg",
+          "text": "Sony"
         }
       }, {
         "image": {
@@ -46,23 +46,23 @@
       }, {
         "image": {
           "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='600'",
-          "src": "./assets/images/brands/gambling_compliance.svg",
-          "src_mob": "./assets/images/brands/gambling_compliance_mob.svg",
-          "text": "GamblingCompliance"
+          "src": "./assets/images/brands/burger_king.svg",
+          "src_mob": "./assets/images/brands/burger_king_mob.svg",
+          "text": "Burger King"
         }
       }, {
         "image": {
           "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='700'",
-          "src": "./assets/images/brands/shell.svg",
-          "src_mob": "./assets/images/brands/shell_mob.svg",
-          "text": "Shell"
+          "src": "./assets/images/brands/spar.svg",
+          "src_mob": "./assets/images/brands/spar_mob.svg",
+          "text": "Spar"
         }
       }, {
         "image": {
           "attrs": "data-sal='zoom-in' data-sal-duration='800' data-sal-delay='800'",
-          "src": "./assets/images/brands/bloomsbury.svg",
-          "src_mob": "./assets/images/brands/bloomsbury_mob.svg",
-          "text": "Bloomsbury"
+          "src": "./assets/images/brands/gazprom.svg",
+          "src_mob": "./assets/images/brands/gazprom_mob.svg",
+          "text": "Gazprom"
         }
       }]
     }

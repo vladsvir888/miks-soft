@@ -1,5 +1,6 @@
 import LazyLoad from 'vanilla-lazyload';
 import sal from 'sal.js';
+import * as focusTrap from 'focus-trap';
 
 import Header from './header';
 import SeveralExamplesSlider from './severalExamplesSlider';
@@ -10,6 +11,11 @@ import CaseSlider from './caseSlider';
 import Modal from './modal';
 
 document.addEventListener('DOMContentLoaded', () => {
+  window.my_trap = {
+    'header': focusTrap.createFocusTrap('.header__container'),
+    'popup': focusTrap.createFocusTrap('.popup__inner'),
+  };
+
   new LazyLoad();
   sal();
 

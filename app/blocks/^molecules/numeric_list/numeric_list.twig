@@ -2,7 +2,7 @@
   <div class="container">
     <ul class="numeric-list">
       {% for item in numeric_list.items %}
-        <li class="numeric-list__item" data-sal="slide-up" data-sal-duration="800">
+        <li class="numeric-list__item" {{ item.attrs }}>
           {% if item.title %}
             <h2 class="numeric-list__title">
               {{ item.title }}

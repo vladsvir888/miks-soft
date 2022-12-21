@@ -2,22 +2,28 @@
   "numeric_list": {
     "items": [{
       "title": "Development of websites and services",
-      "text": "We create spectacular and functional marketing tool. Develop from scratch or develop existing projects"
+      "text": "We create spectacular and functional marketing tool. Develop from scratch or develop existing projects",
+      "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='0.2'"
     }, {
       "title": "Mobile application development",
-      "text": "We will conduct analytics, highlight the MVP and bring the concept to a full-fledged product"
+      "text": "We will conduct analytics, highlight the MVP and bring the concept to a full-fledged product",
+      "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='0.4'"
     }, {
       "title": "Software development",
-      "text": "We will create a system of any level of complexity for you"
+      "text": "We will create a system of any level of complexity for you",
+      "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='0.6'"
     }, {
       "title": "Technical support",
-      "text": "Let's figure out the finished project and improve it. <br> We will conduct a code review, update modules and libraries, fix the UX/UI"
+      "text": "Let's figure out the finished project and improve it. <br> We will conduct a code review, update modules and libraries, fix the UX/UI",
+      "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='0.8'"
     }, {
       "title": "Design",
-      "text": "We will develop a unique UX/UI design. Let's make the interaction with your product intuitive and the design memorable to the audience"
+      "text": "We will develop a unique UX/UI design. Let's make the interaction with your product intuitive and the design memorable to the audience",
+      "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='1'"
     }, {
       "title": "Outstaff",
-      "text": "We will form the necessary team of middle or senior level specialists. <br > Quickly integrate into your project, according to the Time and Materials model"
+      "text": "We will form the necessary team of middle or senior level specialists. <br > Quickly integrate into your project, according to the Time and Materials model",
+      "attrs": "data-sal='slide-up' data-sal-duration='800' data-sal-delay='1.2'"
     }],
     "button": {
       "text": {
