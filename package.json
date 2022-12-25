@@ -63,7 +63,7 @@
     "focus-trap": "^7.2.0",
     "pristinejs": "^0.1.9",
     "sal.js": "^0.8.5",
-    "sweetalert2": "^11.6.15",
+    "sweetalert2": "^11.4.8",
     "swiper": "^8.3.0",
     "vanilla-lazyload": "^17.8.2"
   }
