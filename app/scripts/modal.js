@@ -13,9 +13,9 @@ const Modal = () => {
       Swal.fire({
         showConfirmButton: false,
         html: modalContent,
-        width: '140rem',
+        width: '141rem',
         showClass: {
-          popup: 'animate__animated animate__fadeIn'
+          popup: 'animate__animated animate__slideInDown'
         },
         customClass: {
           container: 'popup'
