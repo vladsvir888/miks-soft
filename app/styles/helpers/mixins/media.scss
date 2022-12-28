@@ -1,5 +1,6 @@
 $breakpoints: (
   "500": 500px,
+  "576": 576px,
   "767": 767px,
   "768": 768px,
   "1024": 1024px,
@@ -25,7 +26,7 @@ $breakpoints: (
 /*
 
   .block {
-    @include media('500', max);
+   @include media('576', max);
   }
 
 */

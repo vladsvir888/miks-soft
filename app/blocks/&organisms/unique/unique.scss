@@ -9,7 +9,7 @@
     padding: 4rem 0;
   }
 
-  @include media('500', max) {
+ @include media('576', max) {
     padding: 2.6rem 0 4rem;
   }
 
@@ -44,7 +44,7 @@
         grid-column: 5 / 7;
         margin-bottom: 5.6rem;
 
-        @include media('500', max) {
+       @include media('576', max) {
           --offset-y: 2rem;
         }
       }
@@ -100,7 +100,7 @@
   &__subtitle {
     color: var(--pallette-white);
 
-    @include media('500', max) {
+   @include media('576', max) {
       max-width: 30rem;
     }
   }
@@ -116,7 +116,7 @@
       height: 35rem;
     }
 
-    @include media('500', max) {
+   @include media('576', max) {
       height: 26rem;
     }
   }
@@ -126,7 +126,7 @@
   //   height: 19.8rem;
   //   object-fit: contain;
 
-  //   @include media('500', max) {
+  //  @include media('576', max) {
   //     width: auto;
   //     height: auto;
   //   }

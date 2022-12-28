@@ -1,11 +1,11 @@
 <div class="hero main__section">
-  <div class="container hero__container">
-    {% if hero.video %}
-      <div class="hero__video">
-        <video src="{{ hero.video.path }}" autoplay="autoplay" loop muted playsinline pip="false"></video>
-      </div>
-    {% endif %}
+  {% if hero.video %}
+    <div class="hero__video">
+      <video src="{{ hero.video.path }}" autoplay="autoplay" loop muted playsinline pip="false"></video>
+    </div>
+  {% endif %}
 
+  <div class="container hero__container">
     {% if hero.title %}
       {% view "@title" with {
         title: hero.title|default({})|merge({

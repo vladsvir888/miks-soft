@@ -14,6 +14,9 @@ const Modal = () => {
         showConfirmButton: false,
         html: modalContent,
         width: '140rem',
+        showClass: {
+          popup: 'animate__animated animate__fadeIn'
+        },
         customClass: {
           container: 'popup'
         }

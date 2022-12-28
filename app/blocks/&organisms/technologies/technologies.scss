@@ -14,7 +14,7 @@
     text-align: var(--tac);
     font-family: var(--font);
 
-    @include media('500', max) {
+   @include media('576', max) {
       font-size: 2rem;
       margin-bottom: 2rem;
     }

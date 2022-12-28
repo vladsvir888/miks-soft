@@ -2,9 +2,12 @@
   $this: &;
 
   @include flex-center;
-  position: sticky;
-  top: 8rem;
-  z-index: 10;
+
+ @include media('576', max) {
+    position: sticky;
+    top: 8rem;
+    z-index: 10;
+  }
 
   &__list {
     display: flex;

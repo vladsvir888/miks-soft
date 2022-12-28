@@ -41,7 +41,7 @@
       min-height: 10rem;
     }
 
-    @include media('500', max) {
+   @include media('576', max) {
       padding: 0.2rem;
     }
   }

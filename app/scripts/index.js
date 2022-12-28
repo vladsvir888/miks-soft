@@ -31,4 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
   BurgerMenu();
   CaseSlider();
   Modal();
+
+  if (document.querySelector('video')) {
+    document.querySelectorAll('.video').forEach(video => {
+      video.play();
+    });
+  }
 });

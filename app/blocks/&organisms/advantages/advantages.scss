@@ -11,7 +11,7 @@
     margin-bottom: 6.8rem;
     text-align: var(--tac);
 
-    @include media('500', max) {
+   @include media('576', max) {
       margin-bottom: 3.6rem;
     }
   }
@@ -44,7 +44,7 @@
     background-color: var(--pallette-black);
 
     &:first-child {
-      @include media('500', max) {
+     @include media('576', max) {
         border-top: 0.1rem solid var(--pallette-onyx);
       }
     }
@@ -53,9 +53,10 @@
       padding-left: 1rem;
     }
 
-    @include media('500', max) {
+   @include media('576', max) {
       grid-template-columns: 1fr 15rem;
       padding-left: 0;
+      padding-right: 0;
       padding-top: 2.5rem;
     }
 
@@ -66,7 +67,7 @@
 
       text-align: var(--tac);
 
-      @include media('500', max) {
+     @include media('576', max) {
         padding-top: 4rem;
       }
     }
@@ -128,7 +129,7 @@
         font-size: 4rem;
       }
 
-      @include media('500', max) {
+     @include media('576', max) {
         line-height: var(--lh100);
       }
     }
@@ -155,7 +156,7 @@
     overflow: hidden;
     height: 18rem;
 
-    @include media('500', max) {
+   @include media('576', max) {
       height: 15rem;
     }
   }
