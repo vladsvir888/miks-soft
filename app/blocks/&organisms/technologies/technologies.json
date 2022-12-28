@@ -53,6 +53,31 @@
         "src": "./assets/images/technologies/symfony.svg",
         "text": "Symfony"
       }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/swift.svg",
+        "text": "Swift"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/obj-c.svg",
+        "text": "Objective-C"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/java.svg",
+        "text": "Java"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/kotlin.svg",
+        "text": "Kotlin"
+      }
+    }, {
+      "image": {
+        "src": "./assets/images/technologies/react-native.svg",
+        "text": "React native"
+      }
     }]
   }
 }

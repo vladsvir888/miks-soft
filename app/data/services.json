@@ -14,7 +14,7 @@
         "items": [{
           "href": "#",
           "text": {
-            "text": "Main page"
+            "text": "Expertise"
           }
         }, {
           "attrs": "aria-current='page'",
@@ -94,7 +94,7 @@
         "id": "input_checkbox_id",
         "type": "checkbox",
         "name": "is_checked",
-        "attrs": "required data-pristine-required-message='Field required'"
+        "attrs": "checked required data-pristine-required-message='Field required'"
       }],
       "button": {
         "submit": true,

@@ -36,6 +36,10 @@
     {% view "&header" with {
       header: portfolio.header
     } %}
+  {% elseif header_type == '404' %}
+    {% view "&header" with {
+      header: error.header
+    } %}
   {% else %}
     {% view "&header" %}
   {% endif %}

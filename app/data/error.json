@@ -3,6 +3,7 @@
   "meta": {
     "description": "404 - Miks Soft"
   },
+  "header_type": "404",
   "error": {
     "type": "404",
     "title": {
@@ -11,6 +12,35 @@
     "text": "Check the link, back to main page or use navigation above",
     "video": {
       "path": "./assets/hero_video.mp4"
+    },
+    "header": {
+      "logo": {
+        "text": "Miks Soft Home",
+        "path": "./assets/images/logo.svg"
+      },
+      "menu": {
+        "items": [{
+          "href": "#",
+          "text": {
+            "text": "Expertise"
+          }
+        }, {
+          "href": "#",
+          "text": {
+            "text": "Services"
+          }
+        }, {
+          "href": "#",
+          "text": {
+            "text": "Portfolio"
+          }
+        }]
+      },
+      "discuss_link": {
+        "text": {
+          "text": "Discuss your project"
+        }
+      }
     }
   },
   "callback_aside": {
