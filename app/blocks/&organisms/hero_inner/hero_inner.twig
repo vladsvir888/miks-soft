@@ -1,4 +1,10 @@
 <div class="hero-inner main__section">
+  {% if hero_inner.video %}
+    <div class="hero-inner__video">
+      <video src="{{ hero_inner.video.path }}" autoplay="autoplay" loop muted playsinline pip="false"></video>
+    </div>
+  {% endif %}
+
   <div class="container">
     <div class="hero-inner__wrap">
       {% if hero_inner.uptitle %}
@@ -8,12 +14,6 @@
               class: "js-title hero-inner__title hero-inner__title--big"
             })
         } %}
-      {% endif %}
-
-      {% if hero_inner.video %}
-        <div class="hero-inner__video">
-          <video src="{{ hero_inner.video.path }}" autoplay="autoplay" loop muted playsinline pip="false"></video>
-        </div>
       {% endif %}
 
       {% if hero_inner.text %}

@@ -1,4 +1,5 @@
 .advantages-service {
+  position: relative;
   overflow: hidden;
   padding-bottom: 19.8rem;
   padding-top: 13.5rem;
@@ -121,28 +122,36 @@
   }
 
   &__video {
-    width: 83rem;
-    height: 83rem;
     position: absolute;
-    right: -56rem;
-    top: -10rem;
+    top: -12rem;
+    right: 0;
     z-index: -1;
+    width: 100%;
+    height: 100%;
+    height: 108rem;
+
+    @include media('1024', max) {
+      width: 180%;
+    }
 
     @include media('767', max) {
-      right: -20rem;
-      top: 7rem;
-      width: 36rem;
-      height: 40rem;
+      height: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include media('576', max) {
+      width: 220%;
     }
 
     &::before {
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(65.84deg,#1c1a22 .68%,#1c1a2200 21.34%),linear-gradient(107.69deg,#1c1a22 -12.01%,#1c1a2200 20.16%),linear-gradient(249.35deg,#1c1a22 -6.47%,#1c1a2200 21.41%),linear-gradient(292.24deg,#1c1a22 3.48%,#1c1a2200 23.35%),linear-gradient(0deg,#1c1a22,#1c1a2200 44.6%),linear-gradient(90deg,#1c1a22 1.24%,#1c1a2200 38%),linear-gradient(270deg,#1c1a22,#1c1a2200 26.7%),linear-gradient(180deg,#1c1a22,#1c1a2200 15.35%);
       z-index: 1;
+      background: linear-gradient(180deg, var(--pallette-black) 13.47%, rgba(29, 25, 35, 0) 37.31%), linear-gradient(360deg, var(--pallette-black) 20.51%, rgba(29, 25, 35, 0) 69.31%);
       content: '';
     }
 

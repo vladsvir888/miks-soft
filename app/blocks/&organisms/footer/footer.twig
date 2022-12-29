@@ -1,12 +1,12 @@
 <footer class="footer">
+  {% if footer.video %}
+    <div class="footer__video">
+      <video src="{{ footer.video.path }}" autoplay="autoplay" loop muted playsinline pip="false"></video>
+    </div>
+  {% endif %}
+
   <div class="container">
     <div class="footer__inner">
-      {% if footer.video %}
-        <div class="footer__video">
-          <video src="{{ footer.video.path }}" autoplay="autoplay" loop muted playsinline pip="false"></video>
-        </div>
-      {% endif %}
-
       <div class="footer__item footer__item--1">
         {% if footer.copyright %}
           <p class="footer__copyright">

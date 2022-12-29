@@ -1,4 +1,10 @@
 <section class="advantages-service">
+  {% if advantages_service.video %}
+    <div class="advantages-service__video">
+      <video src="{{ advantages_service.video.path }}" muted playsinline pip="false"></video>
+    </div>
+  {% endif %}
+
   <div class="container">
     <div class="advantages-service__inner">
       {% if advantages_service.title %}
@@ -44,12 +50,6 @@
             </li>
           {% endfor %}
         </ul>
-      {% endif %}
-
-      {% if advantages_service.video %}
-        <div class="advantages-service__video">
-          <video src="{{ advantages_service.video.path }}" autoplay="autoplay" loop muted playsinline pip="false"></video>
-        </div>
       {% endif %}
     </div>
   </div>
