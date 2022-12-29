@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   CaseSlider();
   Modal();
 
-  if (document.querySelector('video')) {
+  if (document.querySelector('.video')) {
     document.querySelectorAll('.video').forEach(video => {
       video.play();
     });

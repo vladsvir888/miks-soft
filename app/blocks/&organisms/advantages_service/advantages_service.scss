@@ -136,12 +136,12 @@
 
     @include media('767', max) {
       height: 100%;
-      top: 50%;
+      top: calc(50% - 3rem);
       transform: translateY(-50%);
     }
 
     @include media('576', max) {
-      width: 220%;
+      width: 230%;
     }
 
     &::before {

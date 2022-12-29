@@ -1,7 +1,7 @@
 <section class="advantages-service">
   {% if advantages_service.video %}
     <div class="advantages-service__video">
-      <video src="{{ advantages_service.video.path }}" muted playsinline pip="false"></video>
+      <video class="video" src="{{ advantages_service.video.path }}" preload="metadata" autoplay="autoplay" loop muted playsinline></video>
     </div>
   {% endif %}
 

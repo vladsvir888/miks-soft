@@ -1,7 +1,7 @@
 <div class="hero-inner main__section">
   {% if hero_inner.video %}
     <div class="hero-inner__video">
-      <video src="{{ hero_inner.video.path }}" autoplay="autoplay" loop muted playsinline pip="false"></video>
+      <video class="video" src="{{ hero_inner.video.path }}" autoplay="autoplay" preload="metadata" loop muted playsinline></video>
     </div>
   {% endif %}
 

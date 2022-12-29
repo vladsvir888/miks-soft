@@ -1,7 +1,7 @@
 <div class="error main__section">
   {% if error.video %}
     <div class="error__video">
-      <video src="{{ error.video.path }}" autoplay="autoplay" loop muted playsinline pip="false"></video>
+      <video class="video" src="{{ error.video.path }}" preload="metadata" autoplay="autoplay" loop muted playsinline></video>
     </div>
   {% endif %}
   <div class="container">

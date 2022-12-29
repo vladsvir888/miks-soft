@@ -12,7 +12,7 @@
     padding-top: 18rem;
   }
 
- @include media('576', max) {
+  @include media('576', max) {
     padding-top: 9rem;
   }
 
@@ -24,8 +24,8 @@
     height: 108rem;
 
     @include media('1024', max) {
+      width: 145%;
       bottom: 0;
-      left: 8rem;
     }
 
     @include media('767', max) {
@@ -34,7 +34,7 @@
     }
 
     @include media('576', max) {
-      bottom: 20rem;
+      bottom: 19rem;
     }
 
     &::before {
@@ -121,7 +121,7 @@
   }
 
   &__menu-list {
-   @include media('576', max) {
+    @include media('576', max) {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
