@@ -53,34 +53,4 @@
       display: none;
     }
   }
-
-  // &__btn {
-  //   position: relative;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-  //   width: 1.6rem;
-  //   height: 0.8rem;
-  //   border: none;
-  //   background-color: transparent;
-  //   cursor: inherit;
-
-  //   &-item {
-  //     position: absolute;
-  //     left: 0;
-  //     display: block;
-  //     width: 1.6rem;
-  //     height: 0.1rem;
-  //     background-color: var(--pallette-white);
-  //     transition: transform var(--transition);
-
-  //     &:first-child {
-  //       top: 0;
-  //     }
-
-  //     &:last-child {
-  //       bottom: 0;
-  //     }
-  //   }
-  // }
 }

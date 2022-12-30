@@ -10,7 +10,7 @@
       {% view "@title" with {
         title: hero.title|default({})|merge({
           attrs: 'data-sal="slide-up" data-sal-duration="800"',
-          class: "title--h1 js-title hero__title"
+          class: "title--h1 hero__title"
         })
       } %}
     {% endif %}

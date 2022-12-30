@@ -9,6 +9,7 @@ import Form from './form';
 import BurgerMenu from './burgerMenu';
 import CaseSlider from './caseSlider';
 import Modal from './modal';
+// import ScrollToNumericList from './scrollToNumericList';
 
 document.addEventListener('DOMContentLoaded', () => {
   window.my_trap = {
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   sal();
 
   Header();
+  // ScrollToNumericList();
   SeveralExamplesSlider();
   new Tabs('.unique');
   new Tabs('.portfolio');

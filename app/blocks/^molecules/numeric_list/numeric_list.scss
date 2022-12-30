@@ -1,9 +1,31 @@
 .numeric-list {
+  $this: &;
+
   margin-bottom: 6.8rem;
   counter-reset: numeric-list;
 
  @include media('576', max) {
     margin-bottom: 2rem;
+  }
+
+  @at-root {
+    #{$this}-wrap {
+      padding-top: 7.6rem;
+      padding-bottom: 14.5rem;
+
+      @include media('1024', max) {
+        padding-top: 3.6rem;
+        padding-bottom: 6rem;
+      }
+
+      // @include media('576', max) {
+      //   padding-top: 10rem;
+      // }
+
+      &__btn {
+        margin: 0 auto;
+      }
+    }
   }
 
   &__item {
@@ -80,17 +102,5 @@
     @include media('767', max) {
       font-size: 1.2rem;
     }
-  }
-}
-
-.numeric-list-wrap {
-  padding-bottom: 14.5rem;
-
-  @include media('1024', max) {
-    padding-bottom: 6rem;
-  }
-
-  &__btn {
-    margin: 0 auto;
   }
 }

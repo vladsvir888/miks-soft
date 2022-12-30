@@ -1,4 +1,4 @@
-<div class="hero-inner main__section">
+<div class="hero-inner main__section {{ hero_inner.class }}">
   {% if hero_inner.video %}
     <div class="hero-inner__video">
       <video class="video" src="{{ hero_inner.video.path }}" autoplay="autoplay" preload="metadata" loop muted playsinline></video>
@@ -24,7 +24,7 @@
         {% view "@title" with {
           title: hero_inner.title|default({})|merge({
             attrs: 'data-sal="slide-up" data-sal-duration="800" data-sal-delay="200"',
-            class: "js-title hero-inner__title hero-inner__title--small"
+            class: "hero-inner__title hero-inner__title--small"
           })
         } %}
       {% endif %}

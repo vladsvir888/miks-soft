@@ -10,24 +10,6 @@ const Header = () => {
       header.classList.remove('header--active');
     }
   });
-
-  // const target = document.querySelector('.js-title');
-
-  // if (!target && !header) return;
-
-  // const callback = (entries) => {
-  //   entries.forEach(entry => {
-  //     if (!entry.isIntersecting) {
-  //       header.classList.add('header--active');
-  //     } else {
-  //       header.classList.remove('header--active');
-  //     }
-  //   });
-  // };
-
-  // const observer = new IntersectionObserver(callback, { rootMargin: '-250px' });
-
-  // observer.observe(target);
 };
 
 export default Header;

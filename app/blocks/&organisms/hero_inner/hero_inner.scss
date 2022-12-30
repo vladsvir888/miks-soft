@@ -1,24 +1,21 @@
 .hero-inner {
   position: relative;
   overflow: hidden;
-  padding-bottom: 7.6rem;
 
   @include media('1024', max) {
-    padding-bottom: 3.6rem;
     overflow: hidden;
   }
 
-  &__wrap {
-    // position: relative;
-    // overflow: hidden;
+  // &--services {
+  //   @include media('576', max) {
+  //     height: calc(100vh - 15.9rem);
+  //   }
+  // }
 
+  &__wrap {
     @include flex-center-column;
 
     text-align: center;
-
-    // @include media('1024', max) {
-    //   overflow: unset;
-    // }
   }
 
   &__text {

@@ -1,52 +1,5 @@
 {
-  "title_page": "Our services - Miks Soft",
-  "meta": {
-    "description": "Our services - Miks Soft"
-  },
-  "header_type": "services",
-  "services": {
-    "header": {
-      "logo": {
-        "text": "Miks Soft Home",
-        "path": "./assets/images/logo.svg"
-      },
-      "menu": {
-        "items": [{
-          "href": "#",
-          "text": {
-            "text": "Expertise"
-          }
-        }, {
-          "attrs": "aria-current='page'",
-          "href": "#",
-          "text": {
-            "text": "Services"
-          }
-        }, {
-          "href": "#",
-          "text": {
-            "text": "Portfolio"
-          }
-        }]
-      },
-      "discuss_link": {
-        "text": {
-          "text": "Discuss your project"
-        }
-      }
-    },
-    "hero_inner": {
-      "class": "hero-inner--services",
-      "uptitle": {
-        "text": "We are miks"
-      },
-      "text": "We create the best solution due to design, Modern technologies and long-term experience of the&nbsp;team",
-      "video": {
-        "path": "./assets/services_first_screen_video_2.mp4"
-      }
-    }
-  },
-  "callback_aside": {
+  "popup": {
     "title": {
       "level": 2,
       "text": "Lets discuss your project"
@@ -55,21 +8,21 @@
     "form": {
       "items": [{
         "class": "form__item form__item--mb",
-        "id": "input_name_id",
+        "id": "input_name_id_2",
         "fake_placeholder": "Name<span>*</span>",
         "placeholder": "Name",
         "name": "name",
         "attrs": "required data-pristine-required-message='Field incorrect'"
       }, {
         "class": "form__item form__item--mb",
-        "id": "input_company_id",
+        "id": "input_company_id_2",
         "fake_placeholder": "Company<span>*</span>",
         "placeholder": "Company",
         "name": "company",
         "attrs": "required data-pristine-required-message='Field incorrect'"
       }, {
         "class": "form__item form__item--mb",
-        "id": "input_email_id",
+        "id": "input_email_id_2",
         "type": "email",
         "fake_placeholder": "Email<span>*</span>",
         "placeholder": "Email",
@@ -77,7 +30,7 @@
         "attrs": "required data-pristine-required-message='Field incorrect'"
       }, {
         "class": "form__item form__item--mb",
-        "id": "input_phone_id",
+        "id": "input_phone_id_2",
         "type": "number",
         "fake_placeholder": "Phone number<span>*</span>",
         "placeholder": "Phone number",
@@ -85,17 +38,17 @@
         "attrs": "required data-pristine-required-message='Field incorrect'"
       }, {
         "class": "form__item form__item--5",
-        "id": "input_message_id",
+        "id": "input_message_id_2",
         "fake_placeholder": "Few words about your project",
         "placeholder": "Few words about your project",
         "name": "message"
       }, {
         "checkbox": true,
         "class": "form__item--6",
-        "id": "input_checkbox_id",
+        "id": "input_checkbox_id_2",
         "type": "checkbox",
         "name": "is_checked",
-        "attrs": "checked required data-pristine-required-message='Field required'"
+        "attrs": "required data-pristine-required-message='Field required'"
       }],
       "button": {
         "submit": true,

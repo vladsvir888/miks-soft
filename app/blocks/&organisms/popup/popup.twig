@@ -1,21 +1,21 @@
 <div class="callback-aside popup__inner">
-  {% if callback_aside.title %}
+  {% if popup.title %}
     {% view "@title" with {
-      title: callback_aside.title|merge({
+      title: popup.title|merge({
         class: "title--h2 callback-aside__title"
       })
     } %}
   {% endif %}
 
-  {% if callback_aside.subtitle %}
+  {% if popup.subtitle %}
     <p class="callback-aside__text">
-      {{ callback_aside.subtitle }}
+      {{ popup.subtitle }}
     </p>
   {% endif %}
 
-  {% if callback_aside.form %}
+  {% if popup.form %}
     {% view "&form" with {
-      form: callback_aside.form
+      form: popup.form
     } %}
   {% endif %}
 

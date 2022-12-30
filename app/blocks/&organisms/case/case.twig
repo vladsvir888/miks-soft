@@ -7,7 +7,7 @@
             {% view "@title" with {
               title: case.promo.title|default({})|merge({
                 attrs: "data-sal='slide-up' data-sal-duration='800'",
-                class: "js-title promo__title"
+                class: "promo__title"
               })
             } %}
           {% endif %}

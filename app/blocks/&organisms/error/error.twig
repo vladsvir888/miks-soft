@@ -15,7 +15,7 @@
       {% if error.title %}
         {% view "@title" with {
           title: error.title|default({})|merge({
-            class: "js-title error__title"
+            class: "error__title"
           })
         } %}
       {% endif %}

@@ -47,20 +47,11 @@
   }
 
   &__img {
-    // width: 27.6rem;
-    // height: 15.1rem;
-    // object-fit: contain;
     transition: transform var(--transition2);
 
     &:hover {
       transform: scale(1.05);
     }
-
-    // @include media('500', max) {
-    //   width: auto;
-    //   height: auto;
-    //   padding: 2rem;
-    // }
   }
 
   &__title {
