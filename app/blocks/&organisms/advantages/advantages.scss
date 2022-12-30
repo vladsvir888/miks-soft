@@ -29,6 +29,10 @@
     @include media('767', max) {
       grid-template-columns: 1fr;
     }
+
+    @include media('576', max) {
+      width: calc(100% + 1.6rem);
+    }
   }
 
   &__item {
