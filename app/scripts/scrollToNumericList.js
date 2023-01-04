@@ -4,8 +4,8 @@ const ScrollToNumericList = () => {
   if (!target) return;
 
   if (window.matchMedia('(max-width: 576px)').matches) {
-    const callback = (entries, observer) => {
-      entries.forEach(entry => {
+    const callback = (entries) => {
+      entries.forEach((entry) => {
         if (!entry.isIntersecting) {
           document.querySelector('.numeric-list-wrap').scrollIntoView();
         }

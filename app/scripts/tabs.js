@@ -2,13 +2,13 @@ const SELECTORS = {
   BUTTON: '.js-tabs-btn',
   CONTENT: '.js-tabs-content',
   NAV_ITEM: '.tabs-nav__item',
-  BOTTOM_GRADIENT: '.bottom-gradient'
+  BOTTOM_GRADIENT: '.bottom-gradient',
 };
 
 const CLASSES = {
   ACTIVE_CONTENT: 'js-show',
   BUTTON: 'js-tabs-btn',
-  ACTIVE_NAV_ITEM: 'tabs-nav__item--active'
+  ACTIVE_NAV_ITEM: 'tabs-nav__item--active',
 };
 
 class Tabs {
@@ -25,7 +25,7 @@ class Tabs {
     this.firstTab = this.tabs[0];
     this.lastTab = this.tabs[this.tabs.length - 1];
 
-    this.tabs.forEach(tab => {
+    this.tabs.forEach((tab) => {
       tab.addEventListener('click', this.onClick.bind(this));
       tab.addEventListener('keydown', this.onKeydown.bind(this));
     });
@@ -46,12 +46,12 @@ class Tabs {
     const tabContent = this.wrap.querySelector(`[aria-labelledby="${id}"]`);
 
     const tabContents = this.wrap.querySelectorAll(SELECTORS.CONTENT);
-    tabContents.forEach(content => {
+    tabContents.forEach((content) => {
       content.classList.remove(CLASSES.ACTIVE_CONTENT);
     });
 
     const tabBtns = this.wrap.querySelectorAll(SELECTORS.BUTTON);
-    tabBtns.forEach(btn => {
+    tabBtns.forEach((btn) => {
       btn.closest(SELECTORS.NAV_ITEM).classList.remove(CLASSES.ACTIVE_NAV_ITEM);
       btn.setAttribute('aria-selected', false);
     });
@@ -100,7 +100,7 @@ class Tabs {
 
     let flag = false;
 
-    switch(e.code) {
+    switch (e.code) {
       case 'ArrowLeft':
         this.moveFocusToPreviousTab(target);
         flag = true;

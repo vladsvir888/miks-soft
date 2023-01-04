@@ -1,4 +1,4 @@
-import Pristine from "pristinejs";
+import Pristine from 'pristinejs';
 
 class Form {
   static config = {
@@ -7,7 +7,7 @@ class Form {
     successClass: 'input-block--success',
     errorTextParent: 'input-block',
     errorTextTag: 'small',
-    errorTextClass: 'input-block__message'
+    errorTextClass: 'input-block__message',
   }
 
   static endpoint = 'https://webhook.site/1723bffe-6bec-4537-975f-69c8d139791a' // фейковый эндпоинт
@@ -63,9 +63,9 @@ class Form {
       return await fetch(Form.endpoint, {
         method: 'POST',
         headers: {
-          'Content-Type': 'multipart/form-data'
+          'Content-Type': 'multipart/form-data',
         },
-        body: data
+        body: data,
       });
     } catch (error) {
       return error;

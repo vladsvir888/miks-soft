@@ -14,8 +14,8 @@ import TopBtn from './topBtn';
 
 document.addEventListener('DOMContentLoaded', () => {
   window.my_trap = {
-    'header': focusTrap.createFocusTrap('.header__container'),
-    'popup': focusTrap.createFocusTrap('.popup__inner'),
+    header: focusTrap.createFocusTrap('.header__container'),
+    popup: focusTrap.createFocusTrap('.popup__inner'),
   };
 
   new LazyLoad();
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new Tabs('.unique');
   new Tabs('.portfolio');
 
-  document.querySelectorAll('.js-form').forEach(form => {
+  document.querySelectorAll('.js-form').forEach((form) => {
     new Form(form);
   });
 
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   TopBtn();
 
   if (document.querySelector('.video')) {
-    document.querySelectorAll('.video').forEach(video => {
+    document.querySelectorAll('.video').forEach((video) => {
       video.play();
     });
   }

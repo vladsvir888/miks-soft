@@ -8,18 +8,18 @@ const Modal = () => {
 
   if (!modalBtn.length) return;
 
-  modalBtn.forEach(btn => {
+  modalBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
       Swal.fire({
         showConfirmButton: false,
         html: modalContent,
         width: '141rem',
         showClass: {
-          popup: 'animate__animated animate__slideInDown'
+          popup: 'animate__animated animate__slideInDown',
         },
         customClass: {
-          container: 'popup'
-        }
+          container: 'popup',
+        },
       }).then((res) => {
         if (res.isDismissed) {
           if (header.classList.contains('header--show-burger-menu')) {

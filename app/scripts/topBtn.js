@@ -6,7 +6,7 @@ const TopBtn = () => {
 
   topBtn.addEventListener('click', () => {
     poftfolioSection.scrollIntoView({
-      behavior: "smooth"
+      behavior: 'smooth',
     });
   });
 };

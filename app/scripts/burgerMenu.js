@@ -22,7 +22,7 @@ const BurgerMenu = () => {
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.code == 'Escape' && document.querySelector('.header--show-burger-menu')) {
+    if (event.code === 'Escape' && document.querySelector('.header--show-burger-menu')) {
       header.classList.remove('header--show-burger-menu');
       burgerBtn.setAttribute('aria-expanded', false);
       document.body.removeAttribute('style');
