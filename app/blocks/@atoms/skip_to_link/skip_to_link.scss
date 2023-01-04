@@ -1,0 +1,16 @@
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--pallette-black);
+  background-color: var(--pallette-white);
+  border-radius: 0.5rem;
+  transform: translateY(-150%);
+  transition: transform var(--transition);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}

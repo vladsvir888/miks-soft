@@ -1,9 +1,9 @@
 {% extends "../blocks/layout/base.twig" %}
 
 {% block content %}
-  <main class="main main--services">
+  <main id="main" class="main main--services">
     {% view "&hero_inner" with {
-        hero_inner: services.hero_inner
+      hero_inner: services.hero_inner
     } %}
 
     {% view "^numeric_list" %}

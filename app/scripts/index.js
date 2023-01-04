@@ -9,6 +9,7 @@ import Form from './form';
 import BurgerMenu from './burgerMenu';
 import CaseSlider from './caseSlider';
 import Modal from './modal';
+import TopBtn from './topBtn';
 // import ScrollToNumericList from './scrollToNumericList';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   BurgerMenu();
   CaseSlider();
   Modal();
+  TopBtn();
 
   if (document.querySelector('.video')) {
     document.querySelectorAll('.video').forEach(video => {

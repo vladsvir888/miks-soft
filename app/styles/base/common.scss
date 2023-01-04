@@ -57,6 +57,7 @@ html {
   height: 100%;
   scrollbar-color: var(--pallette-american-silver) transparent;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 
   font-size: calc(min(100vw, 1440px) / 1440 * 10);
 
