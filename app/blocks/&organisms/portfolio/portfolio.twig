@@ -30,12 +30,12 @@
           </div>
         {% endfor %}
       {% endif %}
+
+      {% view "@top_btn" with {
+        top_btn: {
+          class: "top-btn--portfolio"
+        }
+      } %}
     </div>
   </div>
-
-  {% view "@top_btn" with {
-    top_btn: {
-      class: "top-btn--portfolio"
-    }
-  } %}
 </section>

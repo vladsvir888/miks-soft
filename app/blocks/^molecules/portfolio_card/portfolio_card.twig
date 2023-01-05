@@ -39,7 +39,12 @@
   {% if portfolio_card.image %}
     <div class="portfolio-card__img-wrap" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
       {% view "@image" with {
-        image: portfolio_card.image
+        image: portfolio_card.image|merge({
+          sizes: {
+            width: 690,
+            height: 484
+          }
+        })
       } %}
     </div>
   {% endif %}

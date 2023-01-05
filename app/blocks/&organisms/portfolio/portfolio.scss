@@ -1,5 +1,4 @@
 .portfolio {
-  position: relative;
   padding-top: 10.4rem;
   padding-bottom: 12rem;
 
@@ -9,6 +8,10 @@
 
   @include media('767', max) {
     padding-bottom: 7rem;
+  }
+
+  @include media('576', max) {
+    padding-bottom: 0.8rem;
   }
 
   &__inner {

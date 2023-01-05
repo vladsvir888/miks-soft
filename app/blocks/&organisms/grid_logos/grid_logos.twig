@@ -5,7 +5,7 @@
         <li class="grid-logos__item">
           {% if item.image %}
             <picture {% if item.image.attrs %}{{ item.image.attrs }}{% endif %}>
-              <source media="(max-width:500px)" srcset="./assets/images/pixel.png" data-srcset="{{ item.image.src_mob }}">
+              <source media="(max-width:576px)" srcset="./assets/images/pixel.png" data-srcset="{{ item.image.src_mob }}">
               <img class="lazy grid-logos__img" src="./assets/images/pixel.png" data-src="{{ item.image.src }}" alt="{{ item.image.text }}">
             </picture>
           {% else %}

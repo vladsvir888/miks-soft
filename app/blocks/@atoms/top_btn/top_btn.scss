@@ -1,16 +1,28 @@
 .top-btn {
+  $this: &;
+
   @include flex-center;
-  position: absolute;
-  right: 1.6rem;
-  bottom: 3rem;
   width: 4.8rem;
   height: 4.8rem;
   background: rgba(28, 26, 34, 0.2);
   border-radius: var(--bdrs8);
   backdrop-filter: var(--bd-filter-blur3);
   border: 0.1rem solid var(--pallette-onyx);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition);
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
 
   &--portfolio {
+    position: sticky;
+    bottom: 0.5rem;
+    z-index: 1;
+    margin-left: auto;
+
     @include media('577', min) {
       display: none;
     }
