@@ -59,6 +59,8 @@ class Tabs {
     tab.setAttribute('aria-selected', true);
     tab.closest(SELECTORS.NAV_ITEM).classList.add(CLASSES.ACTIVE_NAV_ITEM);
     tabContent.classList.add(CLASSES.ACTIVE_CONTENT);
+
+    this.wrap.scrollIntoView();
   }
 
   onClick(e) {

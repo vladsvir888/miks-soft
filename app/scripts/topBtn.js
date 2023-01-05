@@ -3,7 +3,7 @@ const TopBtn = () => {
   const poftfolioSection = document.querySelector('.hero-inner');
   const secondPortfolioItem = document.querySelector('.portfolio__item:nth-child(1)');
 
-  if (window.matchMedia('(max-width: 576px)').matches) {
+  if (window.matchMedia('(max-width: 576px)').matches && topBtn) {
     poftfolioSection.dataset.offsetTop = secondPortfolioItem.offsetTop;
 
     window.addEventListener('scroll', () => {

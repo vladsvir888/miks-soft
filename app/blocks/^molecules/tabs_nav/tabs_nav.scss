@@ -6,7 +6,7 @@
   &--home {
     @include media('576', max) {
       position: sticky;
-      top: 8rem;
+      top: 6.5rem;
       z-index: 10;
 
       #{$this}__list {
