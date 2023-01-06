@@ -60,7 +60,7 @@ class Tabs {
     tab.closest(SELECTORS.NAV_ITEM).classList.add(CLASSES.ACTIVE_NAV_ITEM);
     tabContent.classList.add(CLASSES.ACTIVE_CONTENT);
 
-    this.wrap.scrollIntoView();
+    window.scrollTo({ top: this.wrap.offsetTop });
   }
 
   onClick(e) {
