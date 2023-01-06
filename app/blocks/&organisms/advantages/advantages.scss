@@ -11,7 +11,7 @@
     margin-bottom: 6.8rem;
     text-align: var(--tac);
 
-   @include media('576', max) {
+    @include media('576', max) {
       margin-bottom: 3.6rem;
     }
   }
@@ -48,7 +48,7 @@
     background-color: var(--pallette-black);
 
     &:first-child {
-     @include media('576', max) {
+      @include media('576', max) {
         border-top: 0.1rem solid var(--pallette-onyx);
       }
     }
@@ -57,7 +57,7 @@
       padding-left: 1rem;
     }
 
-   @include media('576', max) {
+    @include media('576', max) {
       grid-template-columns: 1fr 15rem;
       padding-left: 0;
       padding-right: 0;
@@ -71,7 +71,7 @@
 
       text-align: var(--tac);
 
-     @include media('576', max) {
+      @include media('576', max) {
         padding-top: 4rem;
       }
     }
@@ -81,23 +81,33 @@
         opacity: 1;
 
         &--1 {
-          transform: rotate(-15deg) /* scale(1.09) */ scale(1.08);
+          transform: rotate(-15deg)
+            /* scale(1.09) */
+            scale(1.08);
         }
 
         &--2 {
-          transform: rotate(-10.04deg) /* scale(1.03) */ scale(1.07);
+          transform: rotate(-10.04deg)
+            /* scale(1.03) */
+            scale(1.07);
         }
 
         &--3 {
-          transform: rotate(-14.86deg) /* scale(1.14) */ scale(1.07);
+          transform: rotate(-14.86deg)
+            /* scale(1.14) */
+            scale(1.07);
         }
 
         &--4 {
-          transform: rotate(-11.75deg) /* scale(1.05) */ scale(1.09);
+          transform: rotate(-11.75deg)
+            /* scale(1.05) */
+            scale(1.09);
         }
 
         &--5 {
-          transform: rotate(-12.01deg) /* scale(1.12) */ scale(1.12);
+          transform: rotate(-12.01deg)
+            /* scale(1.12) */
+            scale(1.12);
         }
       }
     }
@@ -133,7 +143,7 @@
         font-size: 4rem;
       }
 
-     @include media('576', max) {
+      @include media('576', max) {
         line-height: var(--lh100);
       }
     }
@@ -160,7 +170,7 @@
     overflow: hidden;
     height: 18rem;
 
-   @include media('576', max) {
+    @include media('576', max) {
       height: 15rem;
     }
   }

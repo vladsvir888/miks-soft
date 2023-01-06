@@ -226,7 +226,7 @@
     display: flex;
     flex-direction: column;
 
-   @include media('576', max) {
+    @include media('576', max) {
       &--graphic {
         grid-row: 1 / 2;
       }
@@ -290,6 +290,15 @@
       height: 21.6rem;
     }
 
+    &-wrap {
+      @include flex-center;
+      margin-top: 1.2rem;
+
+      @include media('576', max) {
+        margin-top: 0.5rem;
+      }
+    }
+
     img {
       @include img(cover);
     }
@@ -304,18 +313,24 @@
         content: none;
       }
 
+      position: static;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 3.6rem;
-      height: 3.6rem;
-      background: rgba(28, 26, 34, 0.2);
-      backdrop-filter: var(--bd-filter-blur1);
-      border-radius: var(--bdrs8);
+      width: 4.6rem;
+      height: 2.8rem;
+      margin-top: 0;
+      border-radius: 4rem;
+      background-color: var(--pallette-onyx);
+      transition: background-color var(--transition);
+
+      &:hover {
+        background-color: var(--pallette-topaz);
+      }
 
       .icon {
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 1.2rem;
+        height: 1.2rem;
         flex-shrink: 0;
         fill: transparent;
         stroke: var(--pallette-white);
@@ -326,20 +341,10 @@
       }
     }
 
-    .swiper-button-next {
-      right: -2rem;
-    }
-
-    .swiper-button-prev {
-      left: -2rem;
-    }
-
     .swiper-pagination {
-      bottom: -3rem;
-
-      @include media('767', max) {
-        bottom: -1.6rem;
-      }
+      position: static;
+      width: max-content;
+      margin: 0 2.4rem;
     }
 
     .swiper-pagination-bullet {
@@ -385,7 +390,7 @@
       gap: 2.3rem;
     }
 
-   @include media('576', max) {
+    @include media('576', max) {
       gap: 1.2rem;
     }
   }

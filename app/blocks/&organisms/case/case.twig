@@ -194,7 +194,24 @@
                           </div>
                         {% endfor %}
                       </div>
-                      <div class="swiper-pagination"></div>
+                      <div class="functionality-design__slider-wrap">
+                        <div class="swiper-button-prev">
+                          {% view "@icon" with {
+                            icon: {
+                              name: "sprite-mono.svg#arrow-slider-left"
+                            }
+                          } %}
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next">
+                          {% view "@icon" with {
+                            icon: {
+                              name: "sprite-mono.svg#arrow-slider-right"
+                            }
+                          } %}
+                        </div>
+                      </div>
+                      {# <div class="swiper-pagination"></div>
                       <div class="swiper-button-next">
                         {% view "@icon" with {
                           icon: {
@@ -208,7 +225,7 @@
                             name: "sprite-mono.svg#arrow-slider-left"
                           }
                         } %}
-                      </div>
+                      </div> #}
                     </div>
                   </div>
                 {% endif %}

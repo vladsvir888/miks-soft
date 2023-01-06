@@ -22,7 +22,7 @@
       grid-template-columns: repeat(3, 1fr);
     }
 
-   @include media('576', max) {
+    @include media('576', max) {
       gap: 1.6rem;
     }
   }
@@ -34,7 +34,7 @@
       text-align: var(--tac);
     }
 
-   @include media('576', max) {
+    @include media('576', max) {
       margin-bottom: 2rem;
     }
   }
@@ -89,7 +89,7 @@
       --offset-y: 3.2rem;
     }
 
-   @include media('576', max) {
+    @include media('576', max) {
       padding-bottom: 4.7rem;
       border-bottom: 0.1rem solid var(--pallette-tuna);
     }

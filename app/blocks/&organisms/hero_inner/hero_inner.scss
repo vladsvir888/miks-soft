@@ -6,12 +6,6 @@
     overflow: hidden;
   }
 
-  // &--services {
-  //   @include media('576', max) {
-  //     height: calc(100vh - 15.9rem);
-  //   }
-  // }
-
   &__wrap {
     @include flex-center-column;
 

@@ -16,7 +16,7 @@
   --container-width: 144rem;
   --container-padding: 2rem;
 
- @include media('576', max) {
+  @include media('576', max) {
     --container-padding: 1.6rem;
   }
 
@@ -51,7 +51,7 @@
   --fz-btn-secondary: 1.5rem;
   --fz-btn-primary: 1.1rem;
 
- @include media('576', max) {
+  @include media('576', max) {
     --fz-btn-secondary: 1.3rem;
   }
 
