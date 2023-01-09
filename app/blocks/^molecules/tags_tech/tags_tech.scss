@@ -1,0 +1,35 @@
+.tags-tech {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  line-height: var(--lh100);
+
+  &__title {
+    color: var(--pallette-gray-suit);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 2.6rem;
+    color: var(--pallette-topaz);
+
+    &-item {
+      position: relative;
+
+      &:not(:last-child) {
+        &::after {
+          position: absolute;
+          top: 0;
+          right: -1.3em;
+          width: 0.1rem;
+          height: 1.2rem;
+          background-color: var(--pallette-topaz);
+          transform: rotate(20deg);
+          content: '';
+        }
+      }
+    }
+  }
+}

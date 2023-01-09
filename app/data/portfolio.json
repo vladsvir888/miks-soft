@@ -88,7 +88,34 @@
         "image": {
           "alt": "Busking",
           "name": "portfolio/01.jpg"
-        }
+        },
+        "tags_techs": [{
+          "title": "Works:",
+          "list": {
+            "items": [{
+              "text": "Front-end"
+            }, {
+              "text": "Design"
+            }, {
+              "text": "Support"
+            }]
+          }
+        }, {
+          "title": "Stack:",
+          "list": {
+            "items": [{
+              "text": "Vue.js"
+            }, {
+              "text": "Nuxt"
+            }, {
+              "text": "Core.js"
+            }, {
+              "text": "PWA"
+            }, {
+              "text": "Java"
+            }]
+          }
+        }]
       }, {
         "title": "Naturino",
         "labels": {

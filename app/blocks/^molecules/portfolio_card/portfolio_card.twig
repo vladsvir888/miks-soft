@@ -22,6 +22,16 @@
       </p>
     {% endif %}
 
+    {% if portfolio_card.tags_techs %}
+      <div class="portfolio-card__tags">
+        {% for item in portfolio_card.tags_techs %}
+          {% view "^tags_tech" with {
+            tags_tech: item
+          } %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
     {% if portfolio_card.text_with_arrow %}
       <div class="portfolio-card__text-arrow">
         {{ portfolio_card.text_with_arrow.text }}

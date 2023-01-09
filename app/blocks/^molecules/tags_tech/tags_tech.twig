@@ -1,0 +1,17 @@
+<div class="tags-tech" data-sal="slide-up" data-sal-duration="800" data-sal-delay="350">
+  {% if tags_tech.title %}
+    <div class="tags-tech__title">
+      {{ tags_tech.title }}
+    </div>
+  {% endif %}
+
+  {% if tags_tech.list %}
+    <ul class="tags-tech__list">
+      {% for item in tags_tech.list.items %}
+        <li class="tags-tech__list-item">
+          {{ item.text}}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
