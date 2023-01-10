@@ -9,13 +9,13 @@
         "text": "Website"
       }
     }, {
-      "attrs": "data-color='#353458' aria-selected='false' aria-controls='tab-content-2' role='tab'",
+      "attrs": "data-color='#353458' aria-selected='false' aria-controls='tab-content-2' role='tab' tabindex='-1'",
       "id": "tab_2",
       "text": {
         "text": "Custom software"
       }
     }, {
-      "attrs": "data-color='#1E4364' aria-selected='false' aria-controls='tab-content-3' role='tab'",
+      "attrs": "data-color='#1E4364' aria-selected='false' aria-controls='tab-content-3' role='tab' tabindex='-1'",
       "id": "tab_3",
       "text": {
         "text": "App dev"
