@@ -762,15 +762,15 @@
         "fake_placeholder": "Email<span>*</span>",
         "placeholder": "Email",
         "name": "email",
-        "attrs": "required data-pristine-required-message='Field incorrect'"
+        "attrs": "required data-pristine-required-message='Field incorrect' data-pristine-email-message='Enter correct email. Example: my-email@gmail.com'"
       }, {
         "class": "form__item form__item--mb",
         "id": "input_phone_id",
-        "type": "number",
+        "type": "tel",
         "fake_placeholder": "Phone number<span>*</span>",
         "placeholder": "Phone number",
         "name": "phone",
-        "attrs": "required data-pristine-required-message='Field incorrect'"
+        "attrs": "required data-pristine-required-message='Field incorrect' data-pristine-phone-validator='Entry only numbers (from 0 to 9)'"
       }, {
         "class": "form__item form__item--5",
         "id": "input_message_id",

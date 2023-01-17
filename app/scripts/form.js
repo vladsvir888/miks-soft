@@ -13,6 +13,16 @@ class Form {
   static endpoint = 'https://webhook.site/1723bffe-6bec-4537-975f-69c8d139791a' // фейковый эндпоинт
 
   constructor(form) {
+    Pristine.addValidator('phone-validator', (value) => {
+      const regExp = /^\d+$/;
+
+      if (regExp.test(value)) {
+        return true;
+      }
+
+      return false;
+    }, '${1}', 1, false);
+
     this.form = form;
     this.pristine = new Pristine(this.form, Form.config);
     this.notification = this.form.querySelector('.form__notification');

@@ -87,6 +87,7 @@
   }
 
   &__text-arrow {
+    @include flex-center-y;
     position: relative;
     z-index: -1;
     font-size: 1.8rem;

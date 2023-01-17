@@ -21,9 +21,8 @@
     position: relative;
     display: none;
     padding: 10.2rem 12rem 5rem;
-    background: rgba(28, 26, 34, 0.5);
+    background-color: var(--pallette-black);
     border: 0.1rem solid var(--pallette-onyx);
-    backdrop-filter: var(--bd-filter-blur3);
     border-radius: 1rem;
 
     @include media('1024', max) {

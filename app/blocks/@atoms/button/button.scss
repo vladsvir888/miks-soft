@@ -15,6 +15,10 @@
   &:hover {
     #{$this}__icon {
       transform: rotate(180deg);
+
+      @media (hover: none) {
+        transform: unset;
+      }
     }
   }
 
@@ -38,8 +42,17 @@
       color: var(--pallette-white);
       background-color: var(--pallette-light-taupe);
 
+      @media (hover: none) {
+        color: var(--pallette-black);
+        background-color: var(--pallette-white);
+      }
+
       .btn__icon {
         fill: var(--pallette-white);
+
+        @media (hover: none) {
+          fill: var(--pallette-light-taupe);
+        }
       }
     }
   }
@@ -56,6 +69,11 @@
     &:hover {
       color: var(--pallette-black);
       background-color: var(--pallette-white);
+
+      @media (hover: none) {
+        color: unset;
+        background-color: unset;
+      }
     }
 
     #{$this}__icon {
@@ -92,6 +110,10 @@
     &::before {
       transform-origin: left;
       transform: scaleX(1);
+
+      @media (hover: none) {
+        transform: scaleX(0);
+      }
     }
   }
 }
