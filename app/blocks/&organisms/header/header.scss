@@ -66,6 +66,10 @@
         height: 1.6rem;
       }
     }
+
+    @include media('576', max) {
+      outline: none;  // needs alternative variant
+    }
   }
 
   &__menu {

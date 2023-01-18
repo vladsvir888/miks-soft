@@ -45,6 +45,10 @@
         background-color: var(--pallette-white);
       }
     }
+
+    @include media('576', max) {
+      padding: 0.35rem;
+    }
   }
 
   &__btn {

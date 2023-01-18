@@ -1,4 +1,5 @@
 import Pristine from 'pristinejs';
+import Swal from 'sweetalert2';
 
 class Form {
   static config = {
@@ -36,6 +37,10 @@ class Form {
     this.notification.textContent = this.notification.dataset.notificationError;
     this.notification.classList.add('form__notification--active');
 
+    this.notification.scrollIntoView({
+      behavior: 'smooth',
+    });
+
     setTimeout(() => {
       this.notification.classList.remove('form__notification--active');
     }, 3000);
@@ -45,8 +50,14 @@ class Form {
     this.notification.textContent = this.notification.dataset.notificationSuccess;
     this.notification.classList.add('form__notification--active');
 
+    this.notification.scrollIntoView({
+      behavior: 'smooth',
+    });
+
     setTimeout(() => {
       this.notification.classList.remove('form__notification--active');
+
+      Swal.close();
     }, 3000);
   }
 
