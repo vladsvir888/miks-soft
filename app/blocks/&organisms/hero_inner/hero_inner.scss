@@ -75,10 +75,6 @@
     @include media('767', max) {
       font-size: 1.2rem;
     }
-
-   @include media('576', max) {
-      max-width: 25rem;
-    }
   }
 
   &__video {

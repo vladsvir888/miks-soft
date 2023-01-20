@@ -35,7 +35,7 @@
       height: 100%;
       z-index: 1;
       content: '';
-      background: linear-gradient(180deg, var(--pallette-black) -1.22%, rgba(29, 25, 35, 0) 62.73%), linear-gradient(360deg, var(--pallette-black) 13.47%, rgba(29, 25, 35, 0) 69.31%)
+      background: linear-gradient(180deg, var(--pallette-black) -1.22%, rgba(29, 25, 35, 0) 62.73%), linear-gradient(360deg, var(--pallette-black) 13.47%, rgba(29, 25, 35, 0) 69.31%);
     }
 
     video {
@@ -47,7 +47,7 @@
     margin-bottom: 11.2rem;
 
     @include media('1024', max) {
-      margin-bottom: 5.9rem;
+      margin-bottom: 4rem;
     }
   }
 
