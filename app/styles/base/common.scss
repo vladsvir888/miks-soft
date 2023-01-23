@@ -91,7 +91,7 @@ body {
   padding-top: 18.8rem;
 
   @include media('1024', max) {
-    padding-top: 15.9rem;
+    padding-top: 13rem;
   }
 }
 
@@ -154,7 +154,7 @@ body {
   &--services {
     padding-top: 1.3rem;
 
-   @include media('576', max) {
+    @include media('576', max) {
       padding-top: 0;
 
       .hero-inner__text {

@@ -20,12 +20,13 @@
 
   &__content {
     @include media('1025', min) {
-      grid-column: span 2;
+      grid-column: span 3;
       padding-top: 5rem;
     }
   }
 
   &__title {
+    max-width: 55rem;
     margin-bottom: 3rem;
     font-size: 3.2rem;
     font-weight: var(--fw400);
@@ -63,6 +64,7 @@
   }
 
   &__text {
+    max-width: 45.3rem;
     margin-bottom: 5rem;
     font-size: 1.75rem;
     line-height: var(--lh140);

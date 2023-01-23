@@ -44,9 +44,8 @@
     },
     "tabs_nav": {
       "items": [{
-        "attrs": "aria-selected='true' aria-controls='tab-content-1' role='tab'",
+        "attrs": "aria-selected='false' aria-controls='tab-content-1' role='tab'",
         "id": "tab_1",
-        "class": "tabs-nav__item--active",
         "text": {
           "text": "Website"
         }
@@ -67,9 +66,8 @@
     "note": "Several examples of successful cases, of different scales",
     "tabs_contents": [{
       "attrs": "id='tab-content-1' aria-labelledby='tab_1' role='tabpanel' tabindex='0'",
-      "class": "js-show",
       "items": [{
-        "title": "Busking",
+        "title": "Mobile app development for Qpay",
         "labels": {
           "items": [{
             "class": "tag--normal",
@@ -86,7 +84,7 @@
           "text": "Explore"
         },
         "image": {
-          "alt": "Busking",
+          "alt": "Mobile app development for Qpay",
           "name": "portfolio/01.jpg"
         },
         "tags_techs": [{
@@ -104,15 +102,19 @@
           "title": "Stack:",
           "list": {
             "items": [{
-              "text": "Vue.js"
+              "text": "MySQL"
             }, {
-              "text": "Nuxt"
+              "text": "Vue JS"
             }, {
-              "text": "Core.js"
+              "text": "Next"
             }, {
-              "text": "PWA"
+              "text": "React Native"
+            }, {
+              "text": "Firebase"
             }, {
               "text": "Java"
+            }, {
+              "text": "Rest API"
             }]
           }
         }]

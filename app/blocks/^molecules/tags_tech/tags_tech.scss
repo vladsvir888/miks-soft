@@ -1,5 +1,6 @@
 .tags-tech {
-  display: flex;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
   gap: 1rem;
   font-size: 1.2rem;
   line-height: var(--lh100);
