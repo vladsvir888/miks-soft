@@ -29,6 +29,11 @@
     flex-shrink: 0;
     fill: var(--pallette-light-taupe);
     transition: all var(--transition);
+    pointer-events: none;
+  }
+
+  &__text {
+    pointer-events: none;
   }
 
   &--primary {
