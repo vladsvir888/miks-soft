@@ -19,7 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   new LazyLoad();
-  sal();
+  // sal();
+  sal({
+    threshold: 0.2,
+  });
 
   Header();
   // ScrollToNumericList();
