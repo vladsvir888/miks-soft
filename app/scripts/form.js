@@ -27,6 +27,7 @@ class Form {
     this.form = form;
     this.pristine = new Pristine(this.form, Form.config);
     this.notification = this.form.querySelector('.form__notification');
+    this.formBtn = this.form.querySelector('.form__btn');
 
     if (!this.form) return;
 
@@ -102,6 +103,9 @@ class Form {
 
     if (!valid) return;
 
+    this.formBtn.classList.remove('js-invalid');
+    this.formBtn.classList.add('js-valid');
+
     const data = this.serializeForm(e.target);
 
     const response = await this.sendData(data);
@@ -113,6 +117,9 @@ class Form {
     }
 
     this.form.reset();
+
+    this.formBtn.classList.remove('js-valid');
+    this.formBtn.classList.add('js-invalid');
   }
 }
 

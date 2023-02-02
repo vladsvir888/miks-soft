@@ -8,7 +8,7 @@
 
     {% view "@button" with {
       button: form.button|default({})|merge({
-        class: "btn--secondary form__btn",
+        class: "btn--secondary form__btn js-invalid",
         icon: {
           name: "sprite-mono.svg#btn-figure"
         }
