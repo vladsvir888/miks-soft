@@ -1,10 +1,8 @@
 <div class="callback-aside popup__inner">
   {% if popup.title %}
-    {% view "@title" with {
-      title: popup.title|merge({
-        class: "title--h2 callback-aside__title"
-      })
-    } %}
+    <div class="title title--h2 callback-aside__title">
+      {{ popup.title.text }}
+    </div>
   {% endif %}
 
   {% if popup.subtitle %}

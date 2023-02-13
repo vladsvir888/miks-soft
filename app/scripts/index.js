@@ -10,6 +10,7 @@ import BurgerMenu from './burgerMenu';
 import CaseSlider from './caseSlider';
 import Modal from './modal';
 import TopBtn from './topBtn';
+import toggleCookie from './cookie';
 // import ScrollToNumericList from './scrollToNumericList';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -44,4 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
       video.play();
     });
   }
+
+  toggleCookie();
 });

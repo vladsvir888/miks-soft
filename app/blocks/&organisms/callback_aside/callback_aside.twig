@@ -1,12 +1,9 @@
 <aside class="callback-aside">
   <div class="container">
     {% if callback_aside.title %}
-      {% view "@title" with {
-        title: callback_aside.title|merge({
-          attrs: 'data-sal="slide-up" data-sal-duration="800"',
-          class: "title--h2 callback-aside__title"
-        })
-      } %}
+      <div class="title title--h2 callback-aside__title" data-sal="slide-up" data-sal-duration="800">
+        {{ callback_aside.title.text }}
+      </div>
     {% endif %}
 
     {% if callback_aside.subtitle %}

@@ -1,0 +1,55 @@
+.cookie {
+  @include flex-center-y;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 10;
+  gap: 3rem;
+  padding: 1.4rem 1.4rem 1.4rem 2.4rem;
+  color: var(--pallette-gray-suit);
+  background-color: var(--pallette-onyx);
+  border-radius: var(--bdrs8);
+  backdrop-filter: var(--bd-filter-blur3);
+
+  @include media('767', max) {
+    left: 1rem;
+    gap: 1rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: var(--lh140);
+    letter-spacing: var(--lsm02);
+  }
+
+  &__link {
+    position: relative;
+    display: inline-flex;
+    color: var(--pallette-white);
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.1rem;
+      background-color: var(--pallette-white);
+      transition: opacity var(--transition);
+      content: '';
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    padding: 0.7rem 1rem;
+    font-size: 1.4rem;
+    line-height: var(--lh100);
+  }
+}

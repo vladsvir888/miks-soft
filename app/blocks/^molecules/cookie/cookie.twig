@@ -1,0 +1,14 @@
+<div class="cookie">
+  <p class="cookie__text">
+    We use cookies on our website. You can read more in our <a class="cookie__link" href="#">Privacy Policy</a>.
+  </p>
+
+  {% view "@button" with {
+    button: {
+      class: "btn--primary cookie__btn",
+      text: {
+        text: "Accept"
+      }
+    }
+  } %}
+</div>
