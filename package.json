@@ -62,7 +62,6 @@
     "animate.css": "^4.1.1",
     "core-js": "^3.20.0",
     "focus-trap": "^7.2.0",
-    "js-cookie": "^3.0.1",
     "pristinejs": "^0.1.9",
     "sal.js": "^0.8.5",
     "sweetalert2": "^11.4.8",
