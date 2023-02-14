@@ -3,8 +3,18 @@ const toggleCookie = () => {
 
   if (!btn) return;
 
+  const storageKey = 'miks_cookie_notification';
+
+  const isCookieAccepted = JSON.parse(localStorage.getItem(storageKey));
+
+  if (!isCookieAccepted) {
+    btn.parentElement.classList.remove('cookie--hidden');
+  }
+
   btn.addEventListener('click', () => {
-    btn.parentElement.remove();
+    localStorage.setItem(storageKey, true);
+
+    btn.parentElement.classList.add('cookie--hidden');
   });
 };
 
